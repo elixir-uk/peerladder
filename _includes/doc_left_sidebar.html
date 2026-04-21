@@ -1,0 +1,57 @@
+<aside class="doc_left_sidebarlist">
+    <div class="open_icon" id="left">
+        <i class="arrow_carrot-right"></i>
+        <i class="arrow_carrot-left"></i>
+    </div>
+    <div class="scroll">
+        <ul class="list-unstyled nav-sidebar">
+            {% for item in site.data.navigation_docs %}
+                {% assign itemUrl = item.url | relative_url  %}
+                <li class="nav-item {% if itemUrl == page.url %}active{% endif %}">
+                    <a class="nav-link" href={{itemUrl | default: '#'}}><img src={{item.img | relative_url}} alt="briefcase">{{item.title}}</a>
+                    {% if item.docs %}
+                        <span class="icon">
+                            <i class="arrow_carrot-down"></i>
+                        </span>
+                        <ul class="list-unstyled dropdown_nav">
+                            {% for doc in item.docs %}
+                                {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+                                {% assign p = site.docs | where:"url", doc_url | first %}
+                                <li>
+                                    <a href="{{ p.url | relative_url }}" {% if doc_url==page.url %} class="active" {% endif %}>{{
+                            p.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+
+                </li>
+            {% endfor %}
+        </ul>
+        <ul class="list-unstyled nav-sidebar coding_nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><img src={{"img/side-nav/account.png" | relative_url}} alt="">Account</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href={{"docs/doc-element-code" | relative_url}}><img src={{"img/side-nav/coding.png" | relative_url}} alt="">Development</a>
+            </li>
+        </ul>
+        <ul class="list-unstyled nav-sidebar bottom_nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><img src={{"img/side-nav/united-states.png" | relative_url}} alt="">United
+                                                                                                                                                                                                                                                                                                                                                    States</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><img src={{"img/side-nav/edit.png" | relative_url}} alt="">English
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><img src={{"img/side-nav/users.png" | relative_url}} alt="">Sign In
+                    <i class="arrow_right"></i>
+                </a>
+            </li>
+        </ul>
+
+
+    </div>
+</aside>

@@ -1,0 +1,115 @@
+<div class="row topic_item_tabs inner_tab_list">
+    <div class="col-lg-6">
+        <div class="topic_list_item">
+            <h4>Related articles</h4>
+            {% assign maxRelated = 4 %}
+            {% assign minCommonTags = 1 %}
+            {% assign maxRelatedCounter = 0 %}
+
+            <ul class="navbar-nav">
+                {% for doc in site.docs %}
+
+                {% assign sameTagCount = 0 %}
+                {% assign commonTags = '' %}
+
+                {% for tag in doc.tags %}
+                {% if doc.url != page.url %}
+                {% if page.tags contains tag %}
+                {% assign sameTagCount = sameTagCount | plus: 1 %}
+                {% endif %}
+                {% endif %}
+                {% endfor %}
+
+                {% if sameTagCount >= minCommonTags %}
+                <li><a href="{{ site.baseurl }}{{ doc.url }}"><i class="icon_document_alt"></i>{{ doc.title }}</a></li>
+
+                {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+                {% if maxRelatedCounter >= maxRelated %}
+                {% break %}
+                {% endif %}
+                {% endif %}
+                {% endfor %}
+
+
+            </ul>
+
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="topic_list_item">
+            <h4>Recently viewed articles</h4>
+            <ul class="navbar-nav" id='recent-viwed-post'>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    function createCookie(name, value, days) {
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+            var expires = "; expires=" + date.toGMTString();
+        } else var expires = "";
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(";");
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == " ") c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    function eraseCookie(name) {
+        createCookie(name, "", -1);
+    }
+    var ReadRecentUrlJsn = readCookie("recentUrl");
+
+    if (ReadRecentUrlJsn) {
+        var ReadRecentUrl = JSON.parse(ReadRecentUrlJsn);
+    } else {
+        var ReadRecentUrl = [];
+    }
+    function searchObj(linkKey, myArray) {
+        if (myArray) {
+            for (var i = 0; i < myArray.length; i++) {
+                if (myArray[i].link === linkKey) {
+                    return myArray[i];
+                }
+            }
+        }
+    }
+    var currentObj = {
+        name: '{{page.title }}',
+        link: '{{page.url | relative_url}}'
+    }
+    var resultObject = searchObj("{{ page.url | relative_url}}", ReadRecentUrl);
+    if (resultObject) {
+        var recentLinkArray = ReadRecentUrl.slice(-5);
+    } else {
+        var recentLinkArray = [...ReadRecentUrl, currentObj].slice(-5);
+    }
+    var recentLinkArrayJsn = JSON.stringify(recentLinkArray);
+    createCookie("recentUrl", recentLinkArrayJsn, 7);
+    recentLinkArray.reverse().map(function (value, index) {
+        if (value.link !== currentObj.link) {
+            document.getElementById("recent-viwed-post").innerHTML +=
+                "<li>" +
+                " <a href='" +
+                value.link +
+                "'>" +
+                "<i class='icon_document_alt'></i>" +
+                value.name +
+                "</a>";
+            "</li>"
+        }
+    });
+
+</script>

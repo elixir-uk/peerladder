@@ -1,0 +1,42 @@
+- title: Home
+  img: img/side-nav/home.png
+  url: docs/doc-main/
+
+- title: Elements
+  img: img/side-nav/briefcase.png
+  docs:
+    - doc-element-tab
+    - doc-element-accordion
+    - doc-element-notice
+    - doc-element-table
+    - doc-element-hotspots
+    - doc-element-code
+    - doc-element-lightbox
+
+- title: Content
+  img: img/side-nav/document.png
+  docs:
+    - doc-content-image
+    - doc-content-video
+    - doc-content-tooltip
+
+- title: Layouts
+  img: img/side-nav/layout.png
+  docs:
+    - doc-layout-full-width
+    - doc-layout-left-sidebar
+    - doc-layout-banner-gradient
+    - doc-layout-banner-empty
+
+- title: Reference
+  img: img/side-nav/chat1.png
+  docs:
+    - doc-ref-cheatsheet
+    - doc-ref-footnote
+    - doc-ref-tour
+    - doc-ref-can-use
+    - doc-ref-shortcuts
+
+- title: Change log
+  img: img/side-nav/clock.png
+  url: docs/doc-changelog/

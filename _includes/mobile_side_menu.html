@@ -1,0 +1,108 @@
+<div class="side_menu">
+    <div class="mobile_menu_header">
+        <div class="close_nav">
+            <i class="arrow_left"></i>
+            <i class="icon_close"></i>
+        </div>
+        <div class="mobile_logo">
+            <a class="navbar-brand header_logo" href="index.html">
+                <img class="sticky_logo main_logo" src="{{site.logo | relative_url}}" srcset="{{site.logo2x | relative_url}} 2x" alt="logo">
+                <img class="white_logo " src="{{site.white_logo | relative_url}}" srcset="{{site.white_logo2x | relative_url}} 2x" alt="logo">
+            </a>
+        </div>
+    </div>
+    <div class="mobile_nav_wrapper">
+        <nav class="mobile_nav_top">
+            <ul class="navbar-nav menu ml-auto">
+                {% for item in site.data.navigation.left %}
+                    <li class="nav-item dropdown submenu">
+                        <a class="nav-link" href="{{item.url | relative_url}}">{{item.title}}</a>
+
+                        {% if item.dropdown or item.megaMenu %}
+
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
+                            <ul class="dropdown-menu">
+
+                                {% if item.dropdown %}
+                                    {% for dorpdownItem in item.dropdown %}
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{dorpdownItem.url | relative_url}}">{{dorpdownItem.title}}</a>
+                                        </li>
+                                    {% endfor %}
+                                {% endif %}
+
+                                {% if item.megaMenu %}
+                                    {% for dorpdownItem in item.megaMenu %}
+                                        <li class="nav-item dropdown submenu">
+                                            <a class="nav-link" href="#">{{dorpdownItem.title}}</a>
+                                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
+                                            <ul class="dropdown-menu">
+                                                {% for sub in dorpdownItem.subtitle %}
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="{{sub.url | relative_url}}">{{sub.title}}</a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </li>
+                                    {% endfor %}
+                                {% endif %}
+                            </ul>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div class="mobile_nav_bottom">
+            <aside class="doc_left_sidebarlist">
+                <h2>Docy Documentation</h2>
+                <div class="scroll">
+                    <ul class="list-unstyled nav-sidebar">
+                        {% for item in site.data.navigation_docs %}
+                            {% assign itemUrl = item.url | relative_url  %}
+                            <li class="nav-item {% if itemUrl == page.url %}active{% endif %}">
+                                <a class="nav-link" href={{itemUrl | default: '#'}}><img src={{item.img | relative_url}} alt="briefcase">{{item.title}}</a>
+                                {% if item.docs %}
+                                    <span class="icon">
+                                        <i class="arrow_carrot-down"></i>
+                                    </span>
+                                    <ul class="list-unstyled dropdown_nav">
+                                        {% for doc in item.docs %}
+                                            {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+                                            {% assign p = site.docs | where:"url", doc_url | first %}
+                                            <li>
+                                                <a href="{{ p.url | relative_url }}" {% if doc_url==page.url %} class="active" {% endif %}>{{
+                                        p.title }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <ul class="list-unstyled nav-sidebar coding_nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img alt="" src="{{"img/side-nav/account.png" | relative_url}}">Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{"onepage" | relative_url}}"><img alt="" src={{"img/side-nav/layout.png" | relative_url}}>Onepage Doc</a>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled nav-sidebar bottom_nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img alt="" src={{"img/side-nav/united-states.png" | relative_url}}>United States</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{"signup" | relative_url}}"><img alt="" src={{"img/side-nav/edit.png" | relative_url}}>Signup</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{"signinl" | relative_url}}"><img alt="" src={{"img/side-nav/users.png" | relative_url}}>Sign In
+                                <i class="arrow_right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>

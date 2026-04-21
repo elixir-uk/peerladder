@@ -1,0 +1,123 @@
+<article class="shortcode_info documentation_info rvfs-section">
+    <div class="shortcode_title">
+        {% if page.category %}
+            <a class="btn" href="#">{{page.category}}</a>
+        {% endif %}
+        <h1>Image</h1>
+        <p>
+            <span>Welcome to Docy !</span>
+            Documentation and examples for typography, including global settings, headings, body text, lists, and more.</p>
+    </div>
+    <h4 class="c_head load-order-2">Image with Caption</h4>
+    <p>Images in Bootstrap are made responsive with
+        <code>.img-fluid</code>.
+        <code>max-width: 100%;</code>
+        and
+        <code>height: auto;</code>
+        are applied to the image so that it scales with the parent element.</p>
+    <figure>
+        <img alt="image with caption" class="img-fluid" src="{{"img/blog-single/single_post_img_two.jpg" | relative_url}}">
+        <figcaption>This is the image caption text.</figcaption>
+    </figure>
+    <pre class="snippets">
+        <code class="language-html" data-lang="html">
+            &lt;figure&gt;
+                &lt;img src="img/blog-single/single_post_img_two.jpg" class="img-fluid" alt="image with caption">
+                &lt;figcaption>This is the image caption text.&lt;/figcaption&gt;
+            &lt;/figure&gt;
+        </code>
+    </pre>
+
+    <div class="code_item">
+        <h4 class="c_head load-order-2" id="image-magnify">Image Magnify</h4>
+        <p>We designed Docy for the readers, optimizing not for page views or engagement — but reading. And it turns out that context is a vital part of learning.</p>
+        <a href="{{"img/img-large.jpg" | relative_url}}">
+            <img alt="large" class="img-fluid zoom" src="{{"img/img-large.jpg" | relative_url}}">
+        </a>
+        <pre class="snippets">
+            <code class="language-html" data-lang="html">
+                &lt;a href="img/img-large.jpg"&gt;
+                    &lt;img class="img-fluid zoom" src="img/img-large.jpg" alt="large"&gt;
+                &lt;/a&gt;
+            </code>
+        </pre>
+    </div>
+
+    <div class="code_item">
+        <h4 class="c_head load-order-2">Images Shapes</h4>
+        <p>Easily create images in different shapes with adding one class to the
+            <em>&lt;img&gt;</em>
+            tag.</p>
+        <div class="code-preview">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img alt="Round image" class="rounded" src="{{"img/1.jpg" | relative_url}}">
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img alt="Circle image" class="rounded-circle" src="{{"img/2.jpg" | relative_url}}">
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img alt="Thumbnail" class="img-thumbnail" src="{{"img/3.jpg" | relative_url}}">
+                </div>
+            </div>
+        </div>
+        <pre class="snippet">
+            <code class="language-html" data-lang="html">
+                &lt;img src="..." class="rounded" alt="Round image" &gt;
+                &lt;img src="..." class="rounded-circle" alt="Circle image" &gt;
+                &lt;img src="..." class="img-thumbnail" alt="Thumbnail" &gt;
+            </code>
+        </pre>
+    </div>
+    <div class="code_item">
+        <h4 class="c_head load-order-2">Aligning images</h4>
+        <p>Align images with the
+            <a href="#">helper float classes</a>
+            or
+            <a href="#">text alignment classes</a>.
+            <code class="highlighter-rouge">block</code>-level images can be centered using
+            <a href="#">the
+                <code class="highlighter-rouge">.mx-auto</code>
+                margin utility class</a>.</p>
+        <div class="code-preview">
+            <div class="overflow-hidden">
+                <img alt="..." class="rounded float-left img-fluid" src="{{"img/flot-left.jpg" | relative_url}}">
+                <img alt="..." class="rounded float-right img-fluid" src="{{"img/flot-right.jpg" | relative_url}}">
+            </div>
+        </div>
+        <pre class="snippet">
+            <code class="language-html" data-lang="html">
+               &lt;div class="overflow-hidden mb-20"&gt;
+                    &lt;img src="assets/images/thumb/l-1.jpg" class="rounded float-left" alt="..."&gt;
+                    &lt;img src="assets/images/thumb/l-2.jpg" class="rounded float-right" alt="..."&gt;
+                &lt;div&gt;
+            </code>
+        </pre>
+        <div class="code-preview">
+            <div class="overflow-hidden">
+                <img alt="..." class="rounded mx-auto d-block" src="{{"img/flot-left.jpg" | relative_url}}">
+            </div>
+        </div>
+        <pre class="snippet">
+            <code class="language-html" data-lang="html">
+               &lt;div class="overflow-hidden mb-20"&gt;
+                    &lt;img src="assets/images/thumb/l-1.jpg" class="rounded mx-auto d-block" alt="..."&gt;
+                &lt;div&gt;
+            </code>
+        </pre>
+        <div class="code-preview">
+            <div class="text-center">
+                <img alt="..." class="rounded" src="img/flot-left.jpg">
+            </div>
+        </div>
+        <pre class="snippet">
+            <code class="language-html" data-lang="html">
+               &lt;div class="text-center mb-20"&gt;
+                    &lt;img src="assets/images/thumb/l-1.jpg" class="rounded" alt="..."&gt;
+                &lt;div&gt;
+            </code>
+        </pre>
+    </div>
+</article>

@@ -1,0 +1,79 @@
+footer_one:
+  footer_text: I’m available for commissions and collaborations, and i’m excited to hear from you about new projects.!!
+  footer_logo_link: /
+  footer_bottom:
+    nav:
+      - title: Blog
+        url: "/blog"
+      - title: Latest Projects
+        url: "#"
+
+  footer_nav:
+    - title: Solutions
+      col: col-lg-2 col-sm-6
+      paddingLeft: pl-30
+      navList:
+        - title: Help Docs
+          url: /
+          img: img/new/smile2.png
+        - title: Docbuzz
+          url: /
+          img: img/new/doc2.png
+        - title: User Frontend
+          url: /
+          img: img/new/house2.png
+        - title: Lightbox
+          url: /docs/doc-element-lightbox
+          img: img/new/bag2.png
+
+    - title: Support
+      col: col-lg-3 col-sm-6
+      paddingLeft: pl-100
+      navList:
+        - title: Help Docs
+          url: /
+        - title: Knowledge Base
+          url: /
+        - title: Live Chat
+          url: /
+        - title: Integrations
+          url: /
+        - title: Reports
+          url: /
+        - title: Messages
+          url: /
+
+    - title: Company
+      col: col-lg-3 col-sm-6
+      paddingLeft: pl-100
+      navList:
+        - title: About Us
+          url: /
+        - title: Testimonials
+          url: /
+        - title: Affiliates
+          url: /
+        - title: Partners
+          url: /
+        - title: Careers
+          url: /
+doc_footer:
+  - navList:
+      - title: About
+        url: /
+      - title: Privacy and Policy
+        url: /
+      - title: Careers
+        url: /
+  -  navList:
+      - title: AdChoices
+        url: /
+      - title: Create ad
+        url: /
+      - title: Create page
+        url: /
+  -  navList:
+      - title: Term and Conditions
+        url: /
+      - title: Cookies
+        url: /

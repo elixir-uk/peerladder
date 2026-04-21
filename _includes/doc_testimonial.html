@@ -1,0 +1,36 @@
+<section class="doc_testimonial_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="doc_testimonial_slider">
+
+                    {% for item in site.data.doc_testimonial %}
+
+                    <div class="item">
+                        <h3>{{item.title}}”</h3>
+                        <div class="name">{{item.author}}, <span>{{item.proff}}</span></div>
+                        <a href="{{item.signImg}}" target="_blank" class="sign"><img src="{{item.signImg}}" alt=""></a>
+                    </div>
+
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="doc_img_slider">
+
+
+                    {% for item in site.data.doc_testimonial %}
+
+                    <div class="item">
+                        <img class="dot" src="img/new/dot.png" alt="">
+                        <div class="round one"></div>
+                        <div class="round two"></div>
+                        <img src="{{item.authImg}}" alt="">
+                    </div>
+
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

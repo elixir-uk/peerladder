@@ -1,0 +1,67 @@
+<div class="doc-btm">
+    <ul class="nav card_tagged">
+        <li>Tagged:
+        </li>
+        {% for item in page.tags %}
+            <li>
+                <a href="#">{{item}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <footer class="help_text pt-4" id="help">
+        <div class="border_bottom"></div>
+        <div class="row feedback_link">
+            <div class="col-lg-6">
+                <h6>
+                    <i class="icon_mail_alt"></i>Still stuck?
+                    <a data-target="#exampleModal3" data-toggle="modal" href="#">How can we help?</a>
+                </h6>
+            </div>
+            <div class="col-lg-6">
+                <p>Was this page helpful?
+                    <a class="h_btn" href="#">Yes
+                        <span>5</span>
+                    </a>
+                    <a class="h_btn red" href="#">No
+                        <span>3</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<div aria-hidden="false" class="modal fade img_modal" id="exampleModal3" role="dialog" tabindex="-3">
+    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+        <i class=" icon_close"></i>
+    </button>
+    <div class="modal-dialog help_form" role="document">
+        <div class="modal-content">
+            <div class="shortcode_title">
+                <h2>How can we help?</h2>
+                <p>A premium WordPress theme with integrated Knowledge Base,<br>providing 24/7 community based support.
+                </p>
+            </div>
+            <form action="#" class="contact_form">
+                <div class="row">
+                    <div class="form-group col-lg-6">
+                        <input class="form-control" placeholder="Name" type="text">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <input class="form-control" placeholder="Email" type="email">
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <input class="form-control" placeholder="Subject" type="text">
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <textarea id="massage" name="Message" placeholder="Massage"></textarea>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <button class="btn action_btn" type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+<article class="documentation_info shortcode_info rvfs-section">
+
+    <div class="shortcode_title">
+        <h1>Video</h1>
+        <p>
+            <span>Welcome to Docy !</span>Create responsive video or slideshow embeds based on the width of the parent by creating an intrinsic ratio that scales on any device.</p>
+    </div>
+    <h4 class="c_head load-order-2" id="about">About</h4>
+    <p>Rules are directly applied to
+        <code class="highlighter-rouge">&lt;iframe&gt;</code>,
+        <code class="highlighter-rouge">&lt;embed&gt;</code>,
+        <code class="highlighter-rouge">&lt;video&gt;</code>, and
+        <code class="highlighter-rouge">&lt;object&gt;</code>
+        elements; optionally use an explicit descendant class
+        <code class="highlighter-rouge">.embed-responsive-item</code>
+        when you want to match the styling for other attributes.</p>
+    <div class="mt-5 code_item">
+        <h4 class="c_head load-order-2" id="example">Example</h4>
+        <p>Wrap any embed like an
+            <code class="highlighter-rouge">&lt;iframe&gt;</code>
+            in a parent element with
+            <code class="highlighter-rouge">.embed-responsive</code>
+            and an aspect ratio. The
+            <code class="highlighter-rouge">.embed-responsive-item</code>
+            isn’t strictly required, but we encourage it.</p>
+        <div class="code-preview">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe allowfullscreen class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+            </div>
+        </div>
+        <pre class="snippet">
+            <code class="language-html" data-lang="html">
+                &lt;div class="embed-responsive embed-responsive-16by9"&gt;
+                    &lt;iframe class="embed-responsive-item" src="..." allowfullscreen&gt;&lt;iframe&gt;
+                &lt;div&gt;
+            </code>
+        </pre>
+    </div>
+
+    <div class="mt-5 code_item">
+        <h4 class="c_head load-order-2">Vimeo Video</h4>
+        <p>While it's always better to host your videos on a video sharing website, but we provided a sample for you to include local videos in your pages.</p>
+        <div class="code-preview" id="inline-popups">
+            <img alt="" src="{{"img/img-pointer2.jpg" | relative_url}}">
+            <a class="popup-youtube video_icon" href="#vid2">
+                <i class="arrow_triangle-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <h4 class="c_head load-order-2">AutoPlay Local Video</h4>
+        <p>The local videos would automatically play while the user scrolls to the video section and each video will automatically pause when the user skip the video by scrolling. Video is an electronic medium for the recording, copying, playback, broadcasting, and display of moving visual media.</p>
+        <div class="local-video-container">
+            <video controls muted="muted">
+                <source src="{{"assets/video/SampleVideo.mp4" | relative_url}}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <h4 class="c_head load-order-2">YouTube Channel Videos Playlist</h4>
+        <p>Your channel is where you can organize your video content for your audience. As a channel owner, you can add videos, links, and info about yourself or your channel for visitors to explore.</p>
+        <div class="course-video-wrapper">
+            <div data-ycp_channel="UCvB5ODXIeYVC9O4N7pS-sTA" data-ycp_title="#Demo Title" id="ycp"></div>
+        </div>
+    </div>
+
+</article>
+
+<video class="video-js vjs-default-skin mfp-hide" id="vid2" preload="auto">
+    <p>Video Playback Not Supported</p>
+</video>

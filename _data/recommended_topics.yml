@@ -1,0 +1,56 @@
+- title: Elements
+  img: img/new/smile.png
+  child:
+    - subtitle: Tabs Widget
+      url: /docs/doc-element-tab
+    - subtitle: Notice / Message Widget
+      url: /docs/doc-element-notice
+    - subtitle: Accordions Widget
+      url: /docs/doc-element-accordion
+    - subtitle: Cheatsheet Widget
+      url: /docs/doc-ref-cheatsheet
+    - subtitle: Image Hotspots Widget
+      url: /docs/doc-element-hotspots
+
+- title: Content
+  img: img/new/doc.png
+  child:
+    - subtitle: Video Widget
+      url: /docs/doc-content-video
+    - subtitle: Image Widget
+      url: /docs/doc-content-image
+    - subtitle: Table Widget
+      url: /docs/doc-element-table
+    - subtitle: Tooltip & Direction
+      url: /docs/doc-content-tooltip
+    - subtitle: Typography
+      url: /typography
+
+- title: Layout
+  img: img/new/bag.png
+  child:
+    - subtitle: Aesthetic Banner Design
+      url: /docs/doc-layout-banner-gradient
+    - subtitle: Sticky Header with Navbar
+      url: /onepage
+    - subtitle: Full-width Layout
+      url: /docs/doc-layout-full-width
+    - subtitle: Full-width No Right Sidebar
+      url: /docs/doc-layout-left-sidebar
+    - subtitle: Without Banner
+      url: /docs/doc-layout-banner-empty
+
+- title: References
+  img: img/new/house.png
+  child:
+    - subtitle: Keyboard Shortcuts 
+      url: /docs/doc-ref-shortcuts
+    - subtitle: Footnotes
+      url: /docs/doc-ref-footnotes
+    - subtitle: Interface Tour
+      url: /docs/doc-ref-tour
+    - subtitle: Can I Use
+      url: /docs/doc-ref-can-use
+    - subtitle:  Tooltips & Direction
+      url: /docs/doc-content-tooltip
+

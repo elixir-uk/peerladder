@@ -1,0 +1,36 @@
+{% assign docs = site.data.navigation_docs | map: 'docs' | join: ',' | split: ',' %}
+
+{% for document in docs %}
+    {% assign document_url = document | prepend:"/docs/" | append:"/" %}
+    {% if document_url == page.url %}
+        <div class="paginate-post pt-5">
+            <div class="d-flex justify-content-between">
+                {% if forloop.index == 2 %}
+                    {% else %}
+                        {% assign previous = forloop.index0 | minus: 1 %}
+                        {% assign previous_page = docs[previous] | prepend:"/docs/" | append:"/" %}
+                        {% assign previous_doc = site.docs | where:"url", previous_page | first %}
+
+                        <div class="heading_content mr-auto">
+                            <h6 class="medium  mb-1">{{previous_doc.title}}</h6>
+                            <a href="{{previous_page}}">&larr;
+                                {{ site.data.translation[site.lang].previous | default: "Previous" }}</a>
+                        </div>
+                {% endif %}
+                {% if forloop.last %}
+                    {% else %}
+                        {% assign next = forloop.index0 | plus: 1 %}
+                        {% assign next_page = docs[next] | prepend:"/docs/" | append:"/" %}
+                        {% assign next_doc = site.docs | where:"url", next_page | first %}
+
+                        <div class="heading_content ml-auto">
+                            <h6 class="medium mb-1">{{next_doc.title}}</h6>
+                            <a href="{{next_page}}">{{ site.data.translation[site.lang].next | default: "Next" }}
+                                &rarr;</a>
+                        </div>
+                {% endif %}
+            </div>
+        </div>
+        {% break %}
+    {% endif %}
+{% endfor %}

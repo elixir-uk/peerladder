@@ -1,0 +1,39 @@
+<div class="mobile_main_menu dark_menu sticky-nav ">
+    <div class="container">
+        <div class="mobile_menu_left">
+            <button class="navbar-toggler mobile_menu_btn" type="button">
+                <span class="menu_toggle ">
+                    <span class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </span>
+            </button>
+            <a class="navbar-brand header_logo" href="{{'/' | relative_url}}">
+                <img class="sticky_logo main_logo" src="{{site.logo | relative_url}}" srcset="{{site.logo2x | relative_url}} 2x" alt="logo">
+                <img class="white_logo " src="{{site.white_logo | relative_url}}" srcset="{{site.white_logo2x | relative_url}} 2x" alt="logo">
+            </a>
+        </div>
+        <div class="mobile_menu_right">
+            <div class="right-nav">
+                <a class="nav_btn tp_btn" href="{{'https://is.gd/nDvqm2' | relative_url}}" target="_blank">Get Docy</a>
+                <a class="px-2 ml-3" href="#" title="Subscribe to the newsletter">
+                    <ion-icon name="mail"></ion-icon>
+                </a>
+                <a class="px-2" href="#" title="RSS feed">
+                    <ion-icon name="logo-rss"></ion-icon>
+                </a>
+                <div class="px-2 js-darkmode-btn btn" title="Toggle dark mode">
+                    <label class="tab-btn tab-btns" for="something2">
+                        <ion-icon class="light-mode" name="contrast"></ion-icon>
+                    </label>
+                    <input class="dark_mode_switcher" id="something2" name="something2" type="checkbox">
+                    <label class="tab-btn" for="something2">
+                        <ion-icon class="dark-mode" name="contrast-outline"></ion-icon>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

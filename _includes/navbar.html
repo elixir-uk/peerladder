@@ -1,0 +1,130 @@
+<nav class="navbar navbar-expand-lg {{ include.class }} {{include.type}} sticky-nav">
+    <div class="container">
+        <a class="navbar-brand header_logo" href="{{ '/' | relative_url}}">
+            {% if include.type == 'dark_menu' %}
+            {% assign imgClass = 'first_logo sticky_logo main_logo' %}
+            {% assign imgWClass = 'white_logo' %}
+            {% else %}
+            {% assign imgClass = 'first_logo sticky_logo' %}
+            {% assign imgWClass = 'white_logo main_logo' %}
+            {% endif %}
+
+            <img class='{{imgClass}}' src="{{site.logo | relative_url}}"
+                srcset="{{site.logo2x | relative_url}} 2x" alt="logo">
+            <img class='{{imgWClass}}' src="{{site.white_logo | relative_url}}" srcset="{{site.white_logo2x | relative_url}} 2x" alt="logo">
+        </a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler collapsed" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+            <span class="menu_toggle">
+                <span class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <span class="hamburger-cross">
+                    <span></span>
+                    <span></span>
+                </span>
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav menu ml-auto">
+                {% for item in site.data.navigation.left %}
+                <li
+                    class="nav-item dropdown submenu  {% if item.megaMenu %}mega_menu tab-demo{%endif%} {% if page.url == item.url %}active{%endif%} ">
+                    <a class="nav-link dropdown-toggle" href="{{item.url | relative_url}}">{{item.title}}</a>
+                    {% if item.dropdown %}
+                    <i aria-hidden="false" class="arrow_carrot-down_alt2 mobile_dropdown_icon"
+                        data-toggle="dropdown"></i>
+                    <ul class="dropdown-menu">
+                        {% for dropItem in item.dropdown %}
+                        <li class="nav-item {% if page.url == dropItem.url %}active{%endif%}">
+                            <a href="{{dropItem.url}}" class="nav-link">{{dropItem.title}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {%endif%}
+                    {% if item.megaMenu %}
+                    <i aria-hidden="false" class="arrow_carrot-down_alt2 mobile_dropdown_icon"
+                        data-toggle="dropdown"></i>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-5 tabHeader">
+                                    <ul aria-orientation="vertical" class="nav flex-column nav-pills" id="v-pills-tab"
+                                        role="tablist">
+
+                                        {% for dropItem in item.megaMenu %}
+                                        <li class="nav-item {% if dropItem.active %}active {% endif %}">
+                                            <a class="nav-link" id="{{dropItem.id}}" data-toggle="pill"
+                                                href="#{{dropItem.target}}" role="tab"
+                                                aria-controls="{{dropItem.target}}"
+                                                aria-selected="true">{{dropItem.title}}</a>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="tab-content tabContent" id="v-pills-tabContent">
+                                        {% for dropItem in item.megaMenu %}
+                                        <div class="tab-pane fade {% if dropItem.active %}active show{% endif %}"
+                                            id="{{dropItem.target}}" role="tabpanel" aria-labelledby="{{dropItem.id}}">
+                                            <div class="d-flex">
+                                                <ul class="list-unstyled tab_list">
+                                                    {% for innerItem in dropItem.subtitle  limit: 4 %}
+                                                    <li>
+                                                        <a href="{{innerItem.url}}">{{innerItem.title}}</a>
+                                                    </li>
+                                                    {% endfor %}
+                                                </ul>
+                                                <ul class="list-unstyled tab_list">
+                                                    {% for innerItem in dropItem.subtitle   limit: 4 offset: 4 %}
+                                                    <li>
+                                                        <a href="{{innerItem.url}}">{{innerItem.title}}</a>
+                                                    </li>
+                                                    {% endfor %}
+                                                </ul>
+                                            </div>
+                                            <div class="text">
+                                                <a href="doc-main.html">
+                                                    <p>More Categories</p>
+                                                </a>
+                                                <a href="doc-main.html">
+                                                    <p>All docs</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    {%endif%}
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="right-nav">
+                <a class="nav_btn {{include.btnCls}} " href="{{include.btn_link}}">{{include.btn_title}}</a>
+                {% if page.navbar.right_nav_tool %}
+                <a class="px-2 ml-3" href="#" title="Subscribe to the newsletter">
+                    <ion-icon name="mail"></ion-icon>
+                </a>
+                <a class="px-2" href="#" title="RSS feed">
+                    <ion-icon name="logo-rss"></ion-icon>
+                </a>
+                <div class="px-2 js-darkmode-btn" title="Toggle dark mode">
+                    <label for="something" class="tab-btn tab-btns">
+                        <ion-icon class="light-mode" name="contrast"></ion-icon>
+                    </label>
+                    <input type="checkbox" name="something" id="something" class="dark_mode_switcher">
+                    <label for="something" class="tab-btn">
+                        <ion-icon class="dark-mode" name="contrast-outline"></ion-icon>
+                    </label>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</nav>

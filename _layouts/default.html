@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+{% if page.layout == 'doc' %}
+       {% assign isDoc = 'doc' %}
+    {% endif %}
+<body class="{{isDoc}} {{page.container}}" data-scroll-animation="true" data-spy="scroll" data-target="#navbar-example3" data-offset="70">
+    {% if page.preloader or page.layout == 'doc' or page.layout == 'post' %}
+    {% include preloader.html %}
+    {% endif %}
+    <div class="body_wrapper ">
+        {% if page.layout == 'doc'  %}
+        {% assign navbar_class = page.navbar.class | append: ' menu_one display_none' %}
+        {% else %}
+        {% assign navbar_class = page.navbar.class | append: ' menu_one' %}
+        {% endif %}
+        {% assign navbar_type = page.navbar.type | default: 'dark_menu' %}
+        {% assign navbar_btnClass = page.navbar.btnClass | default: 'tp_btn' %}
+
+        {% unless page.permalink == '/404.html' %}
+        {% include navbar.html class=navbar_class   type=navbar_type  btnCls=navbar_btnClass  btn_title="Get Docy" btn_link="/" %}
+            
+        {% endunless %}
+        <div class="click_capture"></div>
+        {{ content }}
+
+        {% unless page.permalink == '/404.html' %}
+            {% if page.layout == 'doc' %}
+                {% include doc_footer.html %}
+            {%  elsif page.custom_footer != true %}
+                {% include footer_one.html class=page.footer.class  %}
+            {% endif %}
+        {% endunless %}
+    </div>
+
+    <!-- Back to top button -->
+    <a id="back-to-top" title="Back to Top"></a>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src={{"js/jquery-3.5.1.min.js" | relative_url}}></script>
+    <script src={{"assets/bootstrap/js/popper.min.js" | relative_url}}></script>
+    <script src={{"assets/bootstrap/js/bootstrap.min.js" | relative_url}}></script>
+    <script src={{"js/pre-loader.js" | relative_url}}></script>
+    <script src={{"assets/niceselectpicker/jquery.nice-select.min.js" | relative_url}}></script>
+    <script src={{"assets/wow/wow.min.js" | relative_url}}></script>
+    {% if page.custom_js %}
+    {% for script in page.custom_js %}
+    <script src="{{ script | relative_url }}"></script>
+    {% endfor %}
+    {% endif %}
+    <script src={{"https://unpkg.com/ionicons@5.4.0/dist/ionicons.js" | relative_url }}></script>
+    <script src={{"js/jekyll-search.js" | relative_url }}></script>
+    <script src={{"js/plugins.js" | relative_url }}></script>
+    <script src={{"js/main.js" | relative_url }}></script>
+    {% if page.search %}
+    <script>
+        var sjs = SimpleJekyllSearch({
+            searchInput: document.getElementById('searchbox'),
+            resultsContainer: document.getElementById('search-hero-results'),
+            noResultsText: '<li class="no-results">{{ site.data.translation[site.lang].search_no_results | default: "No result found" }}</li>',
+            searchResultTemplate: '<li> <span>{category}</span><a href="{url}">{title}</a></li>',
+            json: "{{ '/search.json' | relative_url }}"
+        });
+
+
+        $(".header_search_keyword ul li a").on("click", function (e) {
+            e.preventDefault();
+
+            document.getElementById("search-hero-results").style.display = "block";
+            var content = $(this).text();
+            $("#searchbox").val(content).focus();
+            sjs.search(`${content}`)
+            $(".input-wrapper input")
+                .parent()
+                .find(".header_search_form_panel")
+                .first()
+                .slideDown(300);
+
+        });
+        $(".input-wrapper input").on('input', function () {
+            var inpval = $(this).val();
+            if (inpval) {
+                $(this).parent().find(".header_search_form_panel").first().slideDown(300);
+            } else {
+                $(this).parent().find(".header_search_form_panel").first().slideUp(300);
+
+            }
+        });
+        $(".input-wrapper input").focusout(function () {
+            $(this).parent().find(".header_search_form_panel").first().slideUp(300);
+        });
+
+        
+
+    </script>
+    {% endif %}
+</body>
+
+</html>

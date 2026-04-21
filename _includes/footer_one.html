@@ -1,0 +1,101 @@
+{% assign footer_one = site.data.footer_nav.footer_one %}
+
+<footer class="doc_footer_area">
+    <div class="doc_footer_top {{ include.class }} ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="f_widget doc_about_widget wow fadeInUp" data-wow-delay="0.2s">
+                        <a href="{{'/' | relative_url}}">
+                            <img class="first_logo" src="{{site.logo | relative_url}}" srcset="{{site.logo2x | relative_url}} 2x" alt="logo">
+                            <img class="white_logo" src="{{site.white_logo | relative_url}}" srcset="{{site.white_logo2x | relative_url}} 2x" alt="logo">
+                        </a>
+                        <p>{{footer_one.footer_text}}</p>
+                        <ul class="list-unstyled">
+                            {% if site.social.facebook %}
+                                <li>
+                                    <a href="{{site.social.facebook | relative_url}}">
+                                        <i class="social_facebook"></i>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if site.social.twitter %}
+                                <li>
+                                    <a href="{{site.social.twitter | relative_url}}">
+                                        <i class="social_twitter"></i>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if site.social.vimeo %}
+                                <li>
+                                    <a href="{{site.social.vimeo | relative_url}}">
+                                        <i class="social_vimeo"></i>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if site.social.linkedin %}
+                                <li>
+                                    <a href="{{site.social.linkedin | relative_url}}">
+                                        <i class="social_linkedin"></i>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if site.social.pinterest %}
+                                <li>
+                                    <a href="{{site.social.pinterest | relative_url}}">
+                                        <i class="social_pinterest"></i>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if site.social.dribbble %}
+                                <li>
+                                    <a href="{{site.social.dribbble | relative_url}}">
+                                        <i class="social_dribbble"></i>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if site.social.youtube %}
+                                <li>
+                                    <a href="{{site.social.youtube | relative_url}}">
+                                        <i class="social_youtube"></i>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+                {% for item in footer_one.footer_nav %}
+                    <div class="{{item.col}}">
+                        <div class="f_widget doc_service_list_widget {{item.paddingLeft}} wow fadeInUp" data-wow-delay="0.3s">
+                            <h3 class="f_title_two">{{item.title}}</h3>
+                            <ul class="list-unstyled">
+                                {% for navItem in item.navList %}
+                                    <li>
+                                        <a href="{{navItem.url | relative_url}}">
+                                            {% if navItem.img %}
+                                                <img src="{{navItem.img | relative_url}}" alt="">
+                                            {%
+                                    endif %}
+                                            {{navItem.title}}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="doc_footer_bottom">
+        <div class="container d-flex justify-content-between">
+            <ul class="doc_footer_menu list-unstyled wow fadeInUp" data-wow-delay="0.2s">
+                {% for item in footer_one.footer_bottom.nav %}
+                    <li>
+                        <a href="{{item.url | relative_url}}">{{item.title}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <p class="wow fadeInUp" data-wow-delay="0.3s">{{site.footer.copyright}}</p>
+        </div>
+    </div>
+</footer>

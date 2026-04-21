@@ -1,0 +1,95 @@
+---
+layout: default
+search: true
+
+navbar:
+    right_nav_tool: true
+    type: dark_menu
+---
+
+{% include doc_banner.html %}
+
+<section class="doc_blog_classic_area sec_pad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                {% for post in paginator.posts %}
+                    {% if forloop.index == 3 %}
+                        <div class="blog_link_post">
+                            <a href="{{post.url | relative_url}}">
+                                <p>{{post.title}}</p>
+                            </a>
+                        </div>
+                    {% else %}
+                        <div class="blog_top_post shadow-sm blog_classic_item">
+                            <img src="{{post.post_img | relative_url}}" alt="">
+                            <div class="b_top_post_content">
+                                <div class="post_tag">
+                                    <a href="#">
+                                        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+                                            {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+                                            {{ post.date | date: date_format }}
+                                        </time>
+                                    </a>
+                                    <a href="#">{{post.timeToRead}}</a>
+                                    <a class="orange" href="#">{{post.category}}</a>
+                                </div>
+                                <a href="{{post.url | relative_url}}">
+                                    <h3>{{post.title}}</h3>
+                                </a>
+                                <p>
+                                    {% assign excerptParts = paginator.posts[0].excerpt | split: "<!-- excerpt-start -->" %}
+                                    {{ excerptParts[1] | strip_newlines | truncate: 227 }}
+                                </p>
+                                <div class="d-flex justify-content-between p_bottom">
+                                    <a href="{{post.url | relative_url}}" class="learn_btn">Continue Reading<i class="arrow_right"></i>
+                                    </a>
+                                    <div class="media post_author">
+                                        <div class="round_img">
+                                            <img src="{{post.avatar | relative_url}}" alt="">
+                                        </div>
+                                        <div class="media-body author_text">
+                                            <a href="#">
+                                                <h4>{{post.author}}</h4>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                {% if paginator.total_pages > 1 %}
+                    <nav class="navigation pagination">
+                        <div class="nav-links">
+                            {% if paginator.previous_page %}
+                                <a class="previous page-numbers" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+                                    <i class="arrow_carrot-left"></i>
+                                </a>
+                            {% endif %}
+
+                            {% for page in (1..paginator.total_pages) %}
+                                {% if page == paginator.page %}
+                                    <span aria-current="page" class="page-numbers current">{{page}}</span>
+                                {% elsif page == 1 %}
+                                    <a class="page-numbers" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{page}}</a>
+                                {% else %}
+                                    <a class="page-numbers" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{page}}</a>
+                                {% endif %}
+                            {% endfor %}
+                            {% if paginator.next_page %}
+                                <a class="next page-numbers" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+                                    <i class="arrow_carrot-right"></i>
+                                </a>
+                            {% endif %}
+                        </div>
+                    </nav>
+                {% endif %}
+            </div>
+            <div class="col-lg-4">
+                {% include blog_right_sidebar.html %}
+            </div>
+        </div>
+    </div>
+</section>
+{% include footer_one.html %}

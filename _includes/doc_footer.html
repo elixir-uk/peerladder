@@ -1,0 +1,35 @@
+<footer class="forum_footer_area">
+    <div class="container">
+        <div class="forum_footer_inner">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <aside class="f_widget ab_wd">
+                        <a href="#"><img src="{{"img/forum/forum-footer-logo.png" | relative_url}}" alt="">SpiderThemes © 2021</a>
+                        <select class="nice_select">
+                            <option value="1">English</option>
+                            <option value="2">Bengali</option>
+                            <option value="3">Euro</option>
+                            <option value="4">Ind</option>
+                        </select>
+                    </aside>
+                </div>
+
+                {% for item in site.data.footer_nav.doc_footer %}
+                    <div class="col-lg-3 col-sm-6">
+                        <aside class="f_widget f_link_wd">
+                            <ul class="navbar-nav">
+                                {% for navitem in item.navList %}
+                                    <li>
+                                        <a href="{{navitem.url | relative_url}}">{{navitem.title}}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </aside>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</footer>

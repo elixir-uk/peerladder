@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Docy | Documentation Jekyll theme.</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Docy" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Documentation Jekyll theme." />
+<meta property="og:description" content="Documentation Jekyll theme." />
+<link rel="canonical" href="http://localhost:4000/404.html" />
+<meta property="og:url" content="http://localhost:4000/404.html" />
+<meta property="og:site_name" content="Docy" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Docy" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Documentation Jekyll theme.","headline":"Docy","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/img/logo.png"}},"url":"http://localhost:4000/404.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="shortcut icon" href=/img/favicon.ico type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href=/assets/bootstrap/css/bootstrap.min.css>
+    <!-- icon css-->
+    <link rel="stylesheet" href=/assets/elagent-icon/style.css>
+    <link rel="stylesheet" href=/assets/niceselectpicker/nice-select.css>
+    <link rel="stylesheet" href=/assets/animation/animate.css>
+    
+    <link rel="stylesheet" href=/css/style.css>
+    <link rel="stylesheet" href=/css/responsive.css>
+    <title>Docy</title>
+
+    
+</head>
+
+<body class=" " data-scroll-animation="true" data-spy="scroll" data-target="#navbar-example3" data-offset="70">
+    
+    <div class="body_wrapper ">
+        
+        
+        
+
+        
+        <div class="click_capture"></div>
+        <section class="error_area bg_color">
+    <div class="error_dot one"></div>
+    <div class="error_dot two"></div>
+    <div class="error_dot three"></div>
+    <div class="error_dot four"></div>
+    <div class="container">
+        <div class="error_content_two text-center">
+            <div class="error_img">
+                <img alt="" class="p_absolute error_shap" src="/img/404_bg.png " />
+                <div class="one wow clipInDown" data-wow-delay="1s"><img alt="" class="img_one" src="/img/404_two.png " /></div>
+                <div class="two wow clipInDown" data-wow-delay="1.5s"><img alt="" class="img_two" src="/img/404_three.png " /></div>
+                <div class="three wow clipInDown" data-wow-delay="1.8s"><img alt="" class="img_three" src="/img/404_one.png " /></div>
+            </div>
+            <h2>Error. We can’t find the page you’re looking for.</h2>
+            <p>Sorry for the inconvenience. Go to our homepage or check out our latest collections for Fashion, Chair, Decoration...</p>
+            <form action="#" class="error_search">
+                <div class="header_search_form_info">
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input class="form-control" autocomplete="off" id="searchbox" name="search" placeholder="Search the Doc" type="search" />
+                            <div class="header_search_form_panel">
+                                <ul class="list-unstyled search_item" id="search-hero-results"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <a class="action_btn box_shadow_none" href="/">
+                <i class="arrow_left"></i>Back to Home Page</a>
+        </div>
+    </div>
+</section>
+
+
+        
+    </div>
+
+    <!-- Back to top button -->
+    <a id="back-to-top" title="Back to Top"></a>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=/js/jquery-3.5.1.min.js></script>
+    <script src=/assets/bootstrap/js/popper.min.js></script>
+    <script src=/assets/bootstrap/js/bootstrap.min.js></script>
+    <script src=/js/pre-loader.js></script>
+    <script src=/assets/niceselectpicker/jquery.nice-select.min.js></script>
+    <script src=/assets/wow/wow.min.js></script>
+    
+    <script src=https://unpkg.com/ionicons@5.4.0/dist/ionicons.js></script>
+    <script src=/js/jekyll-search.js></script>
+    <script src=/js/plugins.js></script>
+    <script src=/js/main.js></script>
+    
+    <script>
+        var sjs = SimpleJekyllSearch({
+            searchInput: document.getElementById('searchbox'),
+            resultsContainer: document.getElementById('search-hero-results'),
+            noResultsText: '<li class="no-results">No result found</li>',
+            searchResultTemplate: '<li> <span>{category}</span><a href="{url}">{title}</a></li>',
+            json: "/search.json"
+        });
+
+
+        $(".header_search_keyword ul li a").on("click", function (e) {
+            e.preventDefault();
+
+            document.getElementById("search-hero-results").style.display = "block";
+            var content = $(this).text();
+            $("#searchbox").val(content).focus();
+            sjs.search(`${content}`)
+            $(".input-wrapper input")
+                .parent()
+                .find(".header_search_form_panel")
+                .first()
+                .slideDown(300);
+
+        });
+        $(".input-wrapper input").on('input', function () {
+            var inpval = $(this).val();
+            if (inpval) {
+                $(this).parent().find(".header_search_form_panel").first().slideDown(300);
+            } else {
+                $(this).parent().find(".header_search_form_panel").first().slideUp(300);
+
+            }
+        });
+        $(".input-wrapper input").focusout(function () {
+            $(this).parent().find(".header_search_form_panel").first().slideUp(300);
+        });
+
+        
+
+    </script>
+    
+</body>
+
+</html>

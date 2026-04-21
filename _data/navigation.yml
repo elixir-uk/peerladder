@@ -1,0 +1,115 @@
+# Navbar left menu navigation links
+
+left:
+  - title: Home
+    url: /
+
+  - title: Docs
+
+    url: /docs/doc-main/
+    megaMenu:
+      - title: Doc Archives
+        id: v-pills-doc-tab
+        target: v-pills-doc
+        active: true
+        subtitle:
+          - title: Doc Topics
+            url: /docs/doc-main
+      - title: Elements
+        id: v-pills-code-tab
+        target: v-pills-code
+        active: false
+        subtitle:
+          - title: Tabs
+            url: /docs/doc-element-tab
+          - title: Accordion
+            url: /docs/doc-element-accordion
+          - title: Notice
+            url: /docs/doc-element-notice
+          - title: Tables
+            url: /docs/doc-element-table
+          - title: Image Hotspots
+            url: /docs/doc-element-hotspots
+          - title: Source Code
+            url: /docs/doc-element-code
+          - title: Image Lightbox
+            url: /docs/doc-element-lightbox
+          - title: Cheatsheet
+            url: /docs/doc-ref-cheatsheet
+      - title: Layouts
+        id: v-pills-layout-tab
+        target: v-pills-layout
+        active: false
+        subtitle:
+          - title: Left Sidebar
+            url: /docs/doc-layout-left-sidebar
+          - title: Full-width
+            url: /docs/doc-layout-full-width
+          - title: Gradient Banner
+            url: /docs/doc-layout-banner-gradient
+          - title: Without Banner
+            url: /docs/doc-layout-banner-empty
+      - title: Reference
+        id: v-pills-ref-tab
+        target: v-pills-ref
+        active: false
+        subtitle:
+          - title: Cheatsheet
+            url: /docs/doc-ref-cheatsheet
+          - title: Footnotes
+            url: /docs/doc-ref-footnotes
+          - title: Interface Tour
+            url: /docs/doc-ref-tour
+          - title: Can I Use
+            url: /docs/doc-ref-can-use
+          - title: Tooltips & Direction
+            url: /docs/doc-content-tooltip
+          - title: Keyboard Shortcuts
+            url: /docs/doc-ref-shortcuts
+      - title: Content
+        id: v-pills-content-tab
+        target: v-pills-content
+        active: false
+        subtitle:
+          - title: Image
+            url: /docs/doc-content-image
+          - title: Tables
+            url: /docs/doc-element-table
+          - title: Video
+            url: /docs/doc-content-video
+          - title: Typography
+            url: /typography
+          - title: Tooltips & Direction
+            url: /docs/doc-content-tooltip
+      - title: Other Pages
+        id: v-pills-other-tab
+        target: v-pills-other
+        active: false
+        subtitle:
+          - title: Onepage
+            url: /onepage
+          - title: Doc Topics
+            url: /docs/doc-main
+          - title: Cheatsheet
+            url: /docs/doc-ref-cheatsheet
+          - title: Changelog
+            url: /docs/doc-changelog
+
+  - title: Pages
+    dropdown:
+      - title: Onepage Doc
+        url: /onepage
+      - title: Contact
+        url: /contact
+      - title: Typography
+        url: /typography
+      - title: 404 Error
+        url: /404
+
+  - title: Blog
+    url: /blog
+    dropdown:
+      - title: Blog Grid
+        url: /blog
+      - title: Blog Details
+        url: /post01
