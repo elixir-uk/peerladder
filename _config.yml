@@ -41,13 +41,9 @@ social:
 collections:
   docs:
     output: true
-
-# Number of posts displayed on blog page
-paginate:     7
-
-# Blog path
-paginate_path: "/blog/:num/"
-
+  people:
+    output: true
+    permalink: /team/:name/
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:
@@ -66,7 +62,9 @@ exclude:
   - node_modules
 
 sass:
-  style:            compressed
+  style: compressed
+  silence_deprecations:
+    - import
 
 # Defaults
 defaults:
@@ -82,3 +80,9 @@ defaults:
       type:         posts
     values:
       layout:       post
+  # _people
+  - scope:
+      path: ""
+      type: people
+    values:
+      layout: person

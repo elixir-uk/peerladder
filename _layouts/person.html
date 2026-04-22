@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+<section class="person-profile-header breadcrumb_area_three">
+  <div class="container">
+    <div class="row align-items-center">
+
+      {% if page.avatar %}
+      <div class="col-lg-2 col-md-3 text-center mb-4 mb-md-0">
+        <img
+          class="person-profile-avatar"
+          src="{{ page.avatar | relative_url }}"
+          alt="{{ page.name }}"
+          loading="lazy">
+      </div>
+      {% endif %}
+
+      <div class="{% if page.avatar %}col-lg-10 col-md-9{% else %}col-12{% endif %}">
+        <h1 class="person-profile-name">{{ page.name }}</h1>
+
+        <span class="role-label role-{{ page.role }}">
+          {%- case page.role -%}
+            {%- when 'co-lead' -%}Co-Lead
+            {%- when 'mentee' -%}Mentee
+            {%- when 'reviewer' -%}Reviewer
+            {%- else -%}{{ page.role }}
+          {%- endcase -%}
+        </span>
+
+        <p class="person-profile-affiliation">
+          <ion-icon name="business-outline"></ion-icon>
+          {{ page.affiliation }}{% if page.country %}, {{ page.country }}{% endif %}
+        </p>
+
+        <nav class="person-profile-links" aria-label="{{ page.name }} external links">
+          {% if page.website %}
+          <a href="{{ page.website }}" class="person-link" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="link-outline"></ion-icon> Website
+          </a>
+          {% endif %}
+          {% if page.orcid %}
+          <a href="https://orcid.org/{{ page.orcid }}" class="person-link orcid-link" target="_blank" rel="noopener noreferrer">
+            ORCID
+          </a>
+          {% endif %}
+          {% if page.github %}
+          <a href="https://github.com/{{ page.github }}" class="person-link github-link" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-github"></ion-icon> GitHub
+          </a>
+          {% endif %}
+        </nav>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="person-profile-body blog_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+
+        {% if page.bio %}
+        <p class="person-profile-bio lead">{{ page.bio }}</p>
+        {% endif %}
+
+        {% if page.expertise %}
+        <div class="person-profile-expertise">
+          <h4>Areas of Expertise</h4>
+          <ul class="person-expertise list-unstyled">
+            {% for item in page.expertise %}
+            <li><span class="badge badge-light">{{ item }}</span></li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if content != "" %}
+        <div class="person-profile-content">
+          {{ content }}
+        </div>
+        {% endif %}
+
+        <a href="{{ '/team/' | relative_url }}" class="back-to-team">
+          <i class="arrow_left"></i> Back to Team
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>

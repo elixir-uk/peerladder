@@ -99,6 +99,8 @@ left:
     dropdown:
       - title: Onepage Doc
         url: /onepage
+      - title: Team
+        url: /team
       - title: Contact
         url: /contact
       - title: Typography

@@ -1,0 +1,66 @@
+{% assign person = include.person %}
+<article class="person-card">
+
+  {% if person.avatar %}
+  <div class="person-avatar-wrap">
+    {% if person.url %}
+    <a href="{{ person.url | relative_url }}">
+      <img class="person-avatar" src="{{ person.avatar | relative_url }}" alt="{{ person.name }}" loading="lazy">
+    </a>
+    {% else %}
+    <img class="person-avatar" src="{{ person.avatar | relative_url }}" alt="{{ person.name }}" loading="lazy">
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <div class="person-body">
+
+    <header class="person-header">
+      {% if person.url %}
+      <h4 class="person-name"><a href="{{ person.url | relative_url }}">{{ person.name }}</a></h4>
+      {% else %}
+      <h4 class="person-name">{{ person.name }}</h4>
+      {% endif %}
+      <span class="role-label role-{{ person.role }}">
+        {%- case person.role -%}
+          {%- when 'co-lead' -%}Co-Lead
+          {%- when 'mentee' -%}Mentee
+          {%- when 'reviewer' -%}Reviewer
+          {%- else -%}{{ person.role }}
+        {%- endcase -%}
+      </span>
+    </header>
+
+    <p class="person-affiliation">
+      {{ person.affiliation }}{% if person.country %}, {{ person.country }}{% endif %}
+    </p>
+
+    {% if person.bio %}
+    <p class="person-bio">{{ person.bio }}</p>
+    {% endif %}
+
+    {% if person.expertise %}
+    <ul class="person-expertise list-unstyled">
+      {% for item in person.expertise %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <nav class="person-links" aria-label="{{ person.name }} links">
+      {% if person.url %}
+      <a href="{{ person.url | relative_url }}" class="person-link profile-link">Profile</a>
+      {% endif %}
+      {% if person.website %}
+      <a href="{{ person.website }}" class="person-link" target="_blank" rel="noopener noreferrer">Website</a>
+      {% endif %}
+      {% if person.orcid %}
+      <a href="https://orcid.org/{{ person.orcid }}" class="person-link orcid-link" target="_blank" rel="noopener noreferrer">ORCID</a>
+      {% endif %}
+      {% if person.github %}
+      <a href="https://github.com/{{ person.github }}" class="person-link github-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+      {% endif %}
+    </nav>
+
+  </div>
+</article>

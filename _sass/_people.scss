@@ -1,0 +1,346 @@
+/*====================================================
+  People — team listing page + person profile page
+  Classes used by:
+    team.md              → .team-page-*, .team-group, .people-grid
+    _includes/person-card.html → .person-card, .role-label, .person-*
+    _layouts/person.html → .person-profile-*
+====================================================*/
+
+// ── Role badge colours ────────────────────────────────────────────────────────
+$role-co-lead  : $brand_color;
+$role-mentee   : #2da44e;
+$role-reviewer : #6b707f;
+
+
+// ── Team listing page ─────────────────────────────────────────────────────────
+
+.team-page-body {
+    padding: 60px 0 80px;
+}
+
+.team-group {
+    margin-bottom: 60px;
+
+    &:last-child { margin-bottom: 0; }
+}
+
+.team-group-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: $h_title;
+    border-bottom: 2px solid rgba($brand_color, 0.15);
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+}
+
+.people-grid {
+    // Bootstrap .row handles the gutter; we just add row-gap
+    row-gap: 24px;
+
+    > [class*="col-"] {
+        display: flex;          // stretch cards to equal height per row
+    }
+}
+
+
+// ── Person card ───────────────────────────────────────────────────────────────
+
+.person-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #eef1f4;
+    border-radius: 8px;
+    overflow: hidden;
+    @include transition(box-shadow, 250ms, ease);
+
+    &:hover {
+        box-shadow: 0 6px 24px 0 rgba(4, 46, 56, 0.10);
+    }
+}
+
+.person-avatar-wrap {
+    background: #f7f9fc;
+    text-align: center;
+    padding: 24px 24px 0;
+
+    a { display: inline-block; }
+}
+
+.person-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.person-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 16px 20px 20px;
+}
+
+.person-header {
+    margin-bottom: 6px;
+}
+
+.person-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: $h_title;
+    margin-bottom: 4px;
+    line-height: 1.3;
+
+    a {
+        color: inherit;
+        &:hover { color: $brand_color; }
+    }
+}
+
+// ── Role badge ───────────────────────────────────────────────────────────────
+
+.role-label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 20px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+
+    &.role-co-lead {
+        background: rgba($role-co-lead, 0.10);
+        color: $role-co-lead;
+    }
+    &.role-mentee {
+        background: rgba($role-mentee, 0.10);
+        color: $role-mentee;
+    }
+    &.role-reviewer {
+        background: rgba($role-reviewer, 0.12);
+        color: $role-reviewer;
+    }
+}
+
+// ── Card body fields ─────────────────────────────────────────────────────────
+
+.person-affiliation {
+    font-size: 13px;
+    color: $p_color;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.person-bio {
+    font-size: 13px;
+    color: $p_color;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.person-expertise {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 12px;
+    padding: 0;
+
+    li {
+        font-size: 11px;
+        background: #f0f2f5;
+        color: $black_500;
+        border-radius: 4px;
+        padding: 2px 7px;
+        line-height: 1.6;
+        list-style: none;
+    }
+}
+
+// ── Card links row ────────────────────────────────────────────────────────────
+
+.person-links {
+    margin-top: auto;       // push to bottom of card
+    padding-top: 12px;
+    border-top: 1px solid #f0f2f5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.person-link {
+    font-size: 12px;
+    font-weight: 500;
+    color: $brand_color;
+    border: 1px solid rgba($brand_color, 0.25);
+    border-radius: 4px;
+    padding: 2px 8px;
+    line-height: 1.6;
+    @include transition(all, 200ms, ease);
+    text-decoration: none;
+
+    &:hover {
+        background: $brand_color;
+        color: #fff;
+        border-color: $brand_color;
+        text-decoration: none;
+    }
+
+    &.profile-link {
+        background: $brand_color;
+        color: #fff;
+        border-color: $brand_color;
+        &:hover { opacity: 0.85; }
+    }
+
+    &.orcid-link  { border-color: rgba(#a6ce39, 0.5); color: #6a9b1a; &:hover { background: #a6ce39; border-color: #a6ce39; color: #fff; } }
+    &.github-link { border-color: rgba(#24292e, 0.2); color: #24292e; &:hover { background: #24292e; border-color: #24292e; color: #fff; } }
+}
+
+
+// ── Person profile page ───────────────────────────────────────────────────────
+
+.person-profile-header {
+    padding: 60px 0 50px;
+
+    .person-profile-avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #fff;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    }
+
+    .person-profile-name {
+        font-size: 32px;
+        font-weight: 700;
+        color: $h_title;
+        margin-bottom: 8px;
+        line-height: 1.2;
+    }
+
+    .role-label {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .person-profile-affiliation {
+        font-size: 15px;
+        color: $p_color;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        ion-icon { font-size: 16px; }
+    }
+
+    .person-profile-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .person-link {
+            font-size: 13px;
+            padding: 4px 12px;
+        }
+    }
+}
+
+.person-profile-body {
+    padding: 50px 0 80px;
+
+    .person-profile-bio {
+        font-size: 16px;
+        line-height: 1.7;
+        color: $p_color;
+        margin-bottom: 30px;
+    }
+
+    .person-profile-expertise {
+        margin-bottom: 30px;
+
+        h4 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: $h_title;
+            margin-bottom: 12px;
+        }
+
+        .person-expertise {
+            gap: 6px;
+
+            li {
+                font-size: 13px;
+                padding: 4px 10px;
+            }
+        }
+    }
+
+    .person-profile-content {
+        margin-bottom: 40px;
+        line-height: 1.8;
+        color: $p_color;
+    }
+}
+
+.back-to-team {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $brand_color;
+    text-decoration: none;
+
+    &:hover {
+        color: #3333d4;
+        text-decoration: none;
+    }
+}
+
+
+// ── Dark mode overrides ───────────────────────────────────────────────────────
+
+.dark_mode {
+    .person-card {
+        background: #1e2430;
+        border-color: #2c3348;
+
+        &:hover { box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.3); }
+    }
+
+    .person-avatar-wrap { background: #252d3d; }
+
+    .person-name        { color: #e0e4f0; a { color: #e0e4f0; } }
+    .person-affiliation,
+    .person-bio         { color: #8b93a8; }
+
+    .person-expertise li {
+        background: #2c3348;
+        color: #8b93a8;
+    }
+
+    .person-links       { border-top-color: #2c3348; }
+
+    .team-group-title   { color: #e0e4f0; border-bottom-color: rgba($brand_color, 0.25); }
+
+    .person-profile-header {
+        .person-profile-name { color: #e0e4f0; }
+        .person-profile-affiliation { color: #8b93a8; }
+    }
+
+    .person-profile-body {
+        .person-profile-bio,
+        .person-profile-content { color: #8b93a8; }
+        .person-profile-expertise h4 { color: #e0e4f0; }
+    }
+}

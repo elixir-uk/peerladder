@@ -300,22 +300,13 @@
 
   /*--------------- nav-sidebar js--------*/
 
-  $(".nav-sidebar > li ").each(function () {
-    var $this = $(this);
-   if($this.find('.dropdown_nav li a').hasClass("active")){
-    $this.addClass('active')
-   }
-  });
-
-  if ($(".nav-sidebar > li").hasClass("active")) {
-    $(".nav-sidebar > li.active").find("ul").slideDown(700);
-  }
-
  
  
 
   function active_dropdown() {
     $(".nav-sidebar > li .icon").on("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
       $(this).parent().find("ul").first().toggle(300);
       $(this).parent().siblings().find("ul").hide(300);
     });
@@ -326,6 +317,8 @@
   $(".nav-sidebar > li .icon").each(function () {
     var $this = $(this);
     $this.on("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
       var has = $this.parent().hasClass("active");
       $(".nav-sidebar li").removeClass("active");
       if (has) {
@@ -334,6 +327,25 @@
         $this.parent().addClass("active");
       }
     });
+  });
+
+  $(".nav-sidebar > li > a[href='#']").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var $li = $(this).parent();
+    var $ul = $li.find("ul").first();
+    if ($ul.length) {
+      var isOpen = $ul.is(":visible");
+      $(".nav-sidebar > li").not($li).find("ul").hide(300);
+      $(".nav-sidebar > li").not($li).removeClass("active");
+      if (isOpen) {
+        $ul.hide(300);
+        $li.removeClass("active");
+      } else {
+        $ul.show(300);
+        $li.addClass("active");
+      }
+    }
   });
 
   /*--------------- blog-single2-sidebar js--------*/
@@ -671,40 +683,6 @@
       .find("a")
       .trigger("click");
   });
-  /*------------ MAILCHIMP js ------------*/
-  if ($(".mailchimp").length > 0) {
-    $(".mailchimp").ajaxChimp({
-      callback: mailchimpCallback,
-      url: "http://droitlab.us15.list-manage.com/subscribe/post?u=0fa954b1e090d4269d21abef5&id=a80b5aedb0", //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
-    });
-  }
-  if ($(".mailchimp_two").length > 0) {
-    $(".mailchimp_two").ajaxChimp({
-      callback: mailchimpCallback,
-      url: "https://droitthemes.us19.list-manage.com/subscribe/post?u=5d334217e146b083fe74171bf&amp;id=0e45662e8c", //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
-    });
-  }
-  $(".memail").on("focus", function () {
-    $(".mchimp-errmessage").fadeOut();
-    $(".mchimp-sucmessage").fadeOut();
-  });
-  $(".memail").on("keydown", function () {
-    $(".mchimp-errmessage").fadeOut();
-    $(".mchimp-sucmessage").fadeOut();
-  });
-  $(".memail").on("click", function () {
-    $(".memail").val("");
-  });
-
-  function mailchimpCallback(resp) {
-    if (resp.result === "success") {
-      $(".mchimp-errmessage").html(resp.msg).fadeIn(1000);
-      $(".mchimp-sucmessage").fadeOut(500);
-    } else if (resp.result === "error") {
-      $(".mchimp-errmessage").html(resp.msg).fadeIn(1000);
-    }
-  }
-
   function Click_menu_hover() {
     if ($(".tab-demo").length) {
       $.fn.tab = function (options) {
@@ -964,45 +942,6 @@
     $("html, body").animate({ scrollTop: 0 }, "300");
   });
 
-  /**
-   * OS select dropdown
-   */
-  /*--------------- niceSelect js--------*/
-  function select() {
-    if ($(".custom-select, .nice_select").length) {
-      $(".custom-select, .nice_select").niceSelect();
-    }
-    if ($("#mySelect").length) {
-      $("#mySelect").selectpicker();
-    }
-  }
-  select();
-
-  if ($("#mySelect").val() == "windows") {
-    $(".windows").show();
-  } else {
-    $(".windows").hide();
-  }
-
-  if ($("#mySelect").val() == "ios") {
-    $(".ios").show();
-  } else {
-    $(".ios").hide();
-  }
-
-  $("#mySelect").change(function () {
-    if ($("#mySelect").val() == "windows") {
-      $(".windows").show();
-    } else {
-      $(".windows").hide();
-    }
-    if ($("#mySelect").val() == "ios") {
-      $(".ios").show();
-    } else {
-      $(".ios").hide();
-    }
-  });
-
   if ($(".doc_testimonial_area").length) {
     $(".doc_testimonial_slider").slick({
       autoplay: true,
@@ -1022,42 +961,6 @@
       fade: true,
       focusOnSelect: true,
     });
-  }
-
-  /*-------------------------------------------------------------------------------
-	  MAILCHIMP js
-	-------------------------------------------------------------------------------*/
-  if ($(".mailchimp").length > 0) {
-    $(".mailchimp").ajaxChimp({
-      callback: mailchimpCallback,
-      url: "http://droitlab.us15.list-manage.com/subscribe/post?u=0fa954b1e090d4269d21abef5&id=a80b5aedb0", //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
-    });
-  }
-  if ($(".mailchimp_two").length > 0) {
-    $(".mailchimp_two").ajaxChimp({
-      callback: mailchimpCallback,
-      url: "https://droitthemes.us19.list-manage.com/subscribe/post?u=5d334217e146b083fe74171bf&amp;id=0e45662e8c", //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
-    });
-  }
-  $(".memail").on("focus", function () {
-    $(".mchimp-errmessage").fadeOut();
-    $(".mchimp-sucmessage").fadeOut();
-  });
-  $(".memail").on("keydown", function () {
-    $(".mchimp-errmessage").fadeOut();
-    $(".mchimp-sucmessage").fadeOut();
-  });
-  $(".memail").on("click", function () {
-    $(".memail").val("");
-  });
-
-  function mailchimpCallback(resp) {
-    if (resp.result === "success") {
-      $(".mchimp-errmessage").html(resp.msg).fadeIn(1000);
-      $(".mchimp-sucmessage").fadeOut(500);
-    } else if (resp.result === "error") {
-      $(".mchimp-errmessage").html(resp.msg).fadeIn(1000);
-    }
   }
 
   /**
@@ -1159,6 +1062,7 @@
     // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
+    .not('[data-toggle="collapse"]')
     .click(function (event) {
       // On-page links
       if (
