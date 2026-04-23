@@ -206,6 +206,47 @@
   }
 }
 
+/*============================================================
+  Primary CTA — lime + forest (one per page, high-impact)
+============================================================*/
+.thm_btn,
+.learn_btn {
+  display: inline-block;
+  color: $lime;
+  font-family: $syne;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+  i {
+    vertical-align: middle;
+    font-size: 16px;
+    padding-left: 5px;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+/*============================================================
+  Ghost / outline button — lavender border, violet text
+============================================================*/
+.btn-ghost {
+  display: inline-block;
+  background: transparent;
+  color: $violet;
+  font-family: $inter;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  border: 2px solid $lavender;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: brand_color_rgba(0.06);
+    border-color: $violet;
+    color: $violet;
+  }
+}
+
 /* Home Advanced Search Area css
 ============================================================================================ */
 .main_btn {
@@ -239,7 +280,7 @@
   padding: 10px 29px;
   border-radius: 4px;
   border: 0;
-  box-shadow: 0 10px 20px 0 rgba(2, 2, 59, 0.2);
+  box-shadow: 0 10px 20px 0 brand_color_rgba(0.2);
   @include transition;
   &:hover {
     background: #fff;

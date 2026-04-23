@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap');
 html {
   height: 100%;
+  background: $bg;
 }
 a {
   text-decoration: none;
@@ -17,28 +18,27 @@ body {
   line-height: 28px;
   font-size: 16px;
   height: 100%;
-  font-family: $rob;
+  font-family: $inter;
   font-weight: 400;
-  color: #6b707f;
+  color: $p_color;
   letter-spacing: 0.15px;
 }
 :focus {
   outline: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+h1, h2, .h1, .h2 {
   font-weight: 700;
-  font-family: $rob;
+  font-family: $syne;
+  color: $violet;
+}
+h3, h4, .h3, .h4 {
+  font-weight: 600;
+  font-family: $syne;
+  color: $h_title;
+}
+h5, h6, .h5, .h6 {
+  font-weight: 500;
+  font-family: $inter;
   color: $h_title;
 }
 a {
@@ -51,7 +51,7 @@ figure {
   border: none;
 }
 figure figcaption {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(240, 238, 249, 0.54);
   line-height: 20px;
   font-size: 14px;
   margin-top: 10px;
@@ -84,10 +84,10 @@ pre[class*="language-"] > code {
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #fff;
+  background: $bg;
 }
 ::-webkit-scrollbar-thumb {
-  background: #999999;
+  background: $card_bg;
   border-radius: 30px;
 }
 
@@ -111,7 +111,7 @@ pre[class*="language-"] > code {
   font-size: 18px;
 }
 .bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 .medium {
   font-weight: 500;
@@ -142,7 +142,7 @@ button:focus {
 /** === Container === **/
 .body_wrapper {
   position: relative;
-  background: #fff;
+  background: $bg;
   z-index: 30;
   overflow: hidden;
   min-height: 100vh;
@@ -221,8 +221,8 @@ ul.list-style li:last-child {
 .key,
 kbd {
   line-height: 0.95rem;
-  border: 1px solid #ddd;
-  color: #6b707f;
+  border: 1px solid rgba(240, 238, 249, 0.2);
+  color: $p_color;
 }
 .key,
 kbd,
@@ -235,7 +235,7 @@ p kbd {
   margin: 2px;
   font-weight: 400;
   font-size: 0.85rem;
-  font-family: "Roboto", sans-serif;
+  font-family: $inter;
   text-align: center;
   text-decoration: none;
   line-height: 0.6rem;
@@ -246,8 +246,8 @@ p kbd {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: $card_bg;
+  border: 1px solid rgba(240, 238, 249, 0.2);
 }
 
 /** ===== section title scss ====== **/
@@ -268,9 +268,9 @@ p kbd {
     .title-lg {
       font-size: 44px;
       line-height: 1.1;
-      color: #1d2746;
+      color: $violet;
       margin-bottom: 30px;
-      font-weight: 400;
+      font-weight: 600;
     }
 
     .action_btn {
@@ -290,7 +290,7 @@ p kbd {
   font-size: 30px;
   line-height: 40px;
   margin-bottom: 0;
-  font-weight: 700;
+  font-weight: 600;
   position: relative;
 
   @media (max-width: 440px) {
@@ -305,10 +305,10 @@ p kbd {
 }
 /*===== section title scss ======*/
 .bg_color {
-  background: #fafcfd;
+  background: $card_bg;
 }
 .f_bg_color {
-  background: #f6fbfc;
+  background: $card_bg;
 }
 
 .local-video-container {
@@ -328,7 +328,7 @@ p kbd {
 /** === Back to Top Button === **/
 #back-to-top {
   display: inline-block;
-  background-color: rgba(220, 220, 220, 0.8);
+  background-color: $card_bg;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -344,15 +344,15 @@ p kbd {
 #back-to-top::after {
   content: "\32";
   font-family: eleganticons;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-size: 2em;
   line-height: 50px;
-  color: #000;
+  color: $p_color;
 }
 #back-to-top:hover {
   cursor: pointer;
-  background-color: #333;
+  background-color: $brand_color;
 }
 #back-to-top:hover::after {
   color: #fff;

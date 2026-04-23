@@ -10,7 +10,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: #1d2746;
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     z-index: 1;
     visibility: hidden;
@@ -61,9 +61,9 @@
     width: 200%;
     right: 0;
     height: 100%;
-    background: #fafcfc;
+    background: $card_bg;
     position: absolute;
-    border-right: 1px solid #E6EDF0;
+    border-right: 1px solid rgba(240, 238, 249, 0.1);
     top: 0;
     z-index: -1;
   }
@@ -96,7 +96,7 @@
       font-size: 14px;
       line-height: 20px;
       font-weight: 500;
-      color: #3c4257;
+      color: $p_color;
       position: relative;
       img{
         padding-right: 15px;
@@ -150,11 +150,11 @@
           font-size: 14px;
           font-weight: 400;
           line-height: 30px;
-          color: #697386;
+          color: rgba(240, 238, 249, 0.65);
           padding: 0;
           &:hover,
           &.active {
-            color: #3c4257;
+            color: $p_color;
             i {
               color: $brand_color;
             }
@@ -167,7 +167,7 @@
     }
   }
   & + .nav-sidebar {
-    border-top: 1px solid #e5e9eb;
+    border-top: 1px solid rgba(240, 238, 249, 0.1);
     padding-top: 20px;
   }
 }
@@ -305,7 +305,7 @@
   }
 }
 .link {
-  background: #f1fdf3;
+  background: $card_bg;
   padding: 14px 10px 14px 30px;
   border-radius: 4px;
   p {
@@ -334,7 +334,7 @@
   }
 }
 .v_menu {
-  border-bottom: 1px solid #e8ecee;
+  border-bottom: 1px solid rgba(240, 238, 249, 0.1);
   padding-bottom: 20px;
   padding-top: 5px;
   margin-bottom: 20px;
@@ -351,7 +351,7 @@
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        background: #e1e3eb;
+        background: rgba(240, 238, 249, 0.15);
         display: inline-block;
         text-align: center;
         line-height: 20px;
@@ -379,14 +379,14 @@
 }
 .process_tab_shortcode {
   .version {
-    background: #f8fafb;
+    background: $card_bg;
     padding: 30px;
     font-size: 15px;
     margin-bottom: 28px;
     p {
       margin-bottom: 20px;
       font-size: 15px;
-      color: #6b707f;
+      color: $p_color;
       &:last-child {
         margin-bottom: 0;
       }
@@ -687,7 +687,7 @@
 .open_icon {
   width: 40px;
   height: 40px;
-  background: #e8eeff;
+  background: brand_color_rgba(0.2);
   line-height: 40px;
   font-size: 32px;
   text-align: center;
@@ -733,7 +733,7 @@
       top: 0;
       width: 1px;
       height: 100%;
-      background: #e6edf0;
+      background: rgba(240, 238, 249, 0.1);
       left: 0;
     }
   }
@@ -752,7 +752,7 @@
   h6 {
     font-size: 12px;
     font-weight: 600;
-    color: #9DAAB6;
+    color: rgba(240, 238, 249, 0.5);
     i {
       margin-right: 6px;
       font-size: 16px;
@@ -786,7 +786,7 @@
     font-weight: 400;
     line-height: 22px;
     padding: 0;
-    color: #677681;
+    color: rgba(240, 238, 249, 0.65);
     position: relative;
     margin-bottom: 6px;
     &.active {
@@ -817,7 +817,7 @@
   height: 100vh;
   max-height: 100vh !important;
   top: 0;
-  background: #fff;
+  background: $card_bg;
   right: -300px;
   z-index: 1050;
   transition: all 0.4s linear;
@@ -893,7 +893,7 @@ body:not(.onepage-doc) .sticky_menu {
 /*========== typography_content css ========*/
 .doc {
   .code-preview {
-    border: 1px solid #e5ebef;
+    border: 1px solid rgba(240, 238, 249, 0.1);
     padding: 20px;
     box-shadow: 0 3px 6px 0 rgba(4, 73, 89, 0.02);
     position: relative;
@@ -976,13 +976,13 @@ body:not(.onepage-doc) .sticky_menu {
   .nav-sidebar {
     .nav-item {
       padding-right: 0;
-      background: #f8fafb;
+      background: $card_bg;
       margin-bottom: 0;
       margin-top: 3px;
       position: relative;
       .docs-progress-bar {
         position: absolute;
-        background: #ebf0f1;
+        background: rgba(240, 238, 249, 0.08);
         bottom: 0;
         left: 0;
         top: 0;
@@ -1022,13 +1022,13 @@ body:not(.onepage-doc) .sticky_menu {
       .dropdown_nav {
         padding-top: 15px;
         padding-bottom: 15px;
-        background: #fff;
+        background: $bg;
         position: relative;
         &:before {
           content: "";
           width: 2px;
           bottom: 15px;
-          background: #edf1f3;
+          background: rgba(240, 238, 249, 0.1);
           position: absolute;
           top: 15px;
           left: 20px;
@@ -1077,11 +1077,11 @@ body:not(.onepage-doc) .sticky_menu {
     font-weight: 400;
   }
   .dropdown-toggle {
-    background: #fafcfd;
-    border: 1px solid #e1e4e5;
+    background: $card_bg;
+    border: 1px solid rgba(240, 238, 249, 0.15);
     border-radius: 5px;
     font-size: 16px;
-    color: #6b707f;
+    color: $p_color;
     padding: 9px 20px 0;
     box-shadow: none;
     &:after {
@@ -1090,7 +1090,7 @@ body:not(.onepage-doc) .sticky_menu {
       font-family: "ElegantIcons";
       top: -2px;
       position: relative;
-      color: #6b707f;
+      color: $p_color;
     }
     i {
       padding-right: 8px;
@@ -1103,8 +1103,8 @@ body:not(.onepage-doc) .sticky_menu {
   .bootstrap-select {
     margin-bottom: 30px;
     > .dropdown-menu {
-      box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
-      background: #fff;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+      background: $card_bg;
       border: 0;
       .inner {
         .dropdown-menu {
@@ -1129,7 +1129,7 @@ body:not(.onepage-doc) .sticky_menu {
               }
               &.active,
               &:hover {
-                background: #f6f6f6;
+                background: rgba(240, 238, 249, 0.08);
                 color: $brand_color;
                 &:before {
                   height: 100%;
@@ -1176,7 +1176,7 @@ body:not(.onepage-doc) .sticky_menu {
 
 .fontsize-controllers{
   .btn-group{
-    border: 1px solid #dfe2e4;
+    border: 1px solid rgba(240, 238, 249, 0.1);
     background-color: rgb(255, 255, 255);
     box-shadow: 0 1px 0 0 rgba(3, 13, 37, 0.2),inset 0 -8px 14px 0 rgba(3, 13, 37, 0.1);
     border-radius: 4px;
@@ -1189,11 +1189,11 @@ body:not(.onepage-doc) .sticky_menu {
       &:focus{
         outline: none;
         box-shadow: none;
-        background: #eff0f1;
+        background: rgba(240, 238, 249, 0.08);
       }
       &.rvfs-reset{
-        border-left: 1px solid #dfe2e4;
-        border-right: 1px solid #dfe2e4;
+        border-left: 1px solid rgba(240, 238, 249, 0.1);
+        border-right: 1px solid rgba(240, 238, 249, 0.1);
       }
     }
   }
@@ -1206,8 +1206,8 @@ body:not(.onepage-doc) .sticky_menu {
 .nav_title {
   font-size: 16px;
   text-transform: uppercase;
-  color: #fff;
-  background: #1d2746;
+  color: $warm_white;
+  background: $card_bg;
   border-radius: 4px;
   line-height: 22px;
   padding: 13px 30px;
@@ -1240,12 +1240,12 @@ body:not(.onepage-doc) .body_fixed #font-switcher {
     li {
       font-size: 14px;
       font-weight: 500;
-      color: #999999;
+      color: rgba(240, 238, 249, 0.5);
       margin-right: 9.32px;
 
       a {
-        background: #edf0f5;
-        color: #616366;
+        background: $card_bg;
+        color: $p_color;
         line-height: 25px;
         padding: 0 14px;
         display: inline-block;
@@ -1310,7 +1310,7 @@ body:not(.onepage-doc) .body_fixed #font-switcher {
     display: inline-block;
     padding: 0;
     border: none;
-    color: #54595d;
+    color: $p_color;
     background: transparent;
     font-weight: 400;
     font-size: 16px;
@@ -1346,7 +1346,7 @@ body:not(.onepage-doc) .body_fixed #font-switcher {
       left: 26px;
       font-size: 12px;
       color: $brand_color;
-      background-color: #fff;
+      background-color: $card_bg;
       padding: 0 5px 0 5px;
     }
     textarea:focus ~ .floating-label,
@@ -1355,7 +1355,7 @@ body:not(.onepage-doc) .body_fixed #font-switcher {
       left: 26px;
       font-size: 12px;
       color: $brand_color;
-      background-color: #fff;
+      background-color: $card_bg;
       padding: 0 5px 0 5px;
     }
     .floating-label {
@@ -1544,7 +1544,7 @@ body:not(.onepage-doc) .body_fixed #font-switcher {
 
 /* Styles for dialog window */
 .small-dialog {
-  background: white;
+  background: $card_bg;
   padding: 50px 40px;
   text-align: left;
   max-width: 510px;
@@ -1715,10 +1715,10 @@ body:not(.onepage-doc) .body_fixed #font-switcher {
     }
   }
   .table.dataTable {
-    border: 1px solid #eaeeef;
+    border: 1px solid rgba(240, 238, 249, 0.1);
     thead {
       tr {
-        background: #f7f8f9;
+        background: $card_bg;
         border-bottom: none;
         th {
           border: none;
@@ -1746,7 +1746,7 @@ body:not(.onepage-doc) .body_fixed #font-switcher {
     tbody {
       tr {
         td {
-          border-top: 1px solid #eaeeef;
+          border-top: 1px solid rgba(240, 238, 249, 0.1);
           font-weight: 400;
           font-size: 14px;
           color: $p_color;
@@ -1771,7 +1771,7 @@ body:not(.onepage-doc) .body_fixed #font-switcher {
         width: 32px;
         border: 1px solid transparent !important;
         box-sizing: border-box;
-        color: #54595d;
+        color: $p_color;
         font-size: 14px;
         font-weight: 400;
         text-align: center;

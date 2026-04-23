@@ -1,0 +1,83 @@
+---
+layout: default
+---
+
+{% assign co-leads  = site.people | where: "role", "co-lead" %}
+{% assign mentees   = site.people | where: "role", "mentee"   | sort: "name" %}
+{% assign reviewers = site.people | where: "role", "reviewer" | sort: "name" %}
+
+{% include page_banner.html %}
+
+<section class="people-page-body">
+  <div class="container">
+
+    <div class="people-filter">
+      <button class="filter-pill active" data-filter="all">All</button>
+      {% if co-leads.size > 0 %}<button class="filter-pill" data-filter="co-leads">Co-Leads</button>{% endif %}
+      {% if mentees.size > 0 %}<button class="filter-pill" data-filter="mentees">Mentees</button>{% endif %}
+      {% if reviewers.size > 0 %}<button class="filter-pill" data-filter="reviewers">Reviewers</button>{% endif %}
+    </div>
+
+    <!-- Co-Leads -->
+    {% if co-leads.size > 0 %}
+    <div class="people-group" id="co-leads">
+      <h2 class="people-group-title">Co-Leads</h2>
+      <div class="people-grid people-grid--co-leads row">
+        {% for member in co-leads %}
+        <div class="col-lg-4 col-md-6">
+          {% include person-card.html person=member %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- Mentees -->
+    {% if mentees.size > 0 %}
+    <div class="people-group" id="mentees">
+      <h2 class="people-group-title">Mentees</h2>
+      <div class="people-grid people-grid--mentees row">
+        {% for member in mentees %}
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          {% include person-card.html person=member %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- Reviewers -->
+    {% if reviewers.size > 0 %}
+    <div class="people-group" id="reviewers">
+      <h2 class="people-group-title">Reviewers</h2>
+      <div class="people-grid people-grid--reviewers row">
+        {% for member in reviewers %}
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          {% include person-card.html person=member %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {{ content }}
+
+  </div>
+</section>
+
+<script>
+(function () {
+  var pills  = document.querySelectorAll('.people-filter .filter-pill');
+  var groups = document.querySelectorAll('.people-group');
+  pills.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      pills.forEach(function (b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      var filter = this.dataset.filter;
+      groups.forEach(function (g) {
+        g.style.display = (filter === 'all' || g.id === filter) ? '' : 'none';
+      });
+    });
+  });
+}());
+</script>

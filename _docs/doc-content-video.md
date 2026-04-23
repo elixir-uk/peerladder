@@ -4,7 +4,7 @@ container: wide-container
 right_sidebar: true
 full_width: true
 search: true
-banner: true
+banner: false
 category: content
 tags: [content,direction]
 custom_js:
@@ -32,4 +32,48 @@ custom_css:
 ---
 
 
-{% include doc_video.html %}
+## YouTube / Vimeo embed
+
+Wrap any `<iframe>` in `.embed-responsive` to make it fluid. Replace the `src` with your video URL.
+
+```html
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item"
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0"
+            allowfullscreen></iframe>
+</div>
+```
+
+Available aspect ratio classes: `embed-responsive-16by9`, `embed-responsive-4by3`, `embed-responsive-1by1`
+
+## Local video (HTML5)
+
+Self-hosted video with native browser controls:
+
+```html
+<div class="local-video-container">
+    <video controls muted>
+        <source src="{{ 'assets/video/your-video.mp4' | relative_url }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+```
+
+Add `autoplay loop` attributes if you want it to play automatically (keep `muted` — browsers block autoplay with audio).
+
+## Video with lightbox popup
+
+Show a thumbnail that opens the video in a popup (requires `jquery.magnific-popup.min.js`):
+
+```html
+<div class="code-preview" id="inline-popups">
+    <img src="{{ 'img/your-thumbnail.jpg' | relative_url }}" alt="">
+    <a class="popup-youtube video_icon" href="#myVideo">
+        <i class="arrow_triangle-right"></i>
+    </a>
+</div>
+
+<video class="video-js vjs-default-skin mfp-hide" id="myVideo" preload="auto">
+    <source src="{{ 'assets/video/your-video.mp4' | relative_url }}" type="video/mp4">
+</video>
+```

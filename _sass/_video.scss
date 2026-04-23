@@ -587,7 +587,7 @@
       display: none !important;
     }
     &:hover {
-      color: $black_700;
+      color: $black_600;
     }
   }
   .next {
@@ -724,7 +724,7 @@
       display: inline-block;
       margin-right: 10px;
       ion-icon {
-        color: $black_700;
+        color: $black_600;
       }
       &:first-child {
         a {
@@ -770,7 +770,7 @@
         align-self: center;
         h4 {
           font-size: 30px;
-          font-weight: 700;
+          font-weight: 600;
           margin-bottom: 0;
         }
       }
@@ -781,7 +781,7 @@
           line-height: 60px;
           padding: 0 37px;
           font-size: 20px;
-          font-weight: 700;
+          font-weight: 600;
           &:hover {
             color: #fff;
             background: $brand_color;

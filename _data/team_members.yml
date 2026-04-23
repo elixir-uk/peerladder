@@ -1,94 +1,25 @@
-# PeerLadder team members
-# Roles: co_lead | mentee | reviewer
+# PeerLadder people members
+# Roles: co-lead | mentee | reviewer
 # All fields except name, role, and affiliation are optional.
-# This data file powers the single /team page only — it does NOT generate
+# This data file powers the single /people page only — it does NOT generate
 # individual profile pages automatically.
 
 # ── Co-Leads ──────────────────────────────────────────────────────────────────
-
-- name: Dr Sarah Mitchell
-  role: co_lead
-  affiliation: University of Edinburgh
-  country: UK
-  website: https://example.org/smitchell
-  avatar: /assets/avatars/sarah-mitchell.jpg
-  orcid: 0000-0001-2345-6789
-  github: smitchell-edi
-  bio: Sarah leads research data infrastructure projects at the Edinburgh Bioinformatics Unit, with a focus on FAIR data practices and training programme design.
-  expertise:
-    - FAIR data
-    - Research data management
-    - Training design
-
-- name: Prof James Harrington
-  role: co_lead
-  affiliation: EMBL-EBI
-  country: UK
-  website: https://example.org/jharrington
-  avatar: /assets/avatars/james-harrington.jpg
-  orcid: 0000-0002-3456-7890
-  github: jharrington-ebi
-  bio: James coordinates ELIXIR training activities and develops peer-review frameworks for computational biology learning resources.
-  expertise:
-    - Bioinformatics training
-    - Peer review
-    - Computational biology
-
-- name: Dr Amara Osei
-  role: co_lead
-  affiliation: University of Manchester
-  country: UK
-  website: https://example.org/aosei
-  avatar: /assets/avatars/amara-osei.jpg
-  orcid: 0000-0003-4567-8901
-  github: amara-osei
-  bio: Amara specialises in open science infrastructure and community-driven annotation frameworks for life-science datasets.
-  expertise:
-    - Open science
-    - Data annotation
-    - Community governance
-
-- name: Prof Lena Brandt
-  role: co_lead
-  affiliation: University of Oxford
-  country: UK
-  website: https://example.org/lbrandt
-  avatar: /assets/avatars/lena-brandt.jpg
-  orcid: 0000-0004-5678-9012
-  github: lena-brandt-ox
-  bio: Lena's group develops quality-assessment pipelines for training materials and leads ELIXIR-UK capacity-building initiatives.
-  expertise:
-    - Quality assessment
-    - Capacity building
-    - Structural bioinformatics
-
-- name: Dr Ravi Patel
-  role: co_lead
-  affiliation: Wellcome Sanger Institute
-  country: UK
-  website: https://example.org/rpatel
-  avatar: /assets/avatars/ravi-patel.jpg
-  orcid: 0000-0005-6789-0123
-  github: rpatel-sanger
-  bio: Ravi builds scalable pipelines for genomics data QC and steers PeerLadder's technical infrastructure workstream.
-  expertise:
-    - Genomics
-    - Data pipelines
-    - Cloud computing
-
-# ── Mentees ───────────────────────────────────────────────────────────────────
-
 - name: Saskia Lawson-Tovey
   role: co-lead
-  affiliation: University of Manchester
+  affiliation: University of Manchester / ELIXIR-UK
   country: UK
+  website: 
+  avatar: 
   orcid: 
   github: 
   expertise:
 - name: Xenia Perez Sitja
   role: co-lead
-  affiliation: Earlham Institute
+  affiliation: Earlham Institute / ELIXIR-UK
   country: UK
+  website: 
+  avatar: /img/avatars/xenia-perez-sitja.jpeg
   orcid: 
   github: sitjart
   expertise:
@@ -96,7 +27,12 @@
   role: co-lead
   affiliation: OLS
   country: UK
+  website: 
+  avatar: 
   orcid: 
   github: 
+  bio: 
   expertise:
+# ── Mentees ───────────────────────────────────────────────────────────────────
+
 

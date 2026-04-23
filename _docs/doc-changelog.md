@@ -4,7 +4,7 @@ container: wide-container
 category: changelog
 right_sidebar: true
 search: true
-banner: true
+banner: false
 navbar:
     right_nav_tool: true
 tags: [refference,instruction]

@@ -4,7 +4,7 @@ container: wide-container
 category: element
 right_sidebar: true
 search: true
-banner: true
+banner: false
 navbar:
     right_nav_tool: true
 tags: [content,element]
@@ -25,4 +25,25 @@ custom_css:
 ---
 
 
-{% include doc_accordion.html %}
+Accordion and toggle components let users expand and collapse sections of content. Both use Bootstrap's collapse plugin — no extra JS needed.
+
+## Toggle (single)
+
+A standalone collapsible panel. Multiple toggles on one page are independent of each other.
+
+Copy the HTML from `_TEMPLATE.md` → **Accordion / Toggle → Toggle (single)** section.
+
+Key points:
+- Each toggle needs a unique `id` on the collapse target (e.g. `id="toggle1"`)
+- The trigger `href` and `aria-controls` must match that `id`
+- Add class `show` to the collapse `<div>` if you want it open by default
+
+## Accordion (mutually exclusive)
+
+Multiple panels where opening one closes the others. Wrap all panels in a parent `<div id="accordion">` and add `data-parent="#accordion"` to each collapse target.
+
+Copy the HTML from `_TEMPLATE.md` → **Accordion / Toggle → Accordion** section.
+
+Key points:
+- The parent wrapper needs a unique `id` — use a different one if you have multiple accordions on the same page
+- Add class `show` to the first panel's collapse `<div>` to start it open

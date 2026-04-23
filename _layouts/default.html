@@ -7,27 +7,14 @@
     {% endif %}
 <body class="{{isDoc}} {{page.container}}" data-scroll-animation="true" data-spy="scroll" data-target="#navbar-example3" data-offset="70">
     <div class="body_wrapper ">
-        {% if page.layout == 'doc'  %}
-        {% assign navbar_class = page.navbar.class | append: ' menu_one display_none' %}
-        {% else %}
-        {% assign navbar_class = page.navbar.class | append: ' menu_one' %}
-        {% endif %}
-        {% assign navbar_type = page.navbar.type | default: 'dark_menu' %}
-        {% assign navbar_btnClass = page.navbar.btnClass | default: 'tp_btn' %}
-
         {% unless page.permalink == '/404.html' %}
-        {% include navbar.html class=navbar_class   type=navbar_type  btnCls=navbar_btnClass  btn_title="Get Docy" btn_link="/" %}
-            
+        {% include navbar.html %}
         {% endunless %}
         <div class="click_capture"></div>
         {{ content }}
 
-        {% unless page.permalink == '/404.html' %}
-            {% if page.layout == 'doc' %}
-                {% include doc_footer.html %}
-            {%  elsif page.custom_footer != true %}
-                {% include footer_one.html class=page.footer.class  %}
-            {% endif %}
+        {% unless page.permalink == '/404.html' or page.custom_footer == true %}
+            {% include footer.html class=page.footer.class %}
         {% endunless %}
     </div>
 

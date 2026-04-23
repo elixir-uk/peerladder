@@ -31,11 +31,8 @@
 - title: Reference
   img: img/side-nav/chat1.png
   docs:
-    - doc-ref-cheatsheet
     - doc-ref-footnote
     - doc-ref-tour
-    - doc-ref-can-use
-    - doc-ref-shortcuts
 
 - title: Change log
   img: img/side-nav/clock.png

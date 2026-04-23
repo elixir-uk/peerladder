@@ -3,7 +3,7 @@ layout: default
 
 search: true
 navbar:
-    type: menu_purple
+    type: dark_menu
     btnClass: not-tp-btn
     right_nav_tool: true
 footer:
@@ -19,9 +19,9 @@ custom_css:
 - assets/slick/slick-theme.css
 ---
 
-{% include banner_one.html title="How can we help you?" subtitle="Search here to get answers to your questions" %}
+{% include banner_one.html title="PeerLadder?" subtitle="Peer mentoring for the people research can't afford to lose. For the dRTPs who've been flying under the radar." %}
 
-{% include recommended_topic.html title="Recommended Topics" subtitle="Loaded with awesome features like Documentation,Knowledgebase,<br> Forum & more!" %}
+{% include features_section.html %}
 
 {% include doc_testimonial.html %}
 {% include doc_subscribe.html title="Great Customer <br>Relationships start here" %}

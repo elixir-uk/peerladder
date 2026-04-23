@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:api.github.com)"
+      "WebFetch(domain:api.github.com)",
+      "Bash(grep -n 'brand_color\\\\|violet\\\\|lime\\\\|$warm_white\\\\|$forest\\\\|$bg\\\\b\\\\|$card_bg\\\\|$syne\\\\|$inter' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/_variables.scss)",
+      "Bash(grep -rn '$brand_color\\\\s*:\\\\|$lime\\\\s*:\\\\|$warm_white\\\\s*:\\\\|$forest\\\\s*:\\\\|$bg\\\\s*:\\\\|$card_bg\\\\s*:\\\\|$syne\\\\s*:' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/)",
+      "Bash(bundle exec *)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

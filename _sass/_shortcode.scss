@@ -357,7 +357,7 @@ body.doc.test.remove {
     font-family: "Roboto", sans-serif;
     content: "Hey!";
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     top: -19px;
     left: 1rem;
     padding: 0 0.5rem;
@@ -880,7 +880,7 @@ button.mfp-close {
   border-top: 1px solid var(--color-contrast-low);
   font-size: 0.875em;
   #footnotes {
-    font-weight: 700;
+    font-weight: 600;
   }
   .footnotes_item {
     font-size: 14px;
@@ -1042,7 +1042,7 @@ ul.ordered-list {
     .c_date {
       h6 {
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 600;
         margin-bottom: 0;
       }
       p {
@@ -1130,6 +1130,65 @@ ul.ordered-list {
   &:hover .changelog_btn {
     opacity: 1;
   }
+}
+
+/*============ Programme timeline overrides ============*/
+.programme_timeline_area {
+  padding: 60px 0 80px;
+
+  .changelog_inner { padding-right: 0; }
+
+  .changelog_info .line {
+    background: rgba($lime, 0.15);
+  }
+
+  .c_date {
+    h6 { color: $h_title; }
+    p  { color: rgba($warm_white, 0.5); }
+  }
+}
+
+.tl_phase {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 4px;
+  padding: 0 8px;
+  text-align: center;
+  min-width: 60px;
+  display: block;
+  margin: 0 auto;
+  color: $forest;
+
+  &.phase-open    { background: $lime; }
+  &.phase-virtual { background: $brand_color; color: $warm_white; }
+  &.phase-inperson{ background: #2da44e; color: #fff; }
+  &.phase-end     { background: rgba($warm_white, 0.15); color: $warm_white; }
+}
+
+.tl-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 0 8px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 3px;
+  margin-right: 14px;
+  flex: 0 0 auto;
+  min-width: 80px;
+  text-align: center;
+
+  &.tag-info     { background: rgba($brand_color, 0.15); color: $brand_color; }
+  &.tag-deadline { background: rgba(#ea3940, 0.15); color: #ea3940; }
+  &.tag-event    { background: rgba($lime, 0.12); color: $lime; }
+  &.tag-workshop { background: rgba(#2da44e, 0.15); color: #2da44e; }
+  &.tag-covered  { background: rgba($warm_white, 0.08); color: rgba($warm_white, 0.6); }
 }
 
 .tour_info_content {

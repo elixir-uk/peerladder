@@ -3,7 +3,7 @@ title: Full Width
 container: wide-container
 right_sidebar: true
 full_width: true
-banner: true
+banner: false
 search: true
 navbar:
     right_nav_tool: true
@@ -33,4 +33,25 @@ custom_css:
 - assets/magnify-pop/magnific-popup.css
 ---
 
-{% include doc_video.html %}
+This page uses the **full-width layout** — the content column stretches edge to edge with no right sidebar.
+
+## How to enable it
+
+Add `full_width: true` and remove (or set to `false`) the `right_sidebar` key in your front matter:
+
+```yaml
+---
+title: Your Page Title
+full_width: true
+right_sidebar: false
+banner: true
+---
+```
+
+The layout renders with `container-fluid pl-60 pr-60` instead of the fixed `custom_container`, giving the content more horizontal room. This is well suited to wide tables, video embeds, or data-heavy pages.
+
+## When to use it
+
+- Pages with wide tables or data grids
+- Video or media-heavy pages
+- Landing or overview pages where breathing room helps readability

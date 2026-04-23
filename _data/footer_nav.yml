@@ -1,12 +1,10 @@
-footer_one:
-  footer_text: I’m available for commissions and collaborations, and i’m excited to hear from you about new projects.!!
+footer:
+  footer_text: Peer mentoring for the people research can't afford to lose. For the dRTPs who've been flying under the radar.
   footer_logo_link: /
   footer_bottom:
     nav:
-      - title: Blog
-        url: "/blog"
-      - title: Latest Projects
-        url: "#"
+      - title: Find out more on DisCouRSE Network+
+        url: "https://discourse-network.github.io/projects/1-13-peerladder/"
 
   footer_nav:
     - title: Solutions

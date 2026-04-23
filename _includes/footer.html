@@ -1,0 +1,84 @@
+<footer class="doc_footer_area">
+    <div class="doc_footer_top">
+        <div class="container">
+            <div class="row">
+
+                <!-- Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer_brand">
+                        <a href="{{ '/' | relative_url }}" class="footer_logo_link">
+                            <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" class="footer_logo">
+                        </a>
+                        <p class="footer_desc">A peer-mentoring initiative empowering underrepresented digital Research Technical Professionals to step into leadership.</p>
+                        <div class="footer_social">
+                            {% if site.social.twitter %}
+                            <a href="{{ site.social.twitter }}" aria-label="Twitter"><i class="social_twitter"></i></a>
+                            {% endif %}
+                            {% if site.social.linkedin %}
+                            <a href="{{ site.social.linkedin }}" aria-label="LinkedIn"><i class="social_linkedin"></i></a>
+                            {% endif %}
+                            {% if site.social.github %}
+                            <a href="{{ site.social.github }}" aria-label="GitHub"><i class="social_github"></i></a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pages -->
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer_col">
+                        <h4 class="footer_col_title">Pages</h4>
+                        <ul class="footer_nav list-unstyled">
+                            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                            <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+                            <li><a href="{{ '/timeline/' | relative_url }}">Timeline</a></li>
+                            <li><a href="{{ '/people/' | relative_url }}">People</a></li>
+                            <li><a href="{{ '/stories-and-events/' | relative_url }}">Stories &amp; Events</a></li>
+                            <li><a href="{{ '/apply/' | relative_url }}">Apply</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Partners -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer_col">
+                        <h4 class="footer_col_title">Partners</h4>
+                        <div class="footer_logos">
+                            <div class="footer_logo_placeholder">University of Manchester</div>
+                            <div class="footer_logo_placeholder">Earlham Institute</div>
+                            <div class="footer_logo_placeholder">OLS</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Funders -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer_col">
+                        <h4 class="footer_col_title">Funded by</h4>
+                        <div class="footer_logos">
+                            <div class="footer_logo_placeholder">DisCouRSE Network+</div>
+                        </div>
+                        <h4 class="footer_col_title footer_col_title--spaced">Supported by</h4>
+                        <div class="footer_logos">
+                            <div class="footer_logo_placeholder">ELIXIR-UK</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="doc_footer_bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <ul class="doc_footer_menu list-unstyled">
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+                <li><a href="{{ '/people/' | relative_url }}">People</a></li>
+                <li><a href="{{ '/apply/' | relative_url }}">Apply</a></li>
+                <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+            </ul>
+            <p>{{ site.footer.copyright }}</p>
+        </div>
+    </div>
+</footer>

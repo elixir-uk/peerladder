@@ -203,23 +203,29 @@
   font-size: 22px;
   font-weight: 500;
   line-height: 30px;
-  transition: all 0.2s linear;
-  &:hover {
-    color: $brand_color;
-  }
+  transition: color 0.2s linear;
 }
 .blog_grid_post {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
   border-radius: 4px;
-  box-shadow: 0 3px 6px 0 rgba(4, 73, 89, 0.06);
-  margin-bottom: 40px;
+  box-shadow: 0 3px 6px 0 rgba(58, 177, 22, 0.06);
+  border-bottom: 1px solid rgba($lime, 0.15);
   transition: all 0.3s linear;
   overflow: hidden;
   cursor: pointer;
 
-  img{
+  img {
     max-width: 100%;
+    display: block;
   }
   .grid_post_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     padding: 20px 30px 25px;
     .post_tag {
       padding-bottom: 10px;
@@ -228,11 +234,28 @@
       margin-bottom: 18px;
     }
     .post_author {
-      padding-top: 18px;
+      padding-top: 0;
+    }
+    // Push the CTA row (events: span.learn_btn, stories: div.d-flex) to bottom
+    > .learn_btn,
+    > .d-flex {
+      margin-top: auto;
+      padding-top: 14px;
     }
   }
   &:hover {
-    box-shadow: 0 20px 24px 0 rgba(4, 73, 89, 0.1);
+    box-shadow: 0 20px 24px 0 rgba(235, 253, 237, 0.1);
+    border-bottom-color: transparent;
+    color: inherit;
+    text-decoration: none;
+    .b_title {
+      color: $brand_color;
+    }
+    .learn_btn {
+      i {
+        transform: translateX(4px);
+      }
+    }
   }
 }
 
@@ -759,6 +782,155 @@ blockquote {
 }
 /*=========== End blog_area css ==========*/
 
+/*============= Stories & Events page css ==============*/
+.stories_events_area {
+  padding: 60px 0 100px;
+
+  .row > [class*="col-"] {
+    display: flex;
+    margin-bottom: 40px;
+  }
+}
+
+.stories_events_tabs {
+  border-bottom: 2px solid #e7edf0;
+  margin-bottom: 0;
+
+  .nav-item {
+    margin-bottom: -2px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #858997;
+    padding: 14px 30px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    background: transparent;
+    transition: all 0.2s ease;
+
+    &:hover,
+    &.active {
+      color: $brand_color;
+      border-bottom-color: $brand_color;
+      background: transparent;
+    }
+  }
+}
+
+.stories_events_content {
+  padding-top: 40px;
+}
+
+.stories_filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-pill {
+  background: rgba($warm_white, 0.05);
+  border: 1px solid rgba($warm_white, 0.12);
+  border-radius: 20px;
+  padding: 6px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba($warm_white, 0.5);
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &.active {
+    background: $brand_color;
+    border-color: $brand_color;
+    color: $warm_white;
+  }
+}
+
+.event_card {
+  border-top: 3px solid $brand_color;
+}
+
+.event_date_badge {
+  display: inline-block;
+  background: brand_color_rgba(0.08);
+  color: $brand_color;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-right: 6px;
+
+  &.past {
+    background: rgba(0, 0, 0, 0.05);
+    color: #858997;
+  }
+}
+
+.event_location {
+  font-size: 13px;
+  color: #858997;
+}
+
+.past_events_link {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e7edf0;
+}
+
+.past_events_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  .c_head {
+    margin-bottom: 0;
+  }
+}
+
+.back_btn {
+  font-size: 14px;
+}
+
+.no-events-msg {
+  margin-top: 30px;
+  padding: 30px;
+  background: #f3f8f9;
+  border-radius: 6px;
+  text-align: center;
+  color: $p_color;
+}
+
+.past_event {
+  opacity: 0.82;
+  border-top-color: #aab0c0;
+}
+
+.cat-articles {
+  color: $brand_color;
+}
+
+.cat-news {
+  color: #fd8d2a;
+}
+
+.cat-events {
+  color: #33cc9e;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+/*============= End Stories & Events page css ==============*/
+
 /*=========== Start blog_sidebar css ==========*/
 .blog_sidebar {
   > ul.list-unstyled {
@@ -972,7 +1144,7 @@ blockquote {
 
   .blog_single2_title {
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 60px;
     color: #1d3846;
@@ -1167,7 +1339,7 @@ blockquote {
   .blog_single2_info_title {
     color: #e25920;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 35px;
     margin-bottom: 15px;
   }
@@ -1238,3 +1410,198 @@ body.body_dark {
 }
 }
 /*=========== End blog_single2 css ==========*/
+
+/*=========== Apply page ============*/
+.apply_area {
+  padding: 70px 0 100px;
+}
+
+.apply_intro {
+  margin-bottom: 50px;
+  .apply_lead {
+    font-size: 18px;
+    line-height: 1.75;
+    color: $p_color;
+    margin-bottom: 24px;
+  }
+}
+
+.apply_section {
+  margin-bottom: 44px;
+}
+
+.apply_h2 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: $syne;
+  color: $h_title;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba($lime, 0.15);
+}
+
+.apply_checklist {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 18px;
+
+  li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: $p_color;
+    line-height: 1.65;
+
+    &::before {
+      content: "\e080";
+      font-family: 'ElegantIcons';
+      position: absolute;
+      left: 0;
+      top: 1px;
+      color: $lime;
+      font-size: 14px;
+    }
+  }
+}
+
+.apply_cta {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid rgba($warm_white, 0.08);
+
+  .apply_contact {
+    margin-top: 18px;
+    font-size: 14px;
+    color: rgba($p_color, 0.6);
+
+    a {
+      color: $brand_color;
+      &:hover { color: $lime; }
+    }
+  }
+}
+
+/*=========== About page ============*/
+.about_overview {
+  padding: 70px 0 60px;
+}
+
+.about_intro_text {
+  p {
+    font-size: 15px;
+    color: $p_color;
+    line-height: 1.8;
+    margin-bottom: 20px;
+
+    &:first-child {
+      font-size: 18px;
+      line-height: 1.75;
+    }
+  }
+}
+
+.about_meta_card {
+  .about_meta_row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+  }
+
+  .about_meta_label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba($warm_white, 0.4);
+    margin-bottom: 3px;
+  }
+
+  .about_meta_val {
+    font-size: 14px;
+    color: $p_color;
+    font-weight: 500;
+
+    small {
+      font-size: 12px;
+      color: rgba($p_color, 0.6);
+      font-weight: 400;
+      display: block;
+      margin-top: 2px;
+    }
+  }
+
+  .about_meta_divider {
+    border: none;
+    border-top: 1px solid rgba($warm_white, 0.07);
+    margin: 14px 0;
+  }
+
+  .about_colead_list {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+
+    li {
+      font-size: 14px;
+      color: $p_color;
+      font-weight: 500;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba($warm_white, 0.05);
+
+      &:first-child { padding-top: 0; }
+      &:last-child { border-bottom: none; padding-bottom: 0; }
+
+      small {
+        font-size: 12px;
+        color: rgba($p_color, 0.6);
+        font-weight: 400;
+        display: block;
+        margin-top: 2px;
+      }
+    }
+  }
+}
+
+.about_faq_area,
+.about_partners_area {
+  padding-top: 0;
+}
+
+.about_section_header {
+  margin-bottom: 40px;
+}
+
+.about_section_title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: $syne;
+  color: $h_title;
+  margin-bottom: 0;
+  padding-bottom: 14px;
+  border-bottom: 2px solid rgba($brand_color, 0.15);
+  display: inline-block;
+}
+
+.about_logo_placeholder {
+  background: rgba($warm_white, 0.04);
+  border: 1px dashed rgba($warm_white, 0.18);
+  border-radius: 6px;
+  padding: 18px 20px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba($warm_white, 0.35);
+  letter-spacing: 0.3px;
+}
+
+.about_logo_wrap {
+  margin: 10px 0 16px;
+}
+
+.about_partner_logos_row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px 0 0;
+}

@@ -4,7 +4,7 @@ container: wide-container
 category: element
 search: true
 right_sidebar: false
-banner: true
+banner: false
 tags: [image modal,element]
 custom_js:
 - assets/prism/prism.js
@@ -24,4 +24,27 @@ custom_css:
 - assets/magnify-pop/magnific-popup.css
 ---
 
-{% include doc_lightbox.html %}
+Two lightbox patterns are available: a simple click-to-enlarge image, and a modal popup with optional hotspot dots.
+
+Both require `jquery.magnific-popup.min.js` in `custom_js`.
+
+## Simple image lightbox
+
+A thumbnail image with a `+` overlay. Clicking opens the full image.
+
+Copy the HTML from `_TEMPLATE.md` → **Lightbox → Simple image lightbox**, then:
+- Set the thumbnail `<img src>` to your preview image
+- Set the `<a href>` to your full-size image
+
+## Modal lightbox
+
+Opens a full overlay modal with the image inside. Can include annotated hotspot dots.
+
+Copy the HTML from `_TEMPLATE.md` → **Lightbox → Modal lightbox with hotspot dots**, then:
+- Update the `data-target` on the trigger to match the modal `id`
+- Replace both image paths (thumbnail and large)
+- For each dot, update its `data-tooltip-content` and create a matching hidden `.tip_content` block
+
+Key points:
+- The modal `id` must be unique per page if you have multiple lightboxes
+- Dots use the same `.tooltips` + `.tooltip_templates` pattern as the tooltip component

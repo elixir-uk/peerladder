@@ -1,9 +1,9 @@
 /*=========== doc_banner_area_one css ============*/
 .doc_banner_area_one {
-  height: 750px;
+  height: 450px;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(60deg, $brand_color 0%, #1d2746 100%);
+  background-image: linear-gradient(60deg, $brand_color 0%, $forest 100%);
   position: relative;
   overflow: hidden;
   .star {
@@ -79,7 +79,7 @@
             transform: translateY(-50%);
           }
           &.active {
-            color: #acace6;
+            color: $lavender;
           }
         }
         &:last-child {
@@ -226,7 +226,7 @@
 
 /*=========== Start doc_banner_area_two css ============*/
 .doc_banner_area_two {
-  height: 650px;
+  height: 450px;
   background: #daf6fc;
   position: relative;
 
@@ -318,7 +318,7 @@
   h2 {
     font-size: 46px;
     margin-bottom: 22px;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   p {
@@ -361,12 +361,8 @@
 
 /*=========== Start Banner Support ============*/
 .Docy-banner-support {
-  height: 945px;
-  background-image: linear-gradient(
-                  30deg,
-                  rgb(254, 239, 236) 0%,
-                  rgb(245, 253, 255) 100%
-  );
+  height: 545px;
+  background: lighten($forest, 3%);
   padding: 200px 0;
   position: relative;
 
@@ -376,7 +372,7 @@
 
   @media (max-width: 768px) {
     padding: 100px 0;
-    height: 820px;
+    height: 620px;
   }
 
   .banner-content-wrapper {
@@ -392,7 +388,7 @@
     .banner-title {
       font-size: 44px;
       font-weight: 500;
-      color: #1d2746;
+      color: $h_title;
       margin-bottom: 12px;
 
       @media (max-width: 768px) {
@@ -402,7 +398,7 @@
 
     p {
       font-size: 18px;
-      color: #6b707f;
+      color: $p_color;
       line-height: 28px;
       margin-bottom: 40px;
 
@@ -429,7 +425,7 @@
         height: 60px;
 
         &::placeholder {
-          color: #6b707f;
+          color: $p_color;
         }
       }
 
@@ -788,7 +784,7 @@
 
 /*=========== Start breadcrumb_area css ============*/
 .breadcrumb_area {
-  background-image: linear-gradient(60deg, $brand_color 0%, #1d2746 100%);
+  background-image: linear-gradient(60deg, $brand_color 0%, $forest 100%);
   padding: 190px 0 95px;
   position: relative;
 
@@ -846,12 +842,12 @@
   padding: 0 80px 0 20px;
   height: 100%;
   border: 0;
-  background: #fff;
-  color: #6b707f;
+  background: $card_bg;
+  color: $p_color;
 
   &:after {
-    border-bottom: 2px solid #6b707f;
-    border-right: 2px solid #6b707f;
+    border-bottom: 2px solid rgba(240, 238, 249, 0.4);
+    border-right: 2px solid rgba(240, 238, 249, 0.4);
     height: 8px;
     width: 8px;
     right: 28px;
@@ -865,7 +861,7 @@
 
     li {
       font-size: 14px;
-      color: #6b707f;
+      color: $p_color;
       position: relative;
       min-height: 36px;
       line-height: 36px;
@@ -898,7 +894,7 @@
 
 /*=========== Start breadcrumb_area_two css ============*/
 .breadcrumb_area_two {
-  background: #edfbfe;
+  background: lighten($forest, 3%);
   padding: 150px 0 60px;
 }
 
@@ -949,7 +945,7 @@
       }
 
       .c_blue {
-        color: #2a74fd;
+        color: $violet;
       }
     }
   }
@@ -959,7 +955,7 @@
 
 /*=========== Start breadcrumb_area_three css ============*/
 .breadcrumb_area_three {
-  background: #f8fafd;
+  background: lighten($forest, 3%);
   padding: 157px 0 70px;
   position: relative;
   z-index: 1;
@@ -997,7 +993,7 @@
     margin-bottom: 15px;
 
     span {
-      font-weight: 700;
+      font-weight: 600;
     }
   }
 
@@ -1010,7 +1006,7 @@
 
 /*=========== Start page_breadcrumb css ============*/
 .page_breadcrumb {
-  background: #edefec;
+  background: $card_bg;
   padding: 12px 0;
   position: relative;
   z-index: 1;
@@ -1019,7 +1015,7 @@
     align-items: center;
   }
   .date {
-    color: #878ea6;
+    color: rgba(240, 238, 249, 0.6);
     float: right;
     font-size: 14px;
     i {
@@ -1034,11 +1030,11 @@
   border-radius: 0;
   padding: 0;
   .breadcrumb-item {
-    color: #878ea6;
+    color: rgba(240, 238, 249, 0.6);
     font-size: 14px;
     line-height: 21px;
     a {
-      color: #878ea6;
+      color: rgba(240, 238, 249, 0.6);
       &:hover {
         color: $brand_color;
       }
@@ -1047,12 +1043,12 @@
       &:before {
         content: "\35";
         font-family: eleganticons;
-        color: #b7b9be;
+        color: rgba(240, 238, 249, 0.3);
       }
     }
   }
   .active {
-    color: #1d2746;
+    color: $warm_white;
   }
 }
 
@@ -1062,7 +1058,7 @@
   h2 {
     font-size: 50px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 600;
   }
   .breadcrumb {
     justify-content: center;
@@ -1088,7 +1084,7 @@
 /* Home Doc Banner Two Area css
 ============================================================================================ */
 .doc_banner_area_dip {
-  background: #002454;
+  background: $forest;
   text-align: center;
   padding: 215px 0 245px;
   position: relative;
@@ -1169,7 +1165,7 @@
     h2 {
       font-size: 46px;
       color: #fff;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 45px;
     }
   }
@@ -1218,7 +1214,7 @@
       height: 60px;
       line-height: 60px;
       font-weight: 500;
-      color: #1d2746;
+      color: $h_title;
       padding: 0 65px 0 25px;
       background: #e8e9ec;
       float: none;
@@ -1233,7 +1229,7 @@
       }
       li {
         font-size: 14px;
-        color: #1d2746;
+        color: $h_title;
         line-height: 40px;
       }
       &:focus {
@@ -1272,7 +1268,7 @@
         margin-bottom: 0;
         > li {
           font-size: 16px;
-          color: #1d2746;
+          color: $h_title;
           .search_item {
             border-top: 1px solid #e6eeef;
             padding: 10px 0 5px;
@@ -1294,7 +1290,7 @@
               > a {
                 line-height: 26px;
                 font-weight: 400;
-                color: #6b707f;
+                color: $p_color;
                 padding: 3px 22px;
                 flex: 1;
                 display: block;
@@ -1368,7 +1364,7 @@
 ============================================================================================ */
 .doc_banner_area {
   &.search-banner-light {
-    background-color: #f3f3f3;
+    background-color: lighten($forest, 3%);
     padding-top: 145px;
     padding-bottom: 100px;
     background-image: url(../img/banner-bg.png);
@@ -1390,14 +1386,14 @@
     }
   }
   &.breadcrumb_green {
-    background: linear-gradient(90deg, #b9d6d2 -25.91%, #e7f5f5 100%);
+    background: lighten($forest, 3%);
     padding-top: 188px;
     padding-bottom: 85px;
     .doc_banner_content {
       h2 {
         margin-bottom: 0;
         font-size: 46px;
-        font-weight: 700;
+        font-weight: 600;
       }
       .header_search_form {
         margin-top: 30px;
@@ -1428,7 +1424,7 @@
             color: $brand_color;
           }
           input {
-            color: #6b707f;
+            color: $p_color;
             font-size: 14px;
             font-weight: 400;
             height: 50px;
@@ -1440,7 +1436,7 @@
               box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 2px 6px 2px rgba(60, 64, 67, .15);
             }
             @include placeholder {
-              color: #6b707f;
+              color: $p_color;
               font-size: 14px;
               font-weight: 400;
             }
@@ -1482,7 +1478,7 @@
 }
 
 .breadcrumb_link {
-  background: #f2f5f7;
+  background: $card_bg;
   .bread_link_inner {
     .nav {
       li {
@@ -1535,7 +1531,7 @@
 /* Video Breadcrumb Area css
 ============================================================================================ */
 .video_breadcrumb_area {
-  background: linear-gradient(90deg, #fff4e6 0%, #fffbf5 100%);
+  background: lighten($forest, 3%);
   .breadcrumb_text {
     text-align: center;
     padding-top: 185px;
@@ -1584,3 +1580,20 @@
 }
 /* End Video Breadcrumb Area css
 ============================================================================================ */
+
+/*=========== Page Banner — narrow, title-only (pages/ and person pages) ============*/
+.page_banner_area {
+  background: lighten($forest, 3%);
+  padding: 130px 0 50px;
+
+  .page_banner_content {
+    h1 {
+      color: $h_title;
+      font-family: $syne;
+      font-size: 36px;
+      font-weight: 700;
+      margin: 0;
+      line-height: 1.2;
+    }
+  }
+}

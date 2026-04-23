@@ -5,8 +5,8 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site title and description
-title:              Docy
-description:        Documentation Jekyll theme.
+title:              PeerLadder
+description:        A UK peer-mentoring programme for underrepreented dRTPs
 lang:               en
 
 # Site base hostname & protocol, e.g. http://example.com
@@ -29,13 +29,13 @@ footer:
 
 # Social icons displayed in footer
 social:
-    facebook:       https://www.facebook.com/
+    facebook:     
     dribbble:
-    instagram:      https://www.instagram.com/
-    linkedin:       https://www.linkedin.com/
+    instagram:     
+    linkedin:      
     pinterest:      
-    twitter:        https://twitter.com/
-    vimeo:          https://vimeo.com/
+    twitter:       
+    vimeo:         
     youtube:
 
 collections:
@@ -43,7 +43,7 @@ collections:
     output: true
   people:
     output: true
-    permalink: /team/:name/
+    permalink: /people/:name/
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:
@@ -55,6 +55,9 @@ google_analytics: #UA—XXXXXXXX-X
 plugins:
   - jekyll-liquify
   - jekyll-seo-tag
+
+include:
+  - _pages
 
 exclude:
   - Gemfile

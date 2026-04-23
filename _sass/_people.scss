@@ -1,7 +1,7 @@
 /*====================================================
-  People — team listing page + person profile page
+  People — people listing page + person profile page
   Classes used by:
-    team.md              → .team-page-*, .team-group, .people-grid
+    people.md              → .people-page-*, .people-group, .people-grid
     _includes/person-card.html → .person-card, .role-label, .person-*
     _layouts/person.html → .person-profile-*
 ====================================================*/
@@ -12,21 +12,21 @@ $role-mentee   : #2da44e;
 $role-reviewer : #6b707f;
 
 
-// ── Team listing page ─────────────────────────────────────────────────────────
+// ── people listing page ─────────────────────────────────────────────────────────
 
-.team-page-body {
+.people-page-body {
     padding: 60px 0 80px;
 }
 
-.team-group {
+.people-group {
     margin-bottom: 60px;
 
     &:last-child { margin-bottom: 0; }
 }
 
-.team-group-title {
+.people-group-title {
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 600;
     color: $h_title;
     border-bottom: 2px solid rgba($brand_color, 0.15);
     padding-bottom: 12px;
@@ -49,23 +49,31 @@ $role-reviewer : #6b707f;
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: #fff;
-    border: 1px solid #eef1f4;
+    background: $card_bg;
+    border: 1px solid rgba($warm_white, 0.07);
+    border-bottom: 1px solid rgba($lime, 0.15);
     border-radius: 8px;
     overflow: hidden;
-    @include transition(box-shadow, 250ms, ease);
+    transition: all 0.3s linear;
+    text-decoration: none;
+    color: inherit;
 
     &:hover {
-        box-shadow: 0 6px 24px 0 rgba(4, 46, 56, 0.10);
+        box-shadow: 0 20px 24px 0 rgba(235, 253, 237, 0.1);
+        border-bottom-color: transparent;
+        color: inherit;
+        text-decoration: none;
+
+        .person-name { color: $brand_color; }
+
+        .person-card-cta i { transform: translateX(4px); }
     }
 }
 
 .person-avatar-wrap {
-    background: #f7f9fc;
-    text-align: center;
+    background: $forest;
+    text-align: left;
     padding: 24px 24px 0;
-
-    a { display: inline-block; }
 }
 
 .person-avatar {
@@ -90,15 +98,11 @@ $role-reviewer : #6b707f;
 
 .person-name {
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 600;
     color: $h_title;
     margin-bottom: 4px;
     line-height: 1.3;
-
-    a {
-        color: inherit;
-        &:hover { color: $brand_color; }
-    }
+    transition: color 0.2s linear;
 }
 
 // ── Role badge ───────────────────────────────────────────────────────────────
@@ -153,8 +157,8 @@ $role-reviewer : #6b707f;
 
     li {
         font-size: 11px;
-        background: #f0f2f5;
-        color: $black_500;
+        background: rgba($warm_white, 0.07);
+        color: rgba($warm_white, 0.6);
         border-radius: 4px;
         padding: 2px 7px;
         line-height: 1.6;
@@ -162,137 +166,156 @@ $role-reviewer : #6b707f;
     }
 }
 
-// ── Card links row ────────────────────────────────────────────────────────────
+// ── Card CTA (bottom of card) ─────────────────────────────────────────────────
 
-.person-links {
-    margin-top: auto;       // push to bottom of card
-    padding-top: 12px;
-    border-top: 1px solid #f0f2f5;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
+.person-card-cta {
+    margin-top: auto;
+    padding-top: 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: $lime;
+    font-family: $syne;
+    display: block;
 
-.person-link {
-    font-size: 12px;
-    font-weight: 500;
-    color: $brand_color;
-    border: 1px solid rgba($brand_color, 0.25);
-    border-radius: 4px;
-    padding: 2px 8px;
-    line-height: 1.6;
-    @include transition(all, 200ms, ease);
-    text-decoration: none;
-
-    &:hover {
-        background: $brand_color;
-        color: #fff;
-        border-color: $brand_color;
-        text-decoration: none;
+    i {
+        vertical-align: middle;
+        font-size: 14px;
+        padding-left: 4px;
+        display: inline-block;
+        transition: transform 0.2s ease-in-out;
     }
-
-    &.profile-link {
-        background: $brand_color;
-        color: #fff;
-        border-color: $brand_color;
-        &:hover { opacity: 0.85; }
-    }
-
-    &.orcid-link  { border-color: rgba(#a6ce39, 0.5); color: #6a9b1a; &:hover { background: #a6ce39; border-color: #a6ce39; color: #fff; } }
-    &.github-link { border-color: rgba(#24292e, 0.2); color: #24292e; &:hover { background: #24292e; border-color: #24292e; color: #fff; } }
 }
 
 
 // ── Person profile page ───────────────────────────────────────────────────────
 
-.person-profile-header {
-    padding: 60px 0 50px;
+.person-profile-body {
+    padding: 50px 0 80px;
+}
 
-    .person-profile-avatar {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid #fff;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.12);
-    }
+.person-profile-row {
+    align-items: flex-start;
+}
 
-    .person-profile-name {
-        font-size: 32px;
-        font-weight: 700;
-        color: $h_title;
-        margin-bottom: 8px;
-        line-height: 1.2;
+.person-profile-aside {
+    text-align: center;
+
+    @media (max-width: 767px) {
+        margin-bottom: 28px;
     }
+}
+
+.person-profile-avatar {
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba($lime, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    display: block;
+    margin: 0 auto;
+}
+
+.person-profile-head {
+    margin-bottom: 28px;
 
     .role-label {
         font-size: 12px;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+}
+
+.person-profile-affiliation {
+    font-size: 14px;
+    color: rgba($p_color, 0.7);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    ion-icon { font-size: 15px; }
+}
+
+.person-profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    .person-link {
+        font-size: 12px;
+        font-weight: 500;
+        color: $brand_color;
+        border: 1px solid rgba($brand_color, 0.25);
+        border-radius: 4px;
+        padding: 3px 10px;
+        text-decoration: none;
+        @include transition(all, 200ms, ease);
+
+        &:hover {
+            background: $brand_color;
+            color: $warm_white;
+            border-color: $brand_color;
+            text-decoration: none;
+        }
+
+        &.orcid-link  { border-color: rgba(#a6ce39, 0.5); color: #a6ce39; &:hover { background: #a6ce39; border-color: #a6ce39; color: $forest; } }
+        &.github-link { border-color: rgba($warm_white, 0.2); color: rgba($warm_white, 0.6); &:hover { background: rgba($warm_white, 0.15); border-color: rgba($warm_white, 0.3); color: $warm_white; } }
+    }
+}
+
+.person-profile-bio {
+    font-size: 15px;
+    line-height: 1.75;
+    color: $p_color;
+    margin-bottom: 28px;
+}
+
+.person-profile-expertise {
+    margin-bottom: 28px;
+
+    h4 {
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        color: rgba($h_title, 0.5);
+        margin-bottom: 10px;
     }
 
-    .person-profile-affiliation {
-        font-size: 15px;
-        color: $p_color;
-        margin-bottom: 16px;
-        display: flex;
-        align-items: center;
+    .person-expertise {
         gap: 6px;
 
-        ion-icon { font-size: 16px; }
-    }
-
-    .person-profile-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-
-        .person-link {
+        li {
             font-size: 13px;
-            padding: 4px 12px;
+            padding: 4px 10px;
         }
     }
 }
 
-.person-profile-body {
-    padding: 50px 0 80px;
+.person-profile-content {
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: $p_color;
+}
 
-    .person-profile-bio {
-        font-size: 16px;
-        line-height: 1.7;
-        color: $p_color;
-        margin-bottom: 30px;
-    }
-
-    .person-profile-expertise {
-        margin-bottom: 30px;
-
-        h4 {
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.6px;
-            color: $h_title;
-            margin-bottom: 12px;
-        }
-
-        .person-expertise {
-            gap: 6px;
-
-            li {
-                font-size: 13px;
-                padding: 4px 10px;
-            }
-        }
-    }
-
-    .person-profile-content {
-        margin-bottom: 40px;
-        line-height: 1.8;
-        color: $p_color;
+.person-profile-main {
+    .back-to-people {
+        margin-top: 10px;
     }
 }
 
-.back-to-team {
+// ── People filter pills ───────────────────────────────────────────────────────
+
+.people-filter {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.back-to-people {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -308,39 +331,3 @@ $role-reviewer : #6b707f;
 }
 
 
-// ── Dark mode overrides ───────────────────────────────────────────────────────
-
-.dark_mode {
-    .person-card {
-        background: #1e2430;
-        border-color: #2c3348;
-
-        &:hover { box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.3); }
-    }
-
-    .person-avatar-wrap { background: #252d3d; }
-
-    .person-name        { color: #e0e4f0; a { color: #e0e4f0; } }
-    .person-affiliation,
-    .person-bio         { color: #8b93a8; }
-
-    .person-expertise li {
-        background: #2c3348;
-        color: #8b93a8;
-    }
-
-    .person-links       { border-top-color: #2c3348; }
-
-    .team-group-title   { color: #e0e4f0; border-bottom-color: rgba($brand_color, 0.25); }
-
-    .person-profile-header {
-        .person-profile-name { color: #e0e4f0; }
-        .person-profile-affiliation { color: #8b93a8; }
-    }
-
-    .person-profile-body {
-        .person-profile-bio,
-        .person-profile-content { color: #8b93a8; }
-        .person-profile-expertise h4 { color: #e0e4f0; }
-    }
-}

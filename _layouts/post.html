@@ -13,14 +13,26 @@ comments: true
                         <h4>{{page.author}}</h4>
                     </a>
                     <div class="post_tag">
-                        <a href="#">
-                            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                                {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-                                {{ page.date | date: date_format }}
-                            </time>
-                        </a>
-                        <a href="#">18 Min Read</a>
-                        <a class="c_blue" href="#">{{page.category}}</a>
+                        {% if page.category == "events" %}
+                            {% if page.event_date %}
+                                <span class="event_date_badge">
+                                    {% assign ef = site.date_format | default: "%b %-d, %Y" %}
+                                    {{ page.event_date | date: ef }}
+                                </span>
+                            {% endif %}
+                            {% if page.event_location %}
+                                <span class="event_location">{{ page.event_location }}</span>
+                            {% endif %}
+                        {% else %}
+                            <a href="#">
+                                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                                    {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+                                    {{ page.date | date: date_format }}
+                                </time>
+                            </a>
+                            <a href="#">{{ page.timeToRead }}</a>
+                        {% endif %}
+                        <a class="cat-{{ page.category }}" href="#">{{ page.category | capitalize }}</a>
                     </div>
                 </div>
             </div>
@@ -35,53 +47,6 @@ comments: true
                     <div class="blog_single_item">
                         {{ content }}
                     </div>
-                    {% include blog_share.html %}
-
-                    <div class="blog_related_post">
-                        <h2 class="c_head">Related Post</h2>
-
-
-                        {% assign maxRelated = 3 %}
-                        {% assign minCommonTags = 1 %}
-                        {% assign maxRelatedCounter = 0 %}
-
-                        <div class="row">
-                            {% for post in site.posts %}
-                                {% assign sameTagCount = 0 %}
-                                {% assign commonTags = '' %}
-                                {% for cat in post.category %}
-                                    {% if post.url != page.url %}
-                                        {% if page.category contains cat %}
-                                            {% assign sameTagCount = sameTagCount | plus: 1 %}
-                                        {% endif %}
-                                    {% endif %}
-                                {% endfor %}
-                                {% if sameTagCount >= minCommonTags %}
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="blog_grid_post wow fadeInUp" data-wow-delay="0.2s">
-                                            <img src="{{post.post_img | relative_url}}" alt="">
-                                            <div class="grid_post_content">
-                                                <div class="post_tag">
-                                                    <a href="#">{{post.timeToRead}}</a>
-                                                    <a class="cat-Docy" href="#">{{post.category}}</a>
-                                                </div>
-                                                <a href="{{post.url | relative_url}}">
-                                                    <h4 class="b_title">{{post.title}}</h4>
-                                                </a>
-                                                <p>{% assign excerptParts = post.excerpt | split: "<!-- excerpt-start -->" %}
-                                                    {{ excerptParts[1] | strip_newlines | truncate: 65 }}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-                                    {% if maxRelatedCounter >= maxRelated %}
-                                        {% break %}
-                                    {% endif %}
-                                {% endif %}
-                            {% endfor %}
-                        </div>
-                    </div>
-
                 </div>
             </div>
             <div class="col-lg-4">

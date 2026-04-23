@@ -26,4 +26,27 @@ custom_css:
 ---
 
 
-{% include doc_tab.html %}
+This page uses the **no-banner layout** — the page starts directly with the content, with no top banner section.
+
+## How to enable it
+
+Set `banner: false` in your front matter:
+
+```yaml
+---
+title: Your Page Title
+banner: false
+navbar:
+  right_nav_tool: true
+  class: position-static
+right_sidebar: true
+---
+```
+
+Setting `navbar.class: position-static` prevents the navbar from sitting over the content when there's no banner to push it down.
+
+## When to use it
+
+- Deep reference pages where the banner would add visual noise
+- Pages embedded inside multi-step flows
+- Any page where you want maximum vertical space from the top

@@ -1,9 +1,33 @@
-/*font Variables*/
-$rob: "Roboto", sans-serif;
-$great: "G    reat Vibes", cursive;
+/*============================================================
+  Font families
+============================================================*/
+$syne:  'Syne', sans-serif;
+$inter: 'Inter', sans-serif;
+$rob:   $inter;   // alias — all existing $rob references now use Inter
 
-$h_title: #1d2746;
-$p_color: #6b707f;
+/*============================================================
+  Dark palette
+============================================================*/
+$bg:         #041A16;   // page / site background
+$card_bg:    #0F3329;   // card / surface background
+$violet:     #9688F2;   // H1/H2, brand, tags
+$lavender:   #9688F2;   // kept for backward compat — same as $violet
+$lime:       #BFF207;   // primary CTA bg, link hover
+$forest:     #014034;   // CTA text on lime buttons only
+$warm_white: #F0EEF9;   // H3/H4/H5/H6, body text, UI text
+
+/*============================================================
+  Semantic tokens
+============================================================*/
+$brand_color: $violet;
+$baseColor2:  $violet;
+$h_title:     $warm_white;
+$p_color:     $warm_white;
+$hover3:      $lime;
+
+/*============================================================
+  Neutral scale (kept for backward compatibility)
+============================================================*/
 $black_100: #d6d9dc;
 $black_150: #c8ccd0;
 $black_200: #bbc0c4;
@@ -16,11 +40,10 @@ $black_700: #3c4146;
 $black_750: #2f3337;
 $black_800: #242729;
 $black_900: #0c0d0e;
-$brand_color : #4c4cf1;
-$baseColor2: #4c4cf1;
-$hover3: #c6e7f7;
 
-// Mixins
+/*============================================================
+  Mixins
+============================================================*/
 @mixin transition(
   $property: all,
   $duration: 300ms,
@@ -30,26 +53,21 @@ $hover3: #c6e7f7;
   transition: $property $duration $animate $delay;
 }
 
-/**=== Functions ===**/
+/*============================================================
+  Functions
+============================================================*/
 @function brand_color_rgba($alpha) {
-  @return rgba(76, 76, 241, $alpha);
+  @return rgba(150, 136, 242, $alpha);  // $violet #9688F2
 }
 
-// Placeholder Mixins
-
+/*============================================================
+  Placeholder mixin
+============================================================*/
 @mixin placeholder {
-  &.placeholder {
-    @content;
-  }
-  &:-moz-placeholder {
-    @content;
-  }
-  &::-moz-placeholder {
-    @content;
-  }
-  &::-webkit-input-placeholder {
-    @content;
-  }
+  &.placeholder       { @content; }
+  &:-moz-placeholder  { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
 }
 
 .col-md-offset-right-1,

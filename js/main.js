@@ -614,42 +614,6 @@
     createCookie(name, "", -1);
   }
 
-  var prefersDark =
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
-  var selectedNightTheme = readCookie("body_dark");
-
-  if (
-    selectedNightTheme == "true" ||
-    (selectedNightTheme === null && prefersDark)
-  ) {
-    applyNight();
-    $(".dark_mode_switcher").prop("checked", true);
-  } else {
-    applyDay();
-    $(".dark_mode_switcher").prop("checked", false);
-  }
-
-  function applyNight() {
-    $("body").addClass("body_dark");
-  }
-
-  function applyDay() {
-    $("body").removeClass("body_dark");
-  }
-
-  $(".dark_mode_switcher").change(function () {
-    if ($(this).is(":checked")) {
-      applyNight();
-      $(".tab-btns").css("color", "#6B707F");
-      createCookie("body_dark", true, 999);
-    } else {
-      applyDay();
-      $(".tab-btns").css("color", "#007CBA");
-      createCookie("body_dark", false, 999);
-    }
-  });
-
   $(".mobile_menu_btn").on("click", function () {
     $("body").removeClass("menu-is-closed").addClass("menu-is-opened");
   });
@@ -1056,6 +1020,19 @@
   //console.log($(window).height() - $('#sticky_doc2').height());
   bodyFixed2();
 
+  // Stories filter pills
+  $(".filter-pill").on("click", function () {
+    $(".filter-pill").removeClass("active");
+    $(this).addClass("active");
+    var filter = $(this).data("filter");
+    if (filter === "all") {
+      $(".story-item").show();
+    } else {
+      $(".story-item").hide();
+      $(".story-item[data-category='" + filter + "']").show();
+    }
+  });
+
   //smoothscroll
   // Select all links with hashes
   $('a[href*="#"]')
@@ -1063,6 +1040,7 @@
     .not('[href="#"]')
     .not('[href="#0"]')
     .not('[data-toggle="collapse"]')
+    .not('[data-toggle="tab"]')
     .click(function (event) {
       // On-page links
       if (
