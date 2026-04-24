@@ -768,6 +768,7 @@
   width: 100%;
   z-index: 10;
   padding: 13px 0;
+  background: $bg;
   @media (min-width: 992px) {
     display: none;
   }
@@ -795,8 +796,8 @@
     margin: 0;
   }
   &.navbar_fixed {
-    box-shadow: 0 4px 10px 0 brand_color_rgba(0.06);
-    background: $card_bg;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    background: $bg;
     transition: all 0.2s, top 0.4s linear;
 
     .nav_btn {
@@ -1250,7 +1251,8 @@
   transform: translate3d(-300px, 0, 0);
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1013;
-  background: #fff;
+  background: $bg;
+  border-right: 1px solid rgba($warm_white, 0.08);
   padding: 20px 0;
   overflow-x: hidden;
   .mobile_menu_header {
@@ -1260,9 +1262,11 @@
     padding-right: 15px;
     .close_nav {
       font-size: 28px;
-      color: $p_color;
+      color: rgba($warm_white, 0.65);
       margin-right: 15px;
       margin-top: -5px;
+      cursor: pointer;
+      &:hover { color: $warm_white; }
       i {
         & + i {
           display: none;
