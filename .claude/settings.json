@@ -8,7 +8,18 @@
       "Bash(python3 -c ' *)",
       "Bash(grep -n '$bg\\\\|$card_bg\\\\|$forest\\\\|$brand_color\\\\|$violet\\\\|$lime\\\\|$warm_white\\\\|$p_color\\\\|$h_title\\\\|$syne\\\\|$inter\\\\|$baseColor' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/main.scss)",
       "Bash(xargs grep *)",
-      "Bash(grep -rn '$lime\\\\|$forest\\\\|#BFF207\\\\|#014034' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/ '--include=*.scss')"
+      "Bash(grep -rn '$lime\\\\|$forest\\\\|#BFF207\\\\|#014034' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/ '--include=*.scss')",
+      "Bash(bundle lock *)",
+      "Bash(bundle install *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git rm *)",
+      "Bash(git pull *)",
+      "Bash(git stash *)",
+      "Bash(sed -n '764,772p' _sass/_header.scss)",
+      "Bash(sed -n '1245,1257p' _sass/_header.scss)",
+      "Bash(gh run *)"
     ],
     "additionalDirectories": [
       "/Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_posts"
