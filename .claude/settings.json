@@ -9,6 +9,9 @@
       "Bash(grep -n '$bg\\\\|$card_bg\\\\|$forest\\\\|$brand_color\\\\|$violet\\\\|$lime\\\\|$warm_white\\\\|$p_color\\\\|$h_title\\\\|$syne\\\\|$inter\\\\|$baseColor' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/main.scss)",
       "Bash(xargs grep *)",
       "Bash(grep -rn '$lime\\\\|$forest\\\\|#BFF207\\\\|#014034' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/ '--include=*.scss')"
+    ],
+    "additionalDirectories": [
+      "/Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_posts"
     ]
   }
 }

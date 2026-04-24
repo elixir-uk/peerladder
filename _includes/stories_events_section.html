@@ -52,7 +52,7 @@
                         {% endfor %}
                     </div>
                 {% else %}
-                    <p class="no-events-msg">No upcoming events at the moment. Check back soon!</p>
+                    <p class="no-events-msg">No events scheduled at the moment — check back soon.</p>
                 {% endif %}
 
                 <div class="past_events_link">
@@ -68,8 +68,11 @@
                     <button class="filter-pill" data-filter="news">News</button>
                 </div>
 
+                {% assign stories = site.posts | where_exp: "p", "p.category == 'articles' or p.category == 'news'" %}
+                {% if stories.size == 0 %}
+                    <p class="no-events-msg">No articles yet — come back soon.</p>
+                {% endif %}
                 <div class="row" id="storiesGrid">
-                    {% assign stories = site.posts | where_exp: "p", "p.category == 'articles' or p.category == 'news'" %}
                     {% for post in stories %}
                         <div class="col-md-6 col-lg-4 mb-40 story-item" data-category="{{ post.category }}">
                             <div class="blog_grid_post">
