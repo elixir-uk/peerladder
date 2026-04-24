@@ -1,75 +1,43 @@
 ---
 layout: default
-comments: true
-
 ---
 
 {% include mobile_main_menu.html %}
 {% include mobile_side_menu.html %}
 
-{% if page.banner %}
-    {% if page.banner == 'banner_gradient' %}
-        {% include  doc_banner_gradient.html %}
-    {% else %}
-        {% include  doc_banner.html %}
-    {% endif %}
-{% endif %}
-<section class="doc_documentation_area" id="sticky_doc">
+<section class="doc_documentation_area doc_no_banner" id="sticky_doc">
     <div class="overlay_bg"></div>
-    <div class="{% if page.full_width %}container-fluid pl-60 pr-60 {% else %} container custom_container {% endif %}">
-        <div class="row">
-            <div class="col-lg-3 doc_mobile_menu display_none">
-                {% include doc_left_sidebar.html %}
-            </div>
+    <div class="doc-flex-layout">
 
-            {% if page.right_sidebar %}
-                {% assign col_size = "col-lg-7 col-md-8" %}
-            {% else %}
-                {% assign col_size = "col-xl-9" %}
-            {% endif %}
+        <aside class="doc-sidebar-panel">
+            {% include doc_left_sidebar.html %}
+        </aside>
 
-            <div class="{{col_size}} doc-middle-content">
-                {{ content }}
-                {% unless page.noDocBottom %}
-                    {% include doc_bottom.html %}
+        <div class="doc-main-panel doc-middle-content rvfs-section">
+            {{ content }}
+            {% unless page.noDocBottom %}
+                {% include doc_bottom.html %}
+            {% endunless %}
+            {% unless page.noDocPaginate %}
+                {% include doc_paginate.html %}
+            {% endunless %}
+        </div>
 
-                {% endunless %}
-                {% unless page.noDocPaginate %}
-                    {% include doc_paginate.html %}
-
-                {% endunless  %}
-                {% unless page.relatedDocs %}
-                    {% include related_docs.html %}
-
-                {% endunless %}
-            </div>
-
-
-            {% if page.right_sidebar %}
-
-                <div class="col-lg-2 col-md-4 doc_right_mobile_menu">
-                    <div class="open_icon" id="right">
-                        <i class="arrow_carrot-left"></i>
-                        <i class="arrow_carrot-right"></i>
+        {% if page.right_sidebar %}
+        <aside class="doc-right-panel">
+            <div class="doc_rightsidebar scroll">
+                <div class="pageSideSection">
+                    <div id="font-switcher">
+                        <div class="fontsize-controllers group" id="rvfs-controllers"></div>
                     </div>
-                    <div class="doc_rightsidebar scroll">
-                        <div class="pageSideSection">
-                            <div class="d-flex justify-content-between align-items-center" id="font-switcher">
-                                <div class="fontsize-controllers group" id="rvfs-controllers"></div>
-                                <a class="print" href="javascript:window.print()">
-                                    <i class="icon_printer"></i>
-                                </a>
-                            </div>
-                            <div class="table-of-content">
-                                <h6>
-                                    <i class="icon_ul"></i>
-                                    CONTENTS</h6>
-                                <nav class="list-unstyled doc_menu" id="navbar-example3"></nav>
-                            </div>
-                        </div>
+                    <div class="table-of-content">
+                        <h6><i class="icon_ul"></i> CONTENTS</h6>
+                        <nav class="list-unstyled doc_menu" id="navbar-example3"></nav>
                     </div>
                 </div>
-            {% endif %}
-        </div>
+            </div>
+        </aside>
+        {% endif %}
+
     </div>
 </section>

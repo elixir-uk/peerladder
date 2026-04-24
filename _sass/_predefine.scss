@@ -67,9 +67,169 @@ table tr td p:last-child {
   margin-bottom: 0;
 }
 
-pre[class*="language-"] > code {
-  border-left: 5px solid brand_color_rgba(0.8);
+// ── Code block overrides (Prism "coy" is a light theme; restyle for dark) ──
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #cdd6f4;          // soft blue-white — readable on dark
+  background: none;
 }
+
+pre[class*="language-"] > code,
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: #0a1e1a;    // very dark teal — close to $bg but distinct
+  background-image: none;
+  box-shadow: none;
+  border-left: 3px solid $violet;
+}
+
+// Plain fenced blocks rendered by kramdown without a language class
+.doc-middle-content pre:not([class]) code,
+.doc-middle-content pre code {
+  display: block;
+  background: #0a1e1a;
+  color: #cdd6f4;
+  border-left: 3px solid $violet;
+  padding: 14px 18px;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.88em;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+// Inline code (backtick spans not inside pre)
+.doc-middle-content :not(pre) > code {
+  background: rgba($violet, 0.12);
+  color: $lime;
+  border: 1px solid rgba($violet, 0.25);
+  border-radius: 3px;
+  padding: 1px 6px;
+  font-size: 0.87em;
+}
+
+// ── Blockquote inside doc content ────────────────────────────────────────────
+.doc-main-panel blockquote:not(.notice) {
+  background: rgba($warm_white, 0.04);
+  border-left: 3px solid rgba($warm_white, 0.25);
+  border-radius: 0 4px 4px 0;
+  padding: 12px 18px;
+  margin: 20px 0;
+  font-size: 15px;
+  font-style: italic;
+  color: rgba($warm_white, 0.7);
+  &::before, &::after { display: none; }
+  p { font-size: inherit; color: inherit; line-height: 1.7; margin-bottom: 0; }
+}
+
+// Also style plain markdown headings / body inside doc content
+.doc-middle-content {
+  h1, h2, h3, h4, h5, h6 { margin-bottom: 20px; margin-top: 30px; }
+  h1:first-child, h2:first-child { margin-top: 0; }
+  p, li { line-height: 1.75; }
+  a { color: $brand_color; }
+  a:hover { color: $lime; }
+}
+
+// ── Notice blocks (dark theme overrides) ─────────────────────────────────────
+.notice-success {
+  background: rgba(#0a3025, 0.6);
+  border-color: rgba(#30845e, 0.45);
+  i, strong { color: #52c98c; }
+  p { color: rgba(#c8f0e0, 0.7); }
+}
+.notice-warning {
+  background: rgba(#2a1e00, 0.6);
+  border-color: rgba($lime, 0.3);
+  i, strong { color: $lime; }
+  p { color: rgba($lime, 0.7); }
+}
+.notice-danger {
+  background: rgba(#2d0509, 0.6);
+  border-color: rgba(#fa303e, 0.35);
+  i, strong { color: #ff6b75; }
+  p { color: rgba(#ff6b75, 0.75); }
+}
+.notice-facilitator {
+  background: rgba(#180e38, 0.6);
+  border-color: rgba($violet, 0.4);
+  i, strong { color: $violet; }
+  p { color: rgba(#d4cff9, 0.75); }
+}
+
+// ── Bootstrap accordion / card (dark theme) ───────────────────────────────────
+.card {
+  background-color: $card_bg;
+  border: 1px solid rgba($warm_white, 0.1);
+  border-radius: 6px !important;
+  & + .card { margin-top: 4px; border-top: 1px solid rgba($warm_white, 0.1); }
+  .card-header {
+    background-color: rgba($warm_white, 0.04);
+    border-bottom: 1px solid rgba($warm_white, 0.08);
+    padding: 0;
+    h5, h4, h3 { margin: 0; font-size: inherit; font-weight: inherit; }
+    .btn-link {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      text-align: left;
+      color: rgba($warm_white, 0.75);
+      font-weight: 500;
+      font-size: 15px;
+      padding: 14px 20px;
+      &:hover, &:focus { color: $brand_color; text-decoration: none; box-shadow: none; }
+      &[aria-expanded="true"] { color: $warm_white; }
+      &::after {
+        content: '▾';
+        font-size: 16px;
+        margin-left: auto;
+        padding-left: 12px;
+        opacity: 0.5;
+        transition: transform 0.22s ease, opacity 0.22s ease;
+        flex-shrink: 0;
+        line-height: 1;
+      }
+      &[aria-expanded="true"]::after {
+        transform: rotate(180deg);
+        opacity: 0.9;
+      }
+    }
+  }
+  .card-body {
+    background-color: $bg;
+    border-top: 1px solid rgba($warm_white, 0.08);
+    color: rgba($warm_white, 0.75);
+    font-size: 15px;
+    line-height: 1.75;
+    padding: 16px 20px 20px;
+  }
+}
+
+// ── Bootstrap tabs (dark theme, inside doc pages) ─────────────────────────────
+.doc-main-panel {
+  .nav-tabs {
+    border-bottom: 1px solid rgba($warm_white, 0.12);
+    margin-bottom: 0;
+    .nav-item .nav-link {
+      color: rgba($warm_white, 0.55);
+      border: 1px solid transparent;
+      border-radius: 4px 4px 0 0;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 18px;
+      &:hover {
+        color: rgba($warm_white, 0.85);
+        border-color: rgba($warm_white, 0.06) rgba($warm_white, 0.06) transparent;
+      }
+      &.active {
+        color: $warm_white;
+        background-color: $card_bg;
+        border-color: rgba($warm_white, 0.12) rgba($warm_white, 0.12) $card_bg;
+      }
+    }
+  }
+  .tab-content > .tab-pane { padding-top: 24px; }
+}
+
 
 .pt_100 {
   padding-top: 100px;
@@ -144,7 +304,7 @@ button:focus {
   position: relative;
   background: $bg;
   z-index: 30;
-  overflow: hidden;
+  overflow-x: hidden;
   min-height: 100vh;
 }
 

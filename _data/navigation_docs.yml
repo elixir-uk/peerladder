@@ -2,37 +2,40 @@
   img: img/side-nav/home.png
   url: docs/doc-main/
 
-- title: Elements
-  img: img/side-nav/briefcase.png
-  docs:
-    - doc-element-tab
-    - doc-element-accordion
-    - doc-element-notice
-    - doc-element-table
-    - doc-element-hotspots
-    - doc-element-code
-    - doc-element-lightbox
-
-- title: Content
+- title: About
   img: img/side-nav/document.png
   docs:
-    - doc-content-image
-    - doc-content-video
-    - doc-content-tooltip
+    - doc-about-programme
 
-- title: Layouts
-  img: img/side-nav/layout.png
-  docs:
-    - doc-layout-full-width
-    - doc-layout-left-sidebar
-    - doc-layout-banner-gradient
-    - doc-layout-banner-empty
-
-- title: Reference
+- title: Theory
   img: img/side-nav/chat1.png
   docs:
-    - doc-ref-footnote
-    - doc-ref-tour
+    - doc-theory-foundations
+    - doc-theory-drtp-context
+
+- title: Before you start
+  img: img/side-nav/briefcase.png
+  docs:
+    - doc-pre-what-to-expect
+    - doc-pre-exercise-1
+    - doc-pre-exercise-2
+
+- title: Workshop 1
+  img: img/side-nav/layout.png
+  docs:
+    - doc-workshop-1-overview
+    - doc-workshop-1-guide
+
+- title: Workshop 2
+  img: img/side-nav/layout.png
+  docs:
+    - doc-workshop-2-overview
+    - doc-workshop-2-guide
+
+- title: Resources
+  img: img/side-nav/issuin.png
+  docs:
+    - doc-resources
 
 - title: Change log
   img: img/side-nav/clock.png

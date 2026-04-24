@@ -70,7 +70,7 @@ $role-reviewer : #6b707f;
 }
 
 .person-avatar-wrap {
-    background: $forest;
+    background: lighten($forest, 5%);
     text-align: left;
     padding: 24px 24px 0;
 }

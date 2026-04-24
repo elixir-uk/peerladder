@@ -1,164 +1,119 @@
 [
   
     {
-      "title"    : "ChangeLog",
+      "title"    : "About the Programme",
+      "category" : "about",
+      "tags"     : "about, programme",
+      "url"      : "/docs/doc-about-programme/",
+      "date"     : "2026-04-24 17:03:51 +0100",
+      "type"     : "Doc"
+    },
+  
+    {
+      "title"    : "Change log",
       "category" : "changelog",
-      "tags"     : "refference, instruction",
+      "tags"     : "changelog",
       "url"      : "/docs/doc-changelog/",
-      "date"     : "2026-04-24 15:40:59 +0100",
-      "type"     : "Doc"
-    },
-  
-    {
-      "title"    : "Image",
-      "category" : "content",
-      "tags"     : "code, content",
-      "url"      : "/docs/doc-content-image/",
-      "date"     : "2026-04-24 15:40:59 +0100",
-      "type"     : "Doc"
-    },
-  
-    {
-      "title"    : "Tooltips &amp; Direction",
-      "category" : "content",
-      "tags"     : "popover, content",
-      "url"      : "/docs/doc-content-tooltip/",
-      "date"     : "2026-04-24 15:40:59 +0100",
-      "type"     : "Doc"
-    },
-  
-    {
-      "title"    : "Video",
-      "category" : "content",
-      "tags"     : "content, direction",
-      "url"      : "/docs/doc-content-video/",
-      "date"     : "2026-04-24 15:40:59 +0100",
-      "type"     : "Doc"
-    },
-  
-    {
-      "title"    : "Accordion",
-      "category" : "element",
-      "tags"     : "content, element",
-      "url"      : "/docs/doc-element-accordion/",
-      "date"     : "2026-04-24 15:40:59 +0100",
-      "type"     : "Doc"
-    },
-  
-    {
-      "title"    : "Source Code",
-      "category" : "element",
-      "tags"     : "code, source, customize, element",
-      "url"      : "/docs/doc-element-code/",
-      "date"     : "2026-04-24 15:40:59 +0100",
-      "type"     : "Doc"
-    },
-  
-    {
-      "title"    : "Image Hotspots",
-      "category" : "element",
-      "tags"     : "hotspot, modal, element",
-      "url"      : "/docs/doc-element-hotspots/",
-      "date"     : "2026-04-24 15:40:59 +0100",
-      "type"     : "Doc"
-    },
-  
-    {
-      "title"    : "Image Lightbox",
-      "category" : "element",
-      "tags"     : "image modal, element",
-      "url"      : "/docs/doc-element-lightbox/",
-      "date"     : "2026-04-24 15:40:59 +0100",
-      "type"     : "Doc"
-    },
-  
-    {
-      "title"    : "Notices",
-      "category" : "element",
-      "tags"     : "content, element",
-      "url"      : "/docs/doc-element-notice/",
-      "date"     : "2026-04-24 15:40:59 +0100",
-      "type"     : "Doc"
-    },
-  
-    {
-      "title"    : "Tab",
-      "category" : "content",
-      "tags"     : "Tabs Widget, Process Tab, element",
-      "url"      : "/docs/doc-element-tab/",
-      "date"     : "2026-04-24 15:40:59 +0100",
-      "type"     : "Doc"
-    },
-  
-    {
-      "title"    : "Table",
-      "category" : "element",
-      "tags"     : "content, element",
-      "url"      : "/docs/doc-element-table/",
-      "date"     : "2026-04-24 15:40:59 +0100",
-      "type"     : "Doc"
-    },
-  
-    {
-      "title"    : "Without Banner",
-      "category" : "layout",
-      "tags"     : "Gradient Banner, Process Tab, layout",
-      "url"      : "/docs/doc-layout-banner-empty/",
-      "date"     : "2026-04-24 15:40:59 +0100",
-      "type"     : "Doc"
-    },
-  
-    {
-      "title"    : "Gradient Banner",
-      "category" : "layout",
-      "tags"     : "Gradient Banner, Process Tab, layout",
-      "url"      : "/docs/doc-layout-banner-gradient/",
-      "date"     : "2026-04-24 15:40:59 +0100",
-      "type"     : "Doc"
-    },
-  
-    {
-      "title"    : "Full Width",
-      "category" : "layout",
-      "tags"     : "layout, video",
-      "url"      : "/docs/doc-layout-full-width/",
-      "date"     : "2026-04-24 15:40:59 +0100",
-      "type"     : "Doc"
-    },
-  
-    {
-      "title"    : "Left Sidebar",
-      "category" : "layout",
-      "tags"     : "hotspot, modal, layout",
-      "url"      : "/docs/doc-layout-left-sidebar/",
-      "date"     : "2026-04-24 15:40:59 +0100",
+      "date"     : "2026-04-24 17:03:51 +0100",
       "type"     : "Doc"
     },
   
     {
       "title"    : "Documentation",
-      "category" : "Doc",
-      "tags"     : "main, documentation",
+      "category" : "",
+      "tags"     : "",
       "url"      : "/docs/doc-main/",
-      "date"     : "2026-04-24 15:40:59 +0100",
+      "date"     : "2026-04-24 17:03:51 +0100",
       "type"     : "Doc"
     },
   
     {
-      "title"    : "Footnote",
-      "category" : "reference",
-      "tags"     : "reference, note",
-      "url"      : "/docs/doc-ref-footnote/",
-      "date"     : "2026-04-24 15:40:59 +0100",
+      "title"    : "Pre-exercise 1",
+      "category" : "preparation",
+      "tags"     : "preparation, exercise",
+      "url"      : "/docs/doc-pre-exercise-1/",
+      "date"     : "2026-04-24 17:03:51 +0100",
       "type"     : "Doc"
     },
   
     {
-      "title"    : "Interface Tour",
-      "category" : "reference",
-      "tags"     : "reference, tour",
-      "url"      : "/docs/doc-ref-tour/",
-      "date"     : "2026-04-24 15:40:59 +0100",
+      "title"    : "Pre-exercise 2",
+      "category" : "preparation",
+      "tags"     : "preparation, exercise",
+      "url"      : "/docs/doc-pre-exercise-2/",
+      "date"     : "2026-04-24 17:03:51 +0100",
+      "type"     : "Doc"
+    },
+  
+    {
+      "title"    : "What to Expect",
+      "category" : "preparation",
+      "tags"     : "preparation, getting started",
+      "url"      : "/docs/doc-pre-what-to-expect/",
+      "date"     : "2026-04-24 17:03:51 +0100",
+      "type"     : "Doc"
+    },
+  
+    {
+      "title"    : "Resources",
+      "category" : "resources",
+      "tags"     : "resources, materials",
+      "url"      : "/docs/doc-resources/",
+      "date"     : "2026-04-24 17:03:51 +0100",
+      "type"     : "Doc"
+    },
+  
+    {
+      "title"    : "The dRTP Context",
+      "category" : "theory",
+      "tags"     : "theory, dRTP",
+      "url"      : "/docs/doc-theory-drtp-context/",
+      "date"     : "2026-04-24 17:03:51 +0100",
+      "type"     : "Doc"
+    },
+  
+    {
+      "title"    : "Foundations of Peer Mentoring",
+      "category" : "theory",
+      "tags"     : "theory, peer mentoring",
+      "url"      : "/docs/doc-theory-foundations/",
+      "date"     : "2026-04-24 17:03:51 +0100",
+      "type"     : "Doc"
+    },
+  
+    {
+      "title"    : "Workshop 1 — Guide",
+      "category" : "workshop",
+      "tags"     : "workshop, guide, facilitator",
+      "url"      : "/docs/doc-workshop-1-guide/",
+      "date"     : "2026-04-24 17:03:51 +0100",
+      "type"     : "Doc"
+    },
+  
+    {
+      "title"    : "Workshop 1 — Overview",
+      "category" : "workshop",
+      "tags"     : "workshop, session",
+      "url"      : "/docs/doc-workshop-1-overview/",
+      "date"     : "2026-04-24 17:03:51 +0100",
+      "type"     : "Doc"
+    },
+  
+    {
+      "title"    : "Workshop 2 — Guide",
+      "category" : "workshop",
+      "tags"     : "workshop, guide, facilitator",
+      "url"      : "/docs/doc-workshop-2-guide/",
+      "date"     : "2026-04-24 17:03:51 +0100",
+      "type"     : "Doc"
+    },
+  
+    {
+      "title"    : "Workshop 2 — Overview",
+      "category" : "workshop",
+      "tags"     : "workshop, session",
+      "url"      : "/docs/doc-workshop-2-overview/",
+      "date"     : "2026-04-24 17:03:51 +0100",
       "type"     : "Doc"
     }
   

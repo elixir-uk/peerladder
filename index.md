@@ -24,5 +24,4 @@ custom_css:
 {% include features_section.html %}
 
 {% include doc_testimonial.html %}
-{% include doc_subscribe.html title="Great Customer <br>Relationships start here" %}
 

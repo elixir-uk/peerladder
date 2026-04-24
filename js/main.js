@@ -980,9 +980,16 @@
   }
 
   $(document).ready(function () {
-    onThisPageTitles($(".shortcode_info h4").toArray());
-    if($(".shortcode_info .changelog_info")){
-      onThisPageTitles($(".shortcode_info .changelog_info").toArray());
+    if ($("#navbar-example3").length) {
+      $(".doc-middle-content h2, .doc-middle-content h3").each(function () {
+        var id = $(this).attr("id");
+        var text = $(this).text().replace(/\s*#\s*$/, "").trim();
+        if (id && text) {
+          var indent = $(this).is("h3") ? " style='padding-left:12px;font-size:12px'" : "";
+          document.getElementById("navbar-example3").innerHTML +=
+            "<a class='nav-link' href='#" + id + "'" + indent + ">" + text + "</a>";
+        }
+      });
     }
   });
 
