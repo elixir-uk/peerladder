@@ -880,11 +880,27 @@
   }
 }
 
+.footer_logo_link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+
 .footer_logo {
   height: 52px;
   width: auto;
-  margin-bottom: 18px;
   display: block;
+}
+
+.footer_wordmark {
+  font-family: $syne;
+  font-size: 22px;
+  font-weight: 700;
+  color: $warm_white;
+  letter-spacing: -0.02em;
+  line-height: 1;
 }
 
 .footer_desc {
@@ -965,7 +981,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 18px;
 }
 
 .footer_partner_logo {

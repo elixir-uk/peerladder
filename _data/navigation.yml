@@ -15,15 +15,15 @@ left:
         url: /apply/
 
   - title: Stories & Events
-    url: /stories-and-events
+    url: /stories-and-events/
     dropdown:
       - title: All Stories & Events
-        url: /stories-and-events
+        url: /stories-and-events/
       - title: Past Events
-        url: /past-events
+        url: /past-events/
 
   - title: People
-    url: /people
+    url: /people/
 
 
 

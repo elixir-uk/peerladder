@@ -5,7 +5,10 @@
       "Bash(grep -n 'brand_color\\\\|violet\\\\|lime\\\\|$warm_white\\\\|$forest\\\\|$bg\\\\b\\\\|$card_bg\\\\|$syne\\\\|$inter' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/_variables.scss)",
       "Bash(grep -rn '$brand_color\\\\s*:\\\\|$lime\\\\s*:\\\\|$warm_white\\\\s*:\\\\|$forest\\\\s*:\\\\|$bg\\\\s*:\\\\|$card_bg\\\\s*:\\\\|$syne\\\\s*:' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/)",
       "Bash(bundle exec *)",
-      "Bash(python3 -c ' *)"
+      "Bash(python3 -c ' *)",
+      "Bash(grep -n '$bg\\\\|$card_bg\\\\|$forest\\\\|$brand_color\\\\|$violet\\\\|$lime\\\\|$warm_white\\\\|$p_color\\\\|$h_title\\\\|$syne\\\\|$inter\\\\|$baseColor' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/main.scss)",
+      "Bash(xargs grep *)",
+      "Bash(grep -rn '$lime\\\\|$forest\\\\|#BFF207\\\\|#014034' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/ '--include=*.scss')"
     ]
   }
 }

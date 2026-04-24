@@ -140,15 +140,27 @@
   transition: all 0.2s linear;
 }
 .header_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   img:not(.main_logo),
   img.sticky_logo {
       display: none;
   }
   img.main_logo {
     display: block;
-    height: 42px;
+    height: 52px;
     width: auto;
   }
+}
+
+.header_wordmark {
+  font-family: $syne;
+  font-size: 20px;
+  font-weight: 700;
+  color: $warm_white;
+  letter-spacing: -0.02em;
+  line-height: 1;
 }
 
 .dark_menu {
@@ -162,14 +174,18 @@
         color: $h_title;
         font-size: 14px;
         font-weight: 500;
-        &:before {
-          display: none;
-        }
+        background-image: linear-gradient($lime, $lime);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 0% 1px;
+        transition: background-size 0.25s ease;
+        &:before { display: none; }
       }
       &:hover,
       &.active {
         > .nav-link {
-          color: $brand_color;
+          color: $h_title;
+          background-size: 100% 1px;
         }
       }
       &.submenu {
