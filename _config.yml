@@ -18,10 +18,10 @@ baseurl:            ""
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 permalink: /:title/
 
-logo: img/logo.png
-logo2x: img/logo-2x.png
-white_logo: img/logo-w.png
-white_logo2x: img/logo-w2x.png
+logo: /img/logos/logo-peer-ladder.svg
+logo2x: 
+white_logo: 
+white_logo2x: 
 
 
 footer:
