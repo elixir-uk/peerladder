@@ -1071,12 +1071,12 @@
     padding-bottom: 12px;
   }
   .navbar-collapse {
-    background: #fff;
+    background: #041a16;
   }
   .menu > .nav-item,
   .navbar_fixed.menu_one .menu > .nav-item {
     padding: 10px 0;
-    border-bottom: 1px solid rgba(237, 237, 237, 0.5);
+    border-bottom: 1px solid rgba(240, 238, 249, 0.08);
   }
   .menu > .nav-item + .nav-item {
     margin-left: 0;
@@ -1088,18 +1088,18 @@
     display: inline-block;
     margin-left: 15px;
     margin-bottom: 20px;
-    color: #6b707f;
+    color: rgba(240, 238, 249, 0.7);
     margin-top: 15px;
-    border-color: rgba(237, 237, 237, 0.5);
+    border-color: rgba(240, 238, 249, 0.2);
   }
   .menu > .nav-item > .nav-link {
-    color: #6b707f;
+    color: rgba(240, 238, 249, 0.8);
   }
   .menu .nav-item .mobile_dropdown_icon {
     position: absolute;
     right: 0;
     top: 0;
-    color: #6b707f;
+    color: rgba(240, 238, 249, 0.5);
     line-height: 42px;
     font-size: 20px;
     display: inline-block;
