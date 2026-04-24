@@ -124,7 +124,7 @@ permalink: /about/
                             <img src="{{ '/img/logos/logo-discourse.svg' | relative_url }}" alt="DisCouRSE Network+" class="about_partner_logo">
                         </a>
                     </div>
-                    <p class="pl_feature_body">PeerLadder is project funded by DisCouRSE Network to improve leadership development for dRTPs</p>
+                    <p class="pl_feature_body">PeerLadder is a project funded by DisCouRSE Network to improve leadership development for dRTPs.</p>
                     <a href="https://discourse-network.github.io/projects/1-13-peerladder/" class="learn_btn" target="_blank" rel="noopener noreferrer">Learn about DisCouRSE <i class="arrow_right"></i></a>
                 </div>
             </div>
