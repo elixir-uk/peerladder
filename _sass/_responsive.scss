@@ -1409,13 +1409,13 @@
     margin-bottom: 0px;
   }
   .menu_one.dark_menu .hamburger span {
-    background: #000;
+    background: $warm_white;
   }
   .menu_one.dark_menu .menu .nav-item.active .mobile_dropdown_icon {
-    color: #007cba;
+    color: $brand_color;
   }
   .menu_one.dark_menu .menu .nav-item:hover .mobile_dropdown_icon {
-    color: #007cba;
+    color: $brand_color;
   }
   .header_tab_items .nav.nav-tabs li a {
     border: none;
