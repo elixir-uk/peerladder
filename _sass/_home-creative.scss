@@ -982,6 +982,11 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
+
+  a {
+    display: block;
+    line-height: 0;
+  }
 }
 
 .footer_partner_logo {
