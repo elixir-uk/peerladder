@@ -30,7 +30,7 @@ Three connected pieces: a superscript link in the body text, a hidden tooltip pr
 
 ## Usage
 
-**1. In your body text** — add a footnote link wherever the reference belongs:
+**1. In your body text** – add a footnote link wherever the reference belongs:
 
 ```html
 <p>
@@ -41,7 +41,7 @@ Three connected pieces: a superscript link in the body text, a hidden tooltip pr
 </p>
 ```
 
-**2. At the bottom of the page** — the numbered footnotes list:
+**2. At the bottom of the page** – the numbered footnotes list:
 
 ```html
 <div class="footnotes margin-top-xl">

@@ -33,7 +33,7 @@ custom_css:
 - assets/magnify-pop/magnific-popup.css
 ---
 
-This page uses the **full-width layout** — the content column stretches edge to edge with no right sidebar.
+This page uses the **full-width layout** – the content column stretches edge to edge with no right sidebar.
 
 ## How to enable it
 

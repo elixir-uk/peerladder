@@ -25,7 +25,7 @@ custom_css:
 - assets/bootstrap/css/bootstrap-select.min.css
 ---
 
-This page uses the **gradient banner** variant — the top banner renders with a purple gradient background instead of the default plain banner.
+This page uses the **gradient banner** variant – the top banner renders with a purple gradient background instead of the default plain banner.
 
 ## How to enable it
 

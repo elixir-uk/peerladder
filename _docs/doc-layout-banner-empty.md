@@ -26,7 +26,7 @@ custom_css:
 ---
 
 
-This page uses the **no-banner layout** — the page starts directly with the content, with no top banner section.
+This page uses the **no-banner layout** – the page starts directly with the content, with no top banner section.
 
 ## How to enable it
 

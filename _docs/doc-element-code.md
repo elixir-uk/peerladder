@@ -23,7 +23,7 @@ custom_css:
 ---
 ## Fenced code blocks (markdown)
 
-Prefer this over raw HTML — Kramdown renders fenced blocks natively and Prism.js adds syntax highlighting automatically.
+Prefer this over raw HTML – Kramdown renders fenced blocks natively and Prism.js adds syntax highlighting automatically.
 
 ````markdown
 ```html
@@ -61,4 +61,4 @@ This is <mark>highlighted text</mark> in a sentence.
 
 For a more prominent code display with the theme's styling. Copy from `_TEMPLATE.md` → **Code Blocks → Styled highlight block**.
 
-Note: the `code` tag `data-lang` attribute is for display only — it does not affect syntax highlighting. Use the correct `language-*` class for Prism.
+Note: the `code` tag `data-lang` attribute is for display only – it does not affect syntax highlighting. Use the correct `language-*` class for Prism.

@@ -28,7 +28,7 @@ navbar:
                 </div>
                 <div class="col-lg-7">
                     <div class="changelog_content">
-                        <p><span class="tl-tag tag-info">Webinar</span>Information webinar — recording available online</p>
+                        <p><span class="tl-tag tag-info">Webinar</span>Information webinar – recording available online</p>
                         <p><span class="tl-tag tag-deadline">Deadline</span>Applications close 27 April 2026</p>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ navbar:
                 </div>
                 <div class="col-lg-7">
                     <div class="changelog_content">
-                        <p><span class="tl-tag tag-event">Selection</span>Virtual selection day — 13 May</p>
+                        <p><span class="tl-tag tag-event">Selection</span>Virtual selection day – 13 May</p>
                         <p><span class="tl-tag tag-event">Onboarding</span>Virtual onboarding session for accepted cohort</p>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ navbar:
                 </div>
                 <div class="col-lg-7">
                     <div class="changelog_content">
-                        <p><span class="tl-tag tag-workshop">Workshop</span>In-person workshop, Manchester — 2 June</p>
+                        <p><span class="tl-tag tag-workshop">Workshop</span>In-person workshop, Manchester – 2 June</p>
                         <p><span class="tl-tag tag-covered">Covered</span>Travel and accommodation provided for all participants</p>
                     </div>
                 </div>
@@ -111,7 +111,7 @@ navbar:
                 </div>
                 <div class="col-lg-7">
                     <div class="changelog_content">
-                        <p><span class="tl-tag tag-event">Monthly</span>Virtual peer-mentoring sessions — one per month</p>
+                        <p><span class="tl-tag tag-event">Monthly</span>Virtual peer-mentoring sessions – one per month</p>
                         <p><span class="tl-tag tag-event">Check-ins</span>Two project people check-ins per participant</p>
                     </div>
                 </div>
@@ -132,7 +132,7 @@ navbar:
                 <div class="col-lg-7">
                     <div class="changelog_content">
                         <p><span class="tl-tag tag-covered">Final</span>Last monthly peer-mentoring session</p>
-                        <p><span class="tl-tag tag-covered">Complete</span>Programme closes — structured mentoring concludes</p>
+                        <p><span class="tl-tag tag-covered">Complete</span>Programme closes – structured mentoring concludes</p>
                     </div>
                 </div>
             </div>

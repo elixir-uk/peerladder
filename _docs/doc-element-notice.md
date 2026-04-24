@@ -90,7 +90,7 @@ Five severity levels. Paste the block you need and fill in `title` and body text
 
 ## Notice blocks
 
-Quieter than alerts — no dismiss button, sits inline with content. Three variants:
+Quieter than alerts – no dismiss button, sits inline with content. Three variants:
 
 ```html
 <!-- Note (green) -->

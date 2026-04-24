@@ -19,7 +19,7 @@ custom_css:
 - assets/slick/slick-theme.css
 ---
 
-{% include banner_one.html title="PeerLadder?" subtitle="Peer mentoring for the people research can't afford to lose. For the dRTPs who've been flying under the radar." %}
+{% include banner_one.html title="PeerLadder" subtitle="Peer mentoring for the people research can't afford to lose. <br>For the dRTPs who've been flying under the radar." %}
 
 {% include features_section.html %}
 

@@ -24,7 +24,7 @@ custom_css:
 
 ## Simple Bootstrap tooltip
 
-The quickest option — no extra HTML needed. Add `data-toggle="tooltip"` and a `title` to any element. Bootstrap initialises these automatically.
+The quickest option – no extra HTML needed. Add `data-toggle="tooltip"` and a `title` to any element. Bootstrap initialises these automatically.
 
 ```html
 <span data-toggle="tooltip" data-placement="top" title="Tooltip text">Hover over me</span>

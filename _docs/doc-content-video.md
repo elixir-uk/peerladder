@@ -59,7 +59,7 @@ Self-hosted video with native browser controls:
 </div>
 ```
 
-Add `autoplay loop` attributes if you want it to play automatically (keep `muted` — browsers block autoplay with audio).
+Add `autoplay loop` attributes if you want it to play automatically (keep `muted` – browsers block autoplay with audio).
 
 ## Video with lightbox popup
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign co-leads  = site.people | where: "role", "co-lead" %}
+{% assign co-leads  = site.people | where: "role", "co-lead" | sort: "order" %}
 {% assign mentees   = site.people | where: "role", "mentee"   | sort: "name" %}
 {% assign reviewers = site.people | where: "role", "reviewer" | sort: "name" %}
 
@@ -24,7 +24,7 @@ layout: default
       <h2 class="people-group-title">Co-Leads</h2>
       <div class="people-grid people-grid--co-leads row">
         {% for member in co-leads %}
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-3 col-md-6">
           {% include person-card.html person=member %}
         </div>
         {% endfor %}

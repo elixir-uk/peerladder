@@ -18,7 +18,7 @@ custom_css:
 - assets/mcustomscrollbar/jquery.mCustomScrollbar.min.css
 - assets/bootstrap/css/bootstrap-select.min.css
 ---
-This page uses the **left-sidebar-only layout** — no right sidebar, giving the content column more width.
+This page uses the **left-sidebar-only layout** – no right sidebar, giving the content column more width.
 
 ## How to enable it
 

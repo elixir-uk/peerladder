@@ -23,7 +23,7 @@ custom_css:
 ---
 ## Markdown table
 
-The simplest option — native markdown, no HTML required:
+The simplest option – native markdown, no HTML required:
 
 ```markdown
 | Column A     | Column B     | Column C     |

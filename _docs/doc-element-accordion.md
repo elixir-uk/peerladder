@@ -25,7 +25,7 @@ custom_css:
 ---
 
 
-Accordion and toggle components let users expand and collapse sections of content. Both use Bootstrap's collapse plugin — no extra JS needed.
+Accordion and toggle components let users expand and collapse sections of content. Both use Bootstrap's collapse plugin – no extra JS needed.
 
 ## Toggle (single)
 
@@ -45,5 +45,5 @@ Multiple panels where opening one closes the others. Wrap all panels in a parent
 Copy the HTML from `_TEMPLATE.md` → **Accordion / Toggle → Accordion** section.
 
 Key points:
-- The parent wrapper needs a unique `id` — use a different one if you have multiple accordions on the same page
+- The parent wrapper needs a unique `id` – use a different one if you have multiple accordions on the same page
 - Add class `show` to the first panel's collapse `<div>` to start it open

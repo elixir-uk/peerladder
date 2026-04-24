@@ -1,7 +1,7 @@
 # PeerLadder people members
 # Roles: co-lead | mentee | reviewer
 # All fields except name, role, and affiliation are optional.
-# This data file powers the single /people page only — it does NOT generate
+# This data file powers the single /people page only – it does NOT generate
 # individual profile pages automatically.
 
 # ── Co-Leads ──────────────────────────────────────────────────────────────────
@@ -10,7 +10,7 @@
   affiliation: University of Manchester / ELIXIR-UK
   country: UK
   website: 
-  avatar: 
+  avatar: /img/avatars/saskia-lawson-tovey.webp
   orcid: 
   github: 
   expertise:
@@ -23,13 +23,13 @@
   orcid: 
   github: sitjart
   expertise:
-- name: Sara Vila
+- name: Sara Villa
   role: co-lead
   affiliation: OLS
   country: UK
   website: 
-  avatar: 
-  orcid: 
+  avatar: /img/avatars/data-villa.jpg
+  orcid: s
   github: 
   bio: 
   expertise:

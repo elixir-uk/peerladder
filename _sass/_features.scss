@@ -689,13 +689,7 @@ body.remove {
   border-radius: 8px;
   padding: 32px;
   height: 100%;
-  border-bottom: 1px solid rgba($lime, 0.15);
-  transition: all 0.3s linear;
-
-  &:hover {
-    box-shadow: 0 20px 24px 0 rgba(235, 253, 237, 0.1);
-    border-bottom-color: transparent;
-  }
+  border: 0.5px solid $lavender;
 }
 
 .pl_feature_icon {

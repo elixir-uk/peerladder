@@ -26,7 +26,7 @@ custom_css:
 
 ## Markdown image
 
-The simplest way to add an image — no HTML needed:
+The simplest way to add an image – no HTML needed:
 
 ```markdown
 ![Alt text]({{ '/img/your-image.jpg' | relative_url }})

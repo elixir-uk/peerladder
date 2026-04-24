@@ -5,7 +5,7 @@ published: false
 # Component & Typography Reference
 
 This file is never published (`published: false` + `_` prefix). Use it as a copy-paste reference
-when building doc pages. Paste HTML blocks directly into any `.md` file — Kramdown renders
+when building doc pages. Paste HTML blocks directly into any `.md` file – Kramdown renders
 inline HTML alongside markdown without issue.
 
 ---
@@ -216,7 +216,7 @@ Requires Bootstrap tab JS. IDs must be unique per page.
 
 ### Standard Bootstrap table (markdown-compatible)
 
-You can write simple tables in markdown — Jekyll renders them natively:
+You can write simple tables in markdown – Jekyll renders them natively:
 
 ```markdown
 | Column A | Column B | Column C |
@@ -371,7 +371,7 @@ Clickable dot overlays on an image. Each numbered `<li>` pairs a trigger dot wit
 
 ## Code Blocks
 
-Markdown fenced blocks work natively — prefer these over raw HTML:
+Markdown fenced blocks work natively – prefer these over raw HTML:
 
 ````markdown
 ```html

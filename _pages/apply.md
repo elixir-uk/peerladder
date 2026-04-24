@@ -25,7 +25,7 @@ navbar:
                     <ul class="apply_checklist">
                         <li>At least <strong>three years' experience</strong> in a dRTP or equivalent technical research role</li>
                         <li>Based at a <strong>UK research-performing organisation</strong></li>
-                        <li>A genuine interest in developing your leadership — formal or informal. No prior leadership experience required.</li>
+                        <li>A genuine interest in developing your leadership – formal or informal. No prior leadership experience required.</li>
                     </ul>
                     <p>PeerLadder particularly welcomes applications from women, disabled individuals, neurodivergent professionals, LGBTQIA+ practitioners, and those from minority ethnic or lower socioeconomic backgrounds.</p>
                 </div>
@@ -35,7 +35,7 @@ navbar:
                     <p>The application form is straightforward. It asks for:</p>
                     <ul class="apply_checklist">
                         <li>Basic career information and eligibility confirmation</li>
-                        <li><strong>Four short questions</strong> — approximately 150 words each — covering your motivation for leadership, your capacity for peer engagement, structural barriers you've encountered, and your involvement in research communities</li>
+                        <li><strong>Four short questions</strong> – approximately 150 words each – covering your motivation for leadership, your capacity for peer engagement, structural barriers you've encountered, and your involvement in research communities</li>
                     </ul>
                     <p>There is no lengthy personal statement, no CV, no references required at application stage.</p>
                 </div>
@@ -44,23 +44,23 @@ navbar:
                     <h2 class="apply_h2">What's Involved</h2>
                     <p>This is a structured, funded programme running from May 2026 to March 2027. Selected participants commit to:</p>
                     <ul class="apply_checklist">
-                        <li>Virtual onboarding session — May 2026</li>
-                        <li>In-person workshop in Manchester — 2 June 2026 (<strong>travel and accommodation fully covered</strong>)</li>
-                        <li>Virtual systemic leadership workshop — July 2026</li>
+                        <li>Virtual onboarding session – May 2026</li>
+                        <li>In-person workshop in Manchester – 2 June 2026 (<strong>travel and accommodation fully covered</strong>)</li>
+                        <li>Virtual systemic leadership workshop – July 2026</li>
                         <li>Monthly virtual peer-mentoring sessions, August 2026 through March 2027</li>
                         <li>Two project people check-ins over the programme</li>
                     </ul>
-                    <p>All sessions are mandatory. The time commitment is modest — typically one to two hours per month outside of workshops — but the expectation is that participants show up consistently.</p>
+                    <p>All sessions are mandatory. The time commitment is modest – typically one to two hours per month outside of workshops – but the expectation is that participants show up consistently.</p>
                 </div>
 
                 <div class="apply_section">
                     <h2 class="apply_h2">Key Dates</h2>
                     <ul class="apply_checklist">
-                        <li><strong>16 April 2026</strong> — Information webinar (recording available)</li>
-                        <li><strong>27 April 2026</strong> — Application deadline</li>
-                        <li><strong>13 May 2026</strong> — Virtual selection day</li>
-                        <li><strong>2 June 2026</strong> — In-person workshop, Manchester</li>
-                        <li><strong>March 2027</strong> — Programme closes</li>
+                        <li><strong>16 April 2026</strong> – Information webinar (recording available)</li>
+                        <li><strong>27 April 2026</strong> – Application deadline</li>
+                        <li><strong>13 May 2026</strong> – Virtual selection day</li>
+                        <li><strong>2 June 2026</strong> – In-person workshop, Manchester</li>
+                        <li><strong>March 2027</strong> – Programme closes</li>
                     </ul>
                 </div>
 

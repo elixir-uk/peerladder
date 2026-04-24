@@ -678,9 +678,16 @@
     img {
       display: inline-block;
       border-radius: 20px;
+      width: 360px;
+      height: 360px;
+      object-fit: cover;
+      object-position: top center;
     }
     .dot {
       border-radius: 0;
+      width: auto;
+      height: auto;
+      object-fit: unset;
       position: absolute;
       left: 60px;
       bottom: 0;
@@ -957,19 +964,16 @@
 .footer_logos {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 8px;
 }
 
-.footer_logo_placeholder {
-  background: rgba($warm_white, 0.04);
-  border: 1px dashed rgba($warm_white, 0.14);
-  border-radius: 6px;
-  padding: 12px 14px;
-  font-size: 12px;
-  font-weight: 600;
-  color: rgba($warm_white, 0.28);
-  letter-spacing: 0.3px;
-  text-align: center;
+.footer_partner_logo {
+  display: block;
+  max-height: 55px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
 // ── Bottom bar ────────────────────────────────────────────────────────────────
