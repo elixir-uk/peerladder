@@ -231,6 +231,70 @@ pre[class*="language-"] {
 }
 
 
+// ── Mobile menu dark theme ────────────────────────────────────────────────────
+.mobile_main_menu {
+  background: $bg;
+  &.navbar_fixed {
+    background: $bg;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  }
+  .menu_toggle .hamburger span {
+    background: $warm_white;
+  }
+}
+
+.side_menu {
+  background: $bg;
+  border-right: 1px solid rgba($warm_white, 0.08);
+
+  .mobile_menu_header {
+    border-bottom: 1px solid rgba($warm_white, 0.08);
+    padding-bottom: 15px;
+    .close_nav {
+      color: rgba($warm_white, 0.65);
+      cursor: pointer;
+      &:hover { color: $warm_white; }
+    }
+  }
+
+  .mobile_nav_top {
+    .menu > .nav-item > .nav-link {
+      color: rgba($warm_white, 0.8);
+      &:hover { color: $brand_color; }
+    }
+    .dropdown-menu {
+      background: rgba($warm_white, 0.03);
+      border: 1px solid rgba($warm_white, 0.08);
+      .nav-item .nav-link {
+        color: rgba($warm_white, 0.65);
+        &:hover { color: $brand_color; }
+      }
+    }
+    .mobile_dropdown_icon { color: rgba($warm_white, 0.4); }
+  }
+
+  .mobile_docs_title {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba($warm_white, 0.35);
+    margin: 20px 0 8px;
+  }
+
+  .nav-sidebar .nav-item .nav-link {
+    color: rgba($warm_white, 0.7);
+    img { opacity: 0.5; }
+    &:hover { color: $brand_color; }
+    &.active { color: $brand_color; }
+  }
+
+  .dropdown_nav li a {
+    color: rgba($warm_white, 0.55);
+    &:hover, &.active { color: $brand_color; }
+  }
+}
+
 .pt_100 {
   padding-top: 100px;
 }
