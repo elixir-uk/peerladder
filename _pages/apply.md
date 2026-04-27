@@ -19,7 +19,7 @@ navbar:
                     <ul class="apply_checklist">
                         <li><strong>Free</strong> – all costs covered, including travel and accommodation for the in-person workshop</li>
                         <li><strong>Four short questions</strong> – ~150 words each. No CV, no references</li>
-                        <li><strong>~1–2 hours per month</strong> outside workshops</li>
+                        <li><strong>~1 hour per month</strong> outside workshops</li>
                     </ul>
                     <a href="https://forms.clickup.com/20526645/f/kjdhn-17732/M5K8X645X7KY480V8H" class="action_btn" target="_blank" rel="noopener noreferrer">Apply Now <i class="arrow_right"></i></a>
                 </div>

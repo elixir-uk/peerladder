@@ -76,7 +76,7 @@ permalink: /about/
                 <div class="pl_feature_box">
                     <div class="pl_feature_icon"><i class="icon_calendar"></i></div>
                     <h3 class="pl_feature_title">What is the time commitment?</h3>
-                    <p class="pl_feature_body">Typically one to two hours per month outside of workshops. The programme includes a virtual onboarding, one in-person workshop in Manchester (travel fully covered), a systemic leadership workshop, and monthly virtual peer-mentoring sessions from August 2026 through March 2027.</p>
+                    <p class="pl_feature_body">Typically around one hour per month outside of workshops. The programme includes a virtual onboarding, one in-person workshop in Manchester (travel fully covered), a systemic leadership workshop, and monthly virtual peer-mentoring sessions from August 2026 through March 2027.</p>
                 </div>
             </div>
 
