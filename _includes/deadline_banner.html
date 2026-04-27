@@ -1,0 +1,62 @@
+{% if site.deadline_banner.enabled %}
+{% assign db = site.deadline_banner %}
+{% assign db_version = db.dismiss_version | default: 1 %}
+<div class="deadline_banner" role="region" aria-label="Site announcement" id="deadlineBanner" data-dismiss-key="pl_deadline_banner_dismissed_v{{ db_version }}" hidden>
+    <div class="deadline_banner__inner">
+        <p class="deadline_banner__text">
+            {% if db.label and db.label != "" %}
+            <span class="deadline_banner__label">{{ db.label }}</span>
+            {% endif %}
+            <span class="deadline_banner__message">{{ db.message }}</span>
+        </p>
+        {% if db.cta_url and db.cta_url != "" %}
+        <a class="deadline_banner__cta" href="{{ db.cta_url | relative_url }}">
+            {{ db.cta_text | default: "Learn more" }} <i class="arrow_right" aria-hidden="true"></i>
+        </a>
+        {% endif %}
+        <button type="button" class="deadline_banner__close" aria-label="Dismiss announcement" id="deadlineBannerClose">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <line x1="5" y1="5" x2="19" y2="19"></line>
+                <line x1="19" y1="5" x2="5" y2="19"></line>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<script>
+    (function () {
+        var banner = document.getElementById('deadlineBanner');
+        var closeBtn = document.getElementById('deadlineBannerClose');
+        if (!banner || !closeBtn) return;
+
+        var dismissKey = banner.getAttribute('data-dismiss-key');
+        var dismissed = false;
+        try { dismissed = localStorage.getItem(dismissKey) === '1'; } catch (e) {}
+
+        function setHeightVar(px) {
+            document.documentElement.style.setProperty('--deadline-banner-height', px + 'px');
+        }
+
+        function syncHeight() {
+            if (banner.hidden) { setHeightVar(0); return; }
+            setHeightVar(banner.offsetHeight);
+        }
+
+        if (!dismissed) {
+            banner.hidden = false;
+            document.body.classList.add('has-deadline-banner');
+            syncHeight();
+            window.addEventListener('resize', syncHeight);
+        } else {
+            setHeightVar(0);
+        }
+
+        closeBtn.addEventListener('click', function () {
+            banner.hidden = true;
+            document.body.classList.remove('has-deadline-banner');
+            setHeightVar(0);
+            try { localStorage.setItem(dismissKey, '1'); } catch (e) {}
+        });
+    })();
+</script>
+{% endif %}

@@ -8,6 +8,7 @@
 <body class="{{isDoc}} {{page.container}}" data-scroll-animation="true" data-spy="scroll" data-target="#navbar-example3" data-offset="70">
     <div class="body_wrapper ">
         {% unless page.permalink == '/404.html' %}
+        {% include deadline_banner.html %}
         {% include navbar.html %}
         {% endunless %}
         <div class="click_capture"></div>

@@ -30,7 +30,7 @@ navbar:
                 <div class="col-lg-7">
                     <div class="changelog_content">
                         <p><span class="tl-tag tag-info">Webinar</span>Information webinar – recording available online</p>
-                        <p><span class="tl-tag tag-deadline">Deadline</span>Applications close 27 April 2026</p>
+                        <p><span class="tl-tag tag-deadline">Deadline</span>Applications close <strong>4 May 2026, 23:59 BST</strong> (extended)</p>
                     </div>
                 </div>
             </div>

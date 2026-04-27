@@ -56,6 +56,18 @@ collections:
 disqus:
     shortname:     #12345
 
+# Site-wide announcement banner shown above the navbar.
+# Toggle `enabled` to show/hide. `message` accepts HTML (e.g. <strong>).
+# Bump `dismiss_version` when you change the message to re-show it to
+# visitors who already dismissed the previous version.
+deadline_banner:
+    enabled:          true
+    label:            "Deadline extended"
+    message:          "Apply by <strong>Monday 4 May 2026, 23:59 BST</strong>."
+    cta_text:         "Apply now"
+    cta_url:          "/apply/"
+    dismiss_version:  1
+
 # Google Analytics 4 (GA4) measurement ID. Loaded only after explicit consent via cookie banner.
 google_analytics: G-5NG0FB9Q61
 

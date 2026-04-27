@@ -31,15 +31,15 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="Funded UK peer-mentoring programme for digital Research Technical Professionals (dRTPs) from underrepresented groups stepping into leadership." />
 <meta property="og:description" content="Funded UK peer-mentoring programme for digital Research Technical Professionals (dRTPs) from underrepresented groups stepping into leadership." />
-<link rel="canonical" href="http://localhost:4000/people/carole-goble/" />
-<meta property="og:url" content="http://localhost:4000/people/carole-goble/" />
+<link rel="canonical" href="https://peerladder.elixiruknode.org/people/carole-goble/" />
+<meta property="og:url" content="https://peerladder.elixiruknode.org/people/carole-goble/" />
 <meta property="og:site_name" content="PeerLadder" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-04-27T16:47:02+01:00" />
+<meta property="article:published_time" content="2026-04-27T17:47:44+01:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Carole Goble" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-04-27T16:47:02+01:00","datePublished":"2026-04-27T16:47:02+01:00","description":"Funded UK peer-mentoring programme for digital Research Technical Professionals (dRTPs) from underrepresented groups stepping into leadership.","headline":"Carole Goble","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/people/carole-goble/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/img/logos/logo-peer-ladder-lavender.svg"}},"url":"http://localhost:4000/people/carole-goble/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-04-27T17:47:44+01:00","datePublished":"2026-04-27T17:47:44+01:00","description":"Funded UK peer-mentoring programme for digital Research Technical Professionals (dRTPs) from underrepresented groups stepping into leadership.","headline":"Carole Goble","mainEntityOfPage":{"@type":"WebPage","@id":"https://peerladder.elixiruknode.org/people/carole-goble/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://peerladder.elixiruknode.org/img/logos/logo-peer-ladder-lavender.svg"}},"url":"https://peerladder.elixiruknode.org/people/carole-goble/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -58,6 +58,69 @@
 <body class=" " data-scroll-animation="true" data-spy="scroll" data-target="#navbar-example3" data-offset="70">
     <div class="body_wrapper ">
         
+        
+
+
+<div class="deadline_banner" role="region" aria-label="Site announcement" id="deadlineBanner" data-dismiss-key="pl_deadline_banner_dismissed_v1" hidden>
+    <div class="deadline_banner__inner">
+        <p class="deadline_banner__text">
+            
+            <span class="deadline_banner__label">Deadline extended</span>
+            
+            <span class="deadline_banner__message">Apply by <strong>Monday 4 May 2026, 23:59 BST</strong>.</span>
+        </p>
+        
+        <a class="deadline_banner__cta" href="/apply/">
+            Apply now <i class="arrow_right" aria-hidden="true"></i>
+        </a>
+        
+        <button type="button" class="deadline_banner__close" aria-label="Dismiss announcement" id="deadlineBannerClose">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <line x1="5" y1="5" x2="19" y2="19"></line>
+                <line x1="19" y1="5" x2="5" y2="19"></line>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<script>
+    (function () {
+        var banner = document.getElementById('deadlineBanner');
+        var closeBtn = document.getElementById('deadlineBannerClose');
+        if (!banner || !closeBtn) return;
+
+        var dismissKey = banner.getAttribute('data-dismiss-key');
+        var dismissed = false;
+        try { dismissed = localStorage.getItem(dismissKey) === '1'; } catch (e) {}
+
+        function setHeightVar(px) {
+            document.documentElement.style.setProperty('--deadline-banner-height', px + 'px');
+        }
+
+        function syncHeight() {
+            if (banner.hidden) { setHeightVar(0); return; }
+            setHeightVar(banner.offsetHeight);
+        }
+
+        if (!dismissed) {
+            banner.hidden = false;
+            document.body.classList.add('has-deadline-banner');
+            syncHeight();
+            window.addEventListener('resize', syncHeight);
+        } else {
+            setHeightVar(0);
+        }
+
+        closeBtn.addEventListener('click', function () {
+            banner.hidden = true;
+            document.body.classList.remove('has-deadline-banner');
+            setHeightVar(0);
+            try { localStorage.setItem(dismissKey, '1'); } catch (e) {}
+        });
+    })();
+</script>
+
+
         <nav class="navbar navbar-expand-lg menu_one dark_menu sticky-nav">
     <div class="container-fluid px-4">
 

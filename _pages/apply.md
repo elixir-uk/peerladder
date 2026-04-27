@@ -57,7 +57,7 @@ navbar:
                     <h2 class="apply_h2">Key Dates</h2>
                     <ul class="apply_checklist">
                         <li><strong>16 April 2026</strong> – Information webinar (recording available)</li>
-                        <li><strong>27 April 2026</strong> – Application deadline</li>
+                        <li><strong>4 May 2026, 23:59 BST</strong> – Application deadline (extended)</li>
                         <li><strong>13 May 2026</strong> – Virtual selection day</li>
                         <li><strong>2 June 2026</strong> – In-person workshop, Manchester</li>
                         <li><strong>March 2027</strong> – Programme closes</li>
