@@ -14,7 +14,117 @@
         <div class="doc_banner_content">
             <h2 class="wow fadeInUp">{{ include.title }}</h2>
             <p class="wow fadeInUp" data-wow-delay="0.2s">{{ include.subtitle }}</p>
-            
+            {% if include.cta_url %}
+            <a href="{{ include.cta_url | relative_url }}" class="action_btn wow fadeInUp" data-wow-delay="0.4s">{{ include.cta_text | default: "Apply Now" }} <i class="arrow_right"></i></a>
+            {% endif %}
         </div>
     </div>
 </section>
+
+<style>
+.rotating-role {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: bottom;
+    color: #F5C842;
+    font-weight: 700;
+    transition: opacity 0.35s ease, transform 0.35s ease, width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform, width;
+}
+.rotating-role.is-out {
+    opacity: 0;
+    transform: translateY(-6px);
+}
+@media (prefers-reduced-motion: reduce) {
+    .rotating-role { transition: none; width: auto !important; }
+}
+</style>
+
+<script>
+(function() {
+    var el = document.getElementById('rotatingRole');
+    if (!el) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var roles = [
+        'dRTPs',
+        'Research Software Engineers',
+        'Bioinformaticians',
+        'Data Stewards',
+        'Data Scientists',
+        'DevOps Engineers',
+        'Community Managers',
+        'HPC Specialists',
+        'Computational Scientists',
+        'Cloud Architects',
+        'Data Engineers',
+        'MLOps Engineers',
+        'Project Managers',
+        'Digital Librarians',
+        'Software Maintainers',
+        'Data Analysts',
+        'AI Specialists',
+        'Coordinators',
+        'Data Managers',
+        'Open-Source Contributors',
+        'Research Infrastructure Engineers',
+        'Machine Learning Specialists',
+        'Systems Administrators',
+        'Digital Archivists',
+        'Research Computing Specialists',
+        'Infrastructure Specialists',
+        'Digital Humanities Technologists',
+        'Research Computing Facilitators',
+        'Technical Research Support Officers'
+    ];
+
+    // Hidden element to measure each role's rendered width, matching el's typography
+    var meter = document.createElement('span');
+    meter.setAttribute('aria-hidden', 'true');
+    meter.style.position = 'absolute';
+    meter.style.visibility = 'hidden';
+    meter.style.whiteSpace = 'nowrap';
+    meter.style.left = '-9999px';
+    meter.style.top = '0';
+    document.body.appendChild(meter);
+
+    function syncMeterFont() {
+        var s = window.getComputedStyle(el);
+        meter.style.fontSize = s.fontSize;
+        meter.style.fontFamily = s.fontFamily;
+        meter.style.fontWeight = s.fontWeight;
+        meter.style.fontStyle = s.fontStyle;
+        meter.style.letterSpacing = s.letterSpacing;
+        meter.style.textTransform = s.textTransform;
+    }
+
+    function widthOf(text) {
+        meter.textContent = text;
+        return meter.getBoundingClientRect().width;
+    }
+
+    function setInitialWidth() {
+        syncMeterFont();
+        el.style.width = widthOf(el.textContent) + 'px';
+    }
+
+    setInitialWidth();
+    window.addEventListener('resize', setInitialWidth);
+
+    var i = 0;
+    setInterval(function() {
+        i = (i + 1) % roles.length;
+        var next = roles[i];
+        var nextWidth = widthOf(next);
+
+        // Fade out and resize in parallel; surrounding text glides instead of snapping.
+        el.classList.add('is-out');
+        el.style.width = nextWidth + 'px';
+
+        setTimeout(function() {
+            el.textContent = next;
+            el.classList.remove('is-out');
+        }, 350);
+    }, 2400);
+})();
+</script>

@@ -140,11 +140,121 @@
     <div class="container">
         <div class="doc_banner_content">
             <h2 class="wow fadeInUp">PeerLadder</h2>
-            <p class="wow fadeInUp" data-wow-delay="0.2s">Peer mentoring for the people research can't afford to lose. <br />For the dRTPs who've been flying under the radar.</p>
+            <p class="wow fadeInUp" data-wow-delay="0.2s">Peer mentoring for the people research can't afford to lose. <br />For the <span class="rotating-role" id="rotatingRole">dRTPs</span> who've been flying under the radar.</p>
+            
+            <a href="/apply/" class="action_btn wow fadeInUp" data-wow-delay="0.4s">Apply Now <i class="arrow_right"></i></a>
             
         </div>
     </div>
 </section>
+
+<style>
+.rotating-role {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: bottom;
+    color: #F5C842;
+    font-weight: 700;
+    transition: opacity 0.35s ease, transform 0.35s ease, width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform, width;
+}
+.rotating-role.is-out {
+    opacity: 0;
+    transform: translateY(-6px);
+}
+@media (prefers-reduced-motion: reduce) {
+    .rotating-role { transition: none; width: auto !important; }
+}
+</style>
+
+<script>
+(function() {
+    var el = document.getElementById('rotatingRole');
+    if (!el) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var roles = [
+        'dRTPs',
+        'Research Software Engineers',
+        'Bioinformaticians',
+        'Data Stewards',
+        'Data Scientists',
+        'DevOps Engineers',
+        'Community Managers',
+        'HPC Specialists',
+        'Computational Scientists',
+        'Cloud Architects',
+        'Data Engineers',
+        'MLOps Engineers',
+        'Project Managers',
+        'Digital Librarians',
+        'Software Maintainers',
+        'Data Analysts',
+        'AI Specialists',
+        'Coordinators',
+        'Data Managers',
+        'Open-Source Contributors',
+        'Research Infrastructure Engineers',
+        'Machine Learning Specialists',
+        'Systems Administrators',
+        'Digital Archivists',
+        'Research Computing Specialists',
+        'Infrastructure Specialists',
+        'Digital Humanities Technologists',
+        'Research Computing Facilitators',
+        'Technical Research Support Officers'
+    ];
+
+    // Hidden element to measure each role's rendered width, matching el's typography
+    var meter = document.createElement('span');
+    meter.setAttribute('aria-hidden', 'true');
+    meter.style.position = 'absolute';
+    meter.style.visibility = 'hidden';
+    meter.style.whiteSpace = 'nowrap';
+    meter.style.left = '-9999px';
+    meter.style.top = '0';
+    document.body.appendChild(meter);
+
+    function syncMeterFont() {
+        var s = window.getComputedStyle(el);
+        meter.style.fontSize = s.fontSize;
+        meter.style.fontFamily = s.fontFamily;
+        meter.style.fontWeight = s.fontWeight;
+        meter.style.fontStyle = s.fontStyle;
+        meter.style.letterSpacing = s.letterSpacing;
+        meter.style.textTransform = s.textTransform;
+    }
+
+    function widthOf(text) {
+        meter.textContent = text;
+        return meter.getBoundingClientRect().width;
+    }
+
+    function setInitialWidth() {
+        syncMeterFont();
+        el.style.width = widthOf(el.textContent) + 'px';
+    }
+
+    setInitialWidth();
+    window.addEventListener('resize', setInitialWidth);
+
+    var i = 0;
+    setInterval(function() {
+        i = (i + 1) % roles.length;
+        var next = roles[i];
+        var nextWidth = widthOf(next);
+
+        // Fade out and resize in parallel; surrounding text glides instead of snapping.
+        el.classList.add('is-out');
+        el.style.width = nextWidth + 'px';
+
+        setTimeout(function() {
+            el.textContent = next;
+            el.classList.remove('is-out');
+        }, 350);
+    }, 2400);
+})();
+</script>
 
 <section class="pl_features_area">
     <div class="container">
@@ -154,8 +264,8 @@
                 <div class="pl_feature_box wow fadeInUp" data-wow-delay="0.1s">
                     <div class="pl_feature_icon"><i class="icon_puzzle_alt"></i></div>
                     <h3 class="pl_feature_title">Made for You</h3>
-                    <p class="pl_feature_sub">For dRTPs who've been overlooked</p>
-                    <p class="pl_feature_body">You've put in the years. You know your field. PeerLadder is for digital Research Technical Professionals from underrepresented backgrounds who are ready to step into leadership – without having to fit a mould that was never designed for them. If the leadership table in your organisation doesn't look like you, this programme was built with you in mind.</p>
+                    <p class="pl_feature_sub">A programme for underrepresented dRTPs</p>
+                    <p class="pl_feature_body">PeerLadder is for dRTPs from underrepresented groups – including but not exclusive of women, disabled and neurodivergent professionals, LGBTQIA+ practitioners, and people from minority ethnic or lower socioeconomic backgrounds – who are ready to step into leadership without fitting a mould that was never designed for you. RSEs, bioinformaticians, data stewards, data scientists, community managers and every other dRTP role welcome.</p>
                 </div>
             </div>
 
@@ -164,7 +274,7 @@
                     <div class="pl_feature_icon"><i class="icon_group"></i></div>
                     <h3 class="pl_feature_title">Genuine Peer Mentoring</h3>
                     <p class="pl_feature_sub">Not a workshop tick-box.</p>
-                    <p class="pl_feature_body">PeerLadder brings together a small cohort of peers who understand your world – the culture, the challenges, the particular oddities of research infrastructure careers. Monthly peer-mentoring sessions, structured group work, and two workshops facilitated by OLS, specialists in open and inclusive research practice.</p>
+                    <p class="pl_feature_body">A small cohort of peers who get your world – the culture, the challenges, the particular oddities of being a dRTP. Monthly peer-mentoring sessions and two workshops facilitated by OLS, specialists in open and inclusive research practice.</p>
                 </div>
             </div>
 
@@ -173,16 +283,16 @@
                     <div class="pl_feature_icon"><i class="icon_calendar"></i></div>
                     <h3 class="pl_feature_title">A Proper Programme</h3>
                     <p class="pl_feature_sub">May 2026 – March 2027</p>
-                    <p class="pl_feature_body">This is a structured, funded commitment – not a one-off event. Virtual onboarding in May, an in-person workshop in Manchester in June (travel and accommodation covered), a virtual leadership workshop in July, and monthly peer-mentoring sessions through to March 2027. Everything provided, nothing left to chance.</p>
+                    <p class="pl_feature_body">Virtual onboarding in May, in-person workshop in Manchester in June (travel and accommodation covered), virtual leadership workshop in July, then monthly peer-mentoring sessions through March 2027. Roughly 1–2 hours per month outside workshops.</p>
                 </div>
             </div>
 
             <div class="col-lg-6 col-md-6 mb-30">
                 <div class="pl_feature_box wow fadeInUp" data-wow-delay="0.4s">
                     <div class="pl_feature_icon"><i class="icon_check_alt2"></i></div>
-                    <h3 class="pl_feature_title">Do You Qualify?</h3>
+                    <h3 class="pl_feature_title">Are You Eligible?</h3>
                     <p class="pl_feature_sub">Three things to check</p>
-                    <p class="pl_feature_body">You'll need at least three years in a dRTP or equivalent technical research role, to be based at a UK research-performing organisation, and a genuine interest in developing your leadership – formal or otherwise. No prior leadership experience required. The application itself is straightforward: four questions, around 150 words each.</p>
+                    <p class="pl_feature_body">Three years in a dRTP role, based at a UK research-performing organisation, and a genuine interest in developing as a leader. No prior leadership experience needed. Four short questions, ~150 words each — no CV, no references.</p>
                 </div>
             </div>
 
