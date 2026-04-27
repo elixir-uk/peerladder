@@ -131,7 +131,8 @@ permalink: /about/
                     <p class="pl_feature_sub">Funded by</p>
                     <div class="about_logo_wrap">
                         <a href="https://discourse-network.github.io/projects/1-13-peerladder/" target="_blank" rel="noopener noreferrer">
-                            <img src="{{ '/img/logos/logo-discourse.svg' | relative_url }}" alt="DisCouRSE Network+" class="about_partner_logo">
+                            <img src="{{ '/img/logos/logo-discourse.svg'          | relative_url }}" alt="DisCouRSE Network+" class="about_partner_logo about_partner_logo--for-light">
+                            <img src="{{ '/img/logos/logo-discourse-negative.svg' | relative_url }}" alt="DisCouRSE Network+" class="about_partner_logo about_partner_logo--for-dark">
                         </a>
                     </div>
                     <p class="pl_feature_body">PeerLadder is a project funded by DisCouRSE Network to improve leadership development for dRTPs.</p>
@@ -143,7 +144,8 @@ permalink: /about/
                 <div class="pl_feature_box about_partner_card">
                     <p class="pl_feature_sub">Supported by</p>
                     <div class="about_logo_wrap">
-                        <img src="{{ '/img/logos/logo-elixir-uk.svg' | relative_url }}" alt="ELIXIR-UK" class="about_partner_logo">
+                        <img src="{{ '/img/logos/logo-elixir-uk.svg'          | relative_url }}" alt="ELIXIR-UK" class="about_partner_logo about_partner_logo--for-light">
+                        <img src="{{ '/img/logos/logo-elixir-uk-negative.svg' | relative_url }}" alt="ELIXIR-UK" class="about_partner_logo about_partner_logo--for-dark">
                     </div>
                     <p class="pl_feature_body">ELIXIR-UK supports this project with coordination, communication support, time and visibility of the initiative.</p>
                     <a href="https://elixiruknode.org/" class="learn_btn" target="_blank" rel="noopener noreferrer">Learn about ELIXIR-UK <i class="arrow_right"></i></a>
@@ -154,9 +156,12 @@ permalink: /about/
                 <div class="pl_feature_box about_partner_card">
                     <p class="pl_feature_sub">Partners</p>
                     <div class="about_partner_logos_row">
-                        <img src="{{ '/img/logos/logo-manchester.svg' | relative_url }}" alt="University of Manchester" class="about_partner_logo">
-                        <img src="{{ '/img/logos/logo-earlham.svg' | relative_url }}" alt="Earlham Institute" class="about_partner_logo">
-                        <img src="{{ '/img/logos/logo-ols.svg' | relative_url }}" alt="OLS" class="about_partner_logo">
+                        <img src="{{ '/img/logos/logo-manchester.svg'          | relative_url }}" alt="University of Manchester" class="about_partner_logo about_partner_logo--for-light">
+                        <img src="{{ '/img/logos/logo-manchester-negative.svg' | relative_url }}" alt="University of Manchester" class="about_partner_logo about_partner_logo--for-dark">
+                        <img src="{{ '/img/logos/logo-earlham.svg'             | relative_url }}" alt="Earlham Institute"        class="about_partner_logo about_partner_logo--for-light">
+                        <img src="{{ '/img/logos/logo-earlham-negative.svg'    | relative_url }}" alt="Earlham Institute"        class="about_partner_logo about_partner_logo--for-dark">
+                        <img src="{{ '/img/logos/logo-ols.svg'                 | relative_url }}" alt="OLS"                      class="about_partner_logo about_partner_logo--for-light">
+                        <img src="{{ '/img/logos/logo-ols-negative.svg'        | relative_url }}" alt="OLS"                      class="about_partner_logo about_partner_logo--for-dark">
                     </div>
                 </div>
             </div>

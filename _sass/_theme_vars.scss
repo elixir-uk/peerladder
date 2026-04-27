@@ -128,6 +128,22 @@
 }
 
 /* ──────────────────────────────────────────────────────────────────────────
+   Partner-logo theme swap — show the correct variant per theme.
+   Templates (e.g. _includes/footer.html, _pages/about.md) render BOTH
+   variants of each partner logo: the default colour-on-light file plus the
+   `-negative.svg` white-on-dark file. These rules hide whichever one
+   doesn't match the active theme.
+
+   Selector pattern: any `…--for-light` is the default (for light theme),
+   any `…--for-dark` is the negative (for dark theme).
+   ────────────────────────────────────────────────────────────────────────── */
+
+[data-theme="dark"]  .footer_partner_logo--for-light,
+[data-theme="dark"]  .about_partner_logo--for-light  { display: none; }
+[data-theme="light"] .footer_partner_logo--for-dark,
+[data-theme="light"] .about_partner_logo--for-dark   { display: none; }
+
+/* ──────────────────────────────────────────────────────────────────────────
    Theme toggle button
    ────────────────────────────────────────────────────────────────────────── */
 
