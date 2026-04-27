@@ -1123,12 +1123,12 @@ ul.ordered-list {
   .changelog_inner { padding-right: 0; }
 
   .changelog_info .line {
-    background: rgba($lime, 0.15);
+    background: rgba(var(--color-accent-rgb), 0.15);
   }
 
   .c_date {
     h6 { color: $h_title; }
-    p  { color: rgba($warm_white, 0.5); }
+    p  { color: rgba(var(--color-text-rgb), 0.5); }
   }
 }
 
@@ -1150,7 +1150,7 @@ ul.ordered-list {
   &.phase-open    { background: $lime; }
   &.phase-virtual { background: $brand_color; color: $warm_white; }
   &.phase-inperson{ background: #2da44e; color: #fff; }
-  &.phase-end     { background: rgba($warm_white, 0.15); color: $warm_white; }
+  &.phase-end     { background: rgba(var(--color-text-rgb), 0.15); color: $warm_white; }
 }
 
 .tl-tag {
@@ -1168,11 +1168,11 @@ ul.ordered-list {
   min-width: 80px;
   text-align: center;
 
-  &.tag-info     { background: rgba($brand_color, 0.15); color: $brand_color; }
+  &.tag-info     { background: rgba(var(--color-brand-rgb), 0.15); color: $brand_color; }
   &.tag-deadline { background: rgba(#ea3940, 0.15); color: #ea3940; }
-  &.tag-event    { background: rgba($lime, 0.12); color: $lime; }
+  &.tag-event    { background: rgba(var(--color-accent-rgb), 0.12); color: $lime; }
   &.tag-workshop { background: rgba(#2da44e, 0.15); color: #2da44e; }
-  &.tag-covered  { background: rgba($warm_white, 0.08); color: rgba($warm_white, 0.6); }
+  &.tag-covered  { background: rgba(var(--color-text-rgb), 0.08); color: rgba(var(--color-text-rgb), 0.6); }
 }
 
 .tour_info_content {

@@ -34,6 +34,12 @@ Table of Content:
 /*---------------------------------------------------- */
 
 /*----------------------------------------------------*/
+@import "theme_vars";   // CSS custom properties for light/dark theme toggle.
+                        // See _theme_vars.scss — every new colour reference
+                        // MUST go through these variables, not hardcoded hex.
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
 @import "predefine";
 /*---------------------------------------------------- */
 

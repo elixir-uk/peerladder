@@ -1252,7 +1252,7 @@
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1013;
   background: $bg;
-  border-right: 1px solid rgba($warm_white, 0.08);
+  border-right: 1px solid rgba(var(--color-text-rgb), 0.08);
   padding: 20px 0;
   overflow-x: hidden;
   .mobile_menu_header {
@@ -1262,7 +1262,7 @@
     padding-right: 15px;
     .close_nav {
       font-size: 28px;
-      color: rgba($warm_white, 0.65);
+      color: rgba(var(--color-text-rgb), 0.65);
       margin-right: 15px;
       margin-top: -5px;
       cursor: pointer;

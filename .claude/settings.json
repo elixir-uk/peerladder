@@ -25,7 +25,16 @@
       "WebFetch(domain:publications.parliament.uk)",
       "WebFetch(domain:psychsafety.com)",
       "WebSearch",
-      "WebFetch(domain:web.mit.edu)"
+      "WebFetch(domain:web.mit.edu)",
+      "Bash(grep -n \"#[0-9A-Fa-f]\\\\{3,6\\\\}\\\\|rgba\\(\" /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_pages/why.md)",
+      "Bash(grep -nA 25 \"^\\\\.pl_feature_box\" /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/_features.scss)",
+      "Bash(grep -rn 'rgba\\($warm_white\\\\|rgba\\($p_color\\\\|rgba\\($h_title\\\\|rgba\\($brand_color\\\\|rgba\\($lavender\\\\|rgba\\($violet\\\\|rgba\\($lime\\\\|rgba\\($forest\\\\|rgba\\($card_bg\\\\|lighten\\($forest\\\\|lighten\\($card_bg\\\\|darken\\($forest\\\\|darken\\($card_bg' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass)",
+      "Bash(grep -rln \"rgba\\(\\\\$\\\\|lighten\\(\\\\$\\\\|darken\\(\\\\$\" /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass)",
+      "Bash(grep -rEn \"rgba\\\\\\(\\\\\\\\\\\\$|lighten\\\\\\(\\\\\\\\\\\\$|darken\\\\\\(\\\\\\\\\\\\$\" /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass)",
+      "Bash(sed -n '40,60p' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/_blog.scss)",
+      "Bash(sed -n '710,730p' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/_blog.scss)",
+      "Bash(grep -nA2 \"\\\\.tl-tag\\\\b\\\\|\\\\.tag-workshop\\\\b\\\\|\\\\.tag-applications\\\\b\" /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/_shortcode.scss /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/_blog.scss /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/_tag.scss)",
+      "Bash(grep -rnA5 \"filter-pill\\\\|\\\\.filter_pill\\\\|filter_pills\" /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_includes)"
     ],
     "additionalDirectories": [
       "/Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_posts"

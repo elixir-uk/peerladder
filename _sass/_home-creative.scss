@@ -1,6 +1,6 @@
 /*=============  doc_banner_area css  =============*/
 .doc_banner_area {
-  background: lighten($forest, 3%);
+  background: $forest_lifted;
   text-align: center;
   padding: 290px 0 200px;
   position: relative;
@@ -58,7 +58,7 @@
 }
 
 .banner_creative1 .doc_banner_content h2 {
-  color: #fff;
+  color: var(--color-text);
 }
 
 .doc_banner_content {
@@ -71,7 +71,7 @@
   }
   p {
     font-size: 20px;
-    color: #fff;
+    color: var(--color-text);
     font-weight: 300;
   }
 }
@@ -636,7 +636,7 @@
       margin-bottom: 5px;
       span {
         font-weight: 400;
-        color: rgba($warm_white, 0.6);
+        color: rgba(var(--color-text-rgb), 0.6);
       }
     }
     .sign {
@@ -655,7 +655,7 @@
         width: 8px;
         height: 8px;
         border-radius: 50%;
-        background: rgba($warm_white, 0.2);
+        background: rgba(var(--color-text-rgb), 0.2);
         transition: all 0.2s;
         &:before {
           display: none;
@@ -906,7 +906,7 @@
 .footer_desc {
   font-size: 14px;
   line-height: 1.7;
-  color: rgba($p_color, 0.65);
+  color: rgba(var(--color-text-rgb), 0.65);
   margin-bottom: 22px;
 }
 
@@ -921,8 +921,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    background: rgba($warm_white, 0.06);
-    color: rgba($warm_white, 0.5);
+    background: rgba(var(--color-text-rgb), 0.06);
+    color: rgba(var(--color-text-rgb), 0.5);
     font-size: 14px;
     transition: all 0.2s linear;
     text-decoration: none;
@@ -947,7 +947,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  color: rgba($warm_white, 0.4);
+  color: rgba(var(--color-text-rgb), 0.4);
   margin-bottom: 18px;
 
   &--spaced {
@@ -1000,13 +1000,13 @@
 // ── Bottom bar ────────────────────────────────────────────────────────────────
 
 .doc_footer_bottom {
-  border-top: 1px solid rgba($warm_white, 0.08);
+  border-top: 1px solid rgba(var(--color-text-rgb), 0.08);
   padding: 24px 0;
 
   p {
     margin-bottom: 0;
     font-size: 13px;
-    color: rgba($p_color, 0.5);
+    color: rgba(var(--color-text-rgb), 0.5);
   }
 }
 
@@ -1021,7 +1021,7 @@
 
     a {
       font-size: 13px;
-      color: rgba($p_color, 0.5);
+      color: rgba(var(--color-text-rgb), 0.5);
       text-decoration: none;
       transition: color 0.2s;
 

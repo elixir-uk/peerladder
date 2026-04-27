@@ -82,6 +82,36 @@
     {% if site.google_analytics %}
     {% include google-analytics.html %}
     {% endif %}
+
+    <!-- Theme toggle click handler. Initial theme is set by the no-FOUC
+         script in head.html; this just wires up the button. -->
+    <script>
+        (function () {
+            var btn = document.getElementById('themeToggle');
+            if (!btn) return;
+
+            function getTheme() {
+                return document.documentElement.getAttribute('data-theme') || 'dark';
+            }
+
+            function applyTheme(t) {
+                document.documentElement.setAttribute('data-theme', t);
+                try { localStorage.setItem('pl_theme', t); } catch (e) {}
+                btn.setAttribute('aria-pressed', t === 'light' ? 'true' : 'false');
+                btn.setAttribute(
+                    'aria-label',
+                    t === 'light' ? 'Switch to dark theme' : 'Switch to light theme'
+                );
+            }
+
+            // Sync ARIA state to whatever the no-FOUC script set
+            applyTheme(getTheme());
+
+            btn.addEventListener('click', function () {
+                applyTheme(getTheme() === 'light' ? 'dark' : 'light');
+            });
+        })();
+    </script>
 </body>
 
 </html>

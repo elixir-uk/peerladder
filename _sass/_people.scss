@@ -28,7 +28,7 @@ $role-reviewer : #6b707f;
     font-size: 22px;
     font-weight: 600;
     color: $h_title;
-    border-bottom: 2px solid rgba($brand_color, 0.15);
+    border-bottom: 2px solid rgba(var(--color-brand-rgb), 0.15);
     padding-bottom: 12px;
     margin-bottom: 30px;
 }
@@ -57,8 +57,8 @@ $role-reviewer : #6b707f;
     color: inherit;
 
     &:hover {
-        background: rgba($warm_white, 0.06);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba($warm_white, 0.1);
+        background: rgba(var(--color-text-rgb), 0.06);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(var(--color-text-rgb), 0.1);
         transform: translateY(-3px);
         color: inherit;
         text-decoration: none;
@@ -70,7 +70,7 @@ $role-reviewer : #6b707f;
 }
 
 .person-avatar-wrap {
-    background: lighten($forest, 5%);
+    background: $forest_lifted;
     text-align: left;
     padding: 24px 24px 0;
 }
@@ -118,7 +118,10 @@ $role-reviewer : #6b707f;
     margin-bottom: 8px;
 
     &.role-co-lead {
-        background: rgba($role-co-lead, 0.10);
+        // $role-co-lead points at $brand_color which is a CSS var, so the
+        // SCSS rgba() call can't compute a tint. Use the brand_color_rgba()
+        // helper which builds rgba(var(--color-brand-rgb), $a) directly.
+        background: brand_color_rgba(0.10);
         color: $role-co-lead;
     }
     &.role-mentee {
@@ -156,8 +159,8 @@ $role-reviewer : #6b707f;
 
     li {
         font-size: 11px;
-        background: rgba($warm_white, 0.07);
-        color: rgba($warm_white, 0.6);
+        background: rgba(var(--color-text-rgb), 0.07);
+        color: rgba(var(--color-text-rgb), 0.6);
         border-radius: 4px;
         padding: 2px 7px;
         line-height: 1.6;
@@ -210,7 +213,7 @@ $role-reviewer : #6b707f;
     aspect-ratio: 1;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid rgba($lime, 0.3);
+    border: 3px solid rgba(var(--color-accent-rgb), 0.3);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
     display: block;
     margin: 0 auto;
@@ -228,7 +231,7 @@ $role-reviewer : #6b707f;
 
 .person-profile-affiliation {
     font-size: 14px;
-    color: rgba($p_color, 0.7);
+    color: rgba(var(--color-text-rgb), 0.7);
     margin-bottom: 14px;
     display: flex;
     align-items: center;
@@ -246,7 +249,7 @@ $role-reviewer : #6b707f;
         font-size: 12px;
         font-weight: 500;
         color: $brand_color;
-        border: 1px solid rgba($brand_color, 0.25);
+        border: 1px solid rgba(var(--color-brand-rgb), 0.25);
         border-radius: 4px;
         padding: 3px 10px;
         text-decoration: none;
@@ -260,7 +263,7 @@ $role-reviewer : #6b707f;
         }
 
         &.orcid-link  { border-color: rgba(#a6ce39, 0.5); color: #a6ce39; &:hover { background: #a6ce39; border-color: #a6ce39; color: $forest; } }
-        &.github-link { border-color: rgba($warm_white, 0.2); color: rgba($warm_white, 0.6); &:hover { background: rgba($warm_white, 0.15); border-color: rgba($warm_white, 0.3); color: $warm_white; } }
+        &.github-link { border-color: rgba(var(--color-text-rgb), 0.2); color: rgba(var(--color-text-rgb), 0.6); &:hover { background: rgba(var(--color-text-rgb), 0.15); border-color: rgba(var(--color-text-rgb), 0.3); color: $warm_white; } }
     }
 }
 
@@ -279,7 +282,7 @@ $role-reviewer : #6b707f;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.7px;
-        color: rgba($h_title, 0.5);
+        color: rgba(var(--color-text-rgb), 0.5);
         margin-bottom: 10px;
     }
 

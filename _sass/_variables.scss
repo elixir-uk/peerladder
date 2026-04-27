@@ -6,15 +6,29 @@ $inter: 'Inter', sans-serif;
 $rob:   $inter;   // alias — all existing $rob references now use Inter
 
 /*============================================================
-  Dark palette
+  Theme palette — pointers to CSS custom properties
+  ────────────────────────────────────────────────────────────
+  Real values live in `_theme_vars.scss` under :root and
+  [data-theme="light"]. These SCSS aliases let the existing
+  rules across the project (which use `$warm_white`, `$card_bg`
+  etc.) automatically respond to the theme toggle without
+  any change at the call site.
+
+  CAUTION: SCSS colour functions like `lighten()` and
+  `rgba($var, 0.5)` cannot operate on a `var()` reference.
+  - For tints/transparencies, use `rgba(var(--color-X-rgb), $a)`
+  - For lighter/darker shades, use the pre-computed
+    `$forest_lifted` (etc.) below, which point at extra
+    custom properties defined in _theme_vars.scss.
 ============================================================*/
-$bg:         #041A16;   // page / site background
-$card_bg:    #014034;   // card / surface background — matches header/footer ($forest)
-$violet:     #9688F2;   // H1/H2, brand, tags
-$lavender:   #9688F2;   // kept for backward compat — same as $violet
-$lime:       #F5C842;   // primary CTA colour — amber
-$forest:     #014034;   // dark green — banner/footer backgrounds
-$warm_white: #F0EEF9;   // H3/H4/H5/H6, body text, UI text
+$bg:           var(--color-bg);
+$card_bg:      var(--color-bg-elevated);
+$forest:       var(--color-bg-elevated);
+$forest_lifted:var(--color-bg-elevated-lifted);  // replaces lighten($forest, 3%)
+$violet:       var(--color-brand);
+$lavender:     var(--color-brand);
+$lime:         var(--color-accent);
+$warm_white:   var(--color-text);
 
 /*============================================================
   Semantic tokens
@@ -56,8 +70,10 @@ $black_900: #0c0d0e;
 /*============================================================
   Functions
 ============================================================*/
+/* Returns an rgba() of the brand colour. Sourced from the
+   --color-brand-rgb custom property so it flips with the theme. */
 @function brand_color_rgba($alpha) {
-  @return rgba(150, 136, 242, $alpha);  // $violet #9688F2
+  @return rgba(var(--color-brand-rgb), $alpha);
 }
 
 /*============================================================

@@ -362,7 +362,7 @@
 /*=========== Start Banner Support ============*/
 .Docy-banner-support {
   height: 545px;
-  background: lighten($forest, 3%);
+  background: $forest_lifted;
   padding: 200px 0;
   position: relative;
 
@@ -894,7 +894,7 @@
 
 /*=========== Start breadcrumb_area_two css ============*/
 .breadcrumb_area_two {
-  background: lighten($forest, 3%);
+  background: $forest_lifted;
   padding: 150px 0 60px;
 }
 
@@ -955,7 +955,7 @@
 
 /*=========== Start breadcrumb_area_three css ============*/
 .breadcrumb_area_three {
-  background: lighten($forest, 3%);
+  background: $forest_lifted;
   padding: 157px 0 70px;
   position: relative;
   z-index: 1;
@@ -1364,7 +1364,7 @@
 ============================================================================================ */
 .doc_banner_area {
   &.search-banner-light {
-    background-color: lighten($forest, 3%);
+    background-color: $forest_lifted;
     padding-top: 145px;
     padding-bottom: 100px;
     background-image: url(../img/banner-bg.png);
@@ -1386,7 +1386,7 @@
     }
   }
   &.breadcrumb_green {
-    background: lighten($forest, 3%);
+    background: $forest_lifted;
     padding-top: 188px;
     padding-bottom: 85px;
     .doc_banner_content {
@@ -1531,7 +1531,7 @@
 /* Video Breadcrumb Area css
 ============================================================================================ */
 .video_breadcrumb_area {
-  background: lighten($forest, 3%);
+  background: $forest_lifted;
   .breadcrumb_text {
     text-align: center;
     padding-top: 185px;
@@ -1583,7 +1583,7 @@
 
 /*=========== Page Banner – narrow, title-only (pages/ and person pages) ============*/
 .page_banner_area {
-  background: lighten($forest, 3%);
+  background: $forest_lifted;
   padding: 130px 0 50px;
 
   .page_banner_content {

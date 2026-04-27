@@ -3,6 +3,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Theme detection: runs before paint to set [data-theme] and avoid flash.
+         Reads localStorage first, falls back to OS preference. -->
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('pl_theme');
+                if (t !== 'light' && t !== 'dark') {
+                    t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches)
+                        ? 'light'
+                        : 'dark';
+                }
+                document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+
     {% seo %}
     {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
     <meta name="google-site-verification" content="SS97akad8FYTmjMixT61nxE9crjfp0QhNoQvF_70UYg" />

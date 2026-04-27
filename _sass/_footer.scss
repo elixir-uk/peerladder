@@ -311,7 +311,7 @@
 /* Footer Area css
 ============================================================================================ */
 .footer_two {
-  background: lighten($forest, 3%);
+  background: $forest_lifted;
   padding-top: 0;
   .footer_widgets {
     position: relative;
@@ -456,7 +456,7 @@
   }
 }
 .footer_four {
-  background: lighten($forest, 3%);
+  background: $forest_lifted;
   .f_title {
     color: $h_title;
   }
@@ -537,7 +537,7 @@
 /* Forum Footer Area css
   ============================================================================================ */
 .forum_footer_area {
-  background: lighten($forest, 3%);
+  background: $forest_lifted;
   padding-top: 55px;
   padding-bottom: 45px;
   position: relative;

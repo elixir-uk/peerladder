@@ -14,21 +14,21 @@ noindex: true
     font-size: 32px;
     line-height: 1.3;
     font-weight: 700;
-    color: #F0EEF9;
+    color: var(--color-text);
     margin-bottom: 24px;
 }
-.why_hero_quote .why_hero_accent { color: #F5C842; }
+.why_hero_quote .why_hero_accent { color: var(--color-accent-strong); }
 .why_stat_number {
     font-size: 56px;
     font-weight: 700;
-    color: #F5C842;
+    color: var(--color-accent-strong);
     line-height: 1;
     margin-bottom: 8px;
     display: block;
 }
 .why_stat_caveat {
     font-size: 13px;
-    color: rgba(240, 238, 249, 0.6);
+    color: var(--color-text-muted);
     font-style: italic;
     margin-top: 10px;
 }
@@ -36,7 +36,7 @@ noindex: true
     font-size: 18px;
     line-height: 1.6;
     font-style: italic;
-    border-left: 3px solid #F5C842;
+    border-left: 3px solid var(--color-accent);
     padding-left: 18px;
     margin: 24px 0;
 }
@@ -45,10 +45,10 @@ noindex: true
     margin-top: 10px;
     font-size: 13px;
     font-style: normal;
-    color: rgba(240, 238, 249, 0.6);
+    color: var(--color-text-muted);
 }
 .why_refs sup {
-    color: #F5C842;
+    color: var(--color-accent-strong);
     font-weight: 600;
     margin-left: 2px;
 }
@@ -64,14 +64,14 @@ noindex: true
     margin-bottom: 14px;
     font-size: 14px;
     line-height: 1.65;
-    color: rgba(240, 238, 249, 0.85);
+    color: var(--color-text-muted);
 }
 .why_references_list > li::marker {
-    color: #F5C842;
+    color: var(--color-accent-strong);
     font-weight: 700;
 }
-.why_references_list > li a { color: #9688F2; }
-.why_references_list > li a:hover { color: #F5C842; }
+.why_references_list > li a { color: var(--color-brand); }
+.why_references_list > li a:hover { color: var(--color-accent-strong); }
 @media (max-width: 767px) {
     .why_hero_quote { font-size: 24px; }
     .why_stat_number { font-size: 44px; }
@@ -127,7 +127,7 @@ noindex: true
 
         <div class="row">
             <div class="col-lg-12">
-                <p style="margin-top: 20px; padding: 18px 22px; border-left: 3px solid #9688F2; background: rgba(150, 136, 242, 0.06); font-size: 15px;">
+                <p style="margin-top: 20px; padding: 18px 22px; border-left: 3px solid var(--color-brand); background: var(--color-brand-soft); font-size: 15px;">
                     <strong>UK context.</strong> The House of Commons Science, Innovation and Technology Committee's 2023 report <em>Diversity and Inclusion in STEM</em> concluded that significant progress is still needed on representation across the UK STEM workforce, and the Government accepted that case in its formal response. The 2025 BSA / APPG briefing similarly finds that EDI in UK STEM is linked to stronger commercial performance and to talent attraction and retention.<sup><a href="#ref-5">5</a>,&nbsp;<a href="#ref-3">3</a></sup></p>
             </div>
         </div>

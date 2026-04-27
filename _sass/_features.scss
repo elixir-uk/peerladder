@@ -718,7 +718,7 @@ body.remove {
 
 .pl_feature_body {
   font-size: 14px;
-  color: rgba($p_color, 0.8);
+  color: rgba(var(--color-text-rgb), 0.8);
   line-height: 1.75;
   margin-bottom: 0;
 }
