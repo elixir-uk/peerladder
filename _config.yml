@@ -46,7 +46,7 @@ social:
 
 collections:
   docs:
-    output: true
+    output: false
   people:
     output: true
     permalink: /people/:name/
@@ -90,9 +90,11 @@ defaults:
       type:         posts
     values:
       layout:       post
+      sitemap:      false
   # _people
   - scope:
       path: ""
       type: people
     values:
       layout: person
+      sitemap: false

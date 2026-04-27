@@ -3,6 +3,8 @@ layout: default
 title: Why It Matters
 description: The evidence behind PeerLadder — why diverse leadership in research tech matters and why psychological safety is the missing piece. Citations from McKinsey, Royal Academy of Engineering, House of Commons, CIPD and Edmondson.
 permalink: /why/
+sitemap: false
+noindex: true
 ---
 
 {% include page_banner.html %}
