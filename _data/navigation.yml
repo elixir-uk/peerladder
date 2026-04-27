@@ -9,6 +9,8 @@ left:
     dropdown:
       - title: About PeerLadder
         url: /about/
+#      - title: Why diversity
+#        url: /why/
       - title: Timeline
         url: /timeline/
       - title: Apply

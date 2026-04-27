@@ -19,7 +19,13 @@
       "Bash(git stash *)",
       "Bash(sed -n '764,772p' _sass/_header.scss)",
       "Bash(sed -n '1245,1257p' _sass/_header.scss)",
-      "Bash(gh run *)"
+      "Bash(gh run *)",
+      "WebFetch(domain:www.mckinsey.com)",
+      "WebFetch(domain:www.britishscienceassociation.org)",
+      "WebFetch(domain:publications.parliament.uk)",
+      "WebFetch(domain:psychsafety.com)",
+      "WebSearch",
+      "WebFetch(domain:web.mit.edu)"
     ],
     "additionalDirectories": [
       "/Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_posts"
