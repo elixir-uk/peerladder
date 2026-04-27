@@ -6,11 +6,18 @@
 
 # Site title and description
 title:              PeerLadder
-description:        A UK peer-mentoring programme for underrepreented dRTPs
+tagline:            Peer mentoring for underrepresented dRTPs
+description:        Funded UK peer-mentoring programme for digital Research Technical Professionals (dRTPs) from underrepresented groups stepping into leadership.
 lang:               en
 
 # Site base hostname & protocol, e.g. http://example.com
-url: ''
+url: 'https://peerladder.elixiruknode.org'
+
+# Default Open Graph / SEO image used when sharing on social platforms
+image: /img/logos/logo-peer-ladder-lavender.svg
+
+# Site keywords (comma-separated, used by jekyll-seo-tag where supported)
+keywords: 'PeerLadder, peer mentoring, dRTP, digital Research Technical Professionals, leadership programme, UK research, underrepresented groups, ELIXIR-UK, DisCouRSE, Open Life Science, OLS, psychological safety, RSE, bioinformatician, data steward'
 
 # Site subpath, e.g. /blog
 baseurl:            ""
@@ -48,12 +55,13 @@ collections:
 disqus:
     shortname:     #12345
 
-# Google Analytics
-google_analytics: #UA—XXXXXXXX-X
+# Google Analytics 4 (GA4) measurement ID. Loaded only after explicit consent via cookie banner.
+google_analytics: G-5NG0FB9Q61
 
 plugins:
   - jekyll-liquify
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 include:
   - _pages

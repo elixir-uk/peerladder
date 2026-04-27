@@ -1,5 +1,7 @@
 ---
 layout: default
+title: PeerLadder
+description: UK peer-mentoring programme for digital Research Technical Professionals from underrepresented groups stepping into leadership. Funded, free to participants, applications open for 2026.
 
 search: true
 navbar:

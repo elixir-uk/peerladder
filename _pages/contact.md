@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Contact
+description: Contact the PeerLadder coordination team. Questions about eligibility, accessibility, or whether the programme is for you — get in touch in confidence.
 permalink: /contact/
 navbar:
     right_nav_tool: true

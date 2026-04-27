@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Apply for PeerLadder 2026
+description: Apply for PeerLadder 2026, a funded UK leadership programme for dRTPs from underrepresented groups. Free to participants, ~1 hour per month, four short questions — no CV, no references.
 permalink: /apply/
 navbar:
     right_nav_tool: true

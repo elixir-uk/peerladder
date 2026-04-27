@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About PeerLadder
+description: PeerLadder empowers underrepresented dRTPs across UK research-performing organisations to climb the leadership ladder together. Built on the ELEAD model, delivered with Open Life Science (OLS), funded by DisCouRSE.
 permalink: /about/
 ---
 

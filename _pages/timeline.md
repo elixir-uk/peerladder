@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Programme Timeline
+description: PeerLadder timeline 2026–27 — applications, virtual onboarding, in-person Manchester workshop, OLS-led psychological safety workshops, and monthly peer mentoring through March 2027.
 permalink: /timeline/
 navbar:
     right_nav_tool: true
