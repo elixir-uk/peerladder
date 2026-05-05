@@ -1148,6 +1148,7 @@ ul.ordered-list {
   color: $forest;
 
   &.phase-open    { background: $lime; }
+  &.phase-closed  { background: rgba(var(--color-text-rgb), 0.18); color: var(--color-text); }
   &.phase-virtual { background: $brand_color; color: $warm_white; }
   &.phase-inperson{ background: #2da44e; color: #fff; }
   &.phase-end     { background: rgba(var(--color-text-rgb), 0.15); color: $warm_white; }

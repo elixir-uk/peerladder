@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PeerLadder
-description: UK peer-mentoring programme for digital Research Technical Professionals from underrepresented groups stepping into leadership. Funded, free to participants, applications open for 2026.
+description: UK peer-mentoring programme for digital Research Technical Professionals from underrepresented groups stepping into leadership. Applications for the 2026 pilot cohort closed on 4 May 2026 and are now under review.
 
 search: true
 navbar:
@@ -21,7 +21,7 @@ custom_css:
 - assets/slick/slick-theme.css
 ---
 
-{% include banner_one.html title="PeerLadder" subtitle="Peer mentoring for the people research can't afford to lose. <br>For the <span class='rotating-role' id='rotatingRole'>dRTPs</span> who've been flying under the radar." cta_url="/apply/" cta_text="Apply Now" %}
+{% include banner_one.html title="PeerLadder" subtitle="Peer mentoring for the people research can't afford to lose. <br>For the <span class='rotating-role' id='rotatingRole'>dRTPs</span> who've been flying under the radar." cta_url="/about/" cta_text="Learn about the programme" %}
 
 {% include features_section.html %}
 

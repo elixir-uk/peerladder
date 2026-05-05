@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Apply for PeerLadder 2026
-description: Apply for PeerLadder 2026, a funded UK leadership programme for dRTPs from underrepresented groups. Free to participants, ~1 hour per month, four short questions — no CV, no references.
+title: PeerLadder 2026 — Applications closed
+description: Applications for the PeerLadder 2026 pilot cohort closed on 4 May 2026 and are now under review. Selection day is 13 May 2026; successful applicants will be contacted by email.
 permalink: /apply/
 navbar:
     right_nav_tool: true
@@ -16,13 +16,16 @@ navbar:
             <div class="col-lg-8">
 
                 <div class="apply_intro">
-                    <p class="apply_lead">PeerLadder is a funded peer-mentoring programme for dRTPs from underrepresented backgrounds who are ready to step into leadership. Applications for the 2026 cohort are open.</p>
+                    <div class="apply_status_closed" role="status" aria-live="polite">
+                        <p class="apply_status_closed__title"><strong>Applications closed</strong></p>
+                        <p class="apply_status_closed__body">Applications for the 2026 pilot cohort closed on <strong>Monday 4 May 2026 at 23:59 BST</strong>. We're now reviewing submissions ahead of the virtual selection day on <strong>13 May 2026</strong>. Successful applicants will be contacted by email.</p>
+                    </div>
+                    <p class="apply_lead">PeerLadder is a funded peer-mentoring programme for dRTPs from underrepresented backgrounds who are ready to step into leadership. The page below is preserved as a record of the 2026 application — sign up to our updates if you'd like to hear about a future cohort.</p>
                     <ul class="apply_checklist">
                         <li><strong>Free</strong> – all costs covered, including travel and accommodation for the in-person workshop</li>
                         <li><strong>Four short questions</strong> – ~150 words each. No CV, no references</li>
                         <li><strong>~1 hour per month</strong> outside workshops</li>
                     </ul>
-                    <a href="https://forms.clickup.com/20526645/f/kjdhn-17732/M5K8X645X7KY480V8H" class="action_btn" target="_blank" rel="noopener noreferrer">Apply Now <i class="arrow_right"></i></a>
                 </div>
 
                 <div class="apply_section">
@@ -70,8 +73,7 @@ navbar:
                 </div>
 
                 <div class="apply_cta">
-                    <a href="https://forms.clickup.com/20526645/f/kjdhn-17732/M5K8X645X7KY480V8H" class="action_btn" target="_blank" rel="noopener noreferrer">Apply Now <i class="arrow_right"></i></a>
-                    <p class="apply_contact">Questions? Email <a href="mailto:peerladder@elixiruknode.org">peerladder@elixiruknode.org</a></p>
+                    <p class="apply_contact">Applications are closed for 2026. Questions about a future cohort? Email <a href="mailto:peerladder@elixiruknode.org">peerladder@elixiruknode.org</a>.</p>
                 </div>
 
             </div>

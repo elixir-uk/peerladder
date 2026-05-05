@@ -23,14 +23,14 @@ navbar:
                 </div>
                 <div class="col-lg-2">
                     <div class="version_info">
-                        <div class="tl_phase phase-open">Open</div>
+                        <div class="tl_phase phase-closed">Closed</div>
                         <div class="line bottom_half"></div>
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="changelog_content">
                         <p><span class="tl-tag tag-info">Webinar</span>Information webinar – recording available online</p>
-                        <p><span class="tl-tag tag-deadline">Deadline</span>Applications close <strong>4 May 2026, 23:59 BST</strong> (extended)</p>
+                        <p><span class="tl-tag tag-deadline">Closed</span>Applications closed <strong>4 May 2026, 23:59 BST</strong>. Now under review.</p>
                     </div>
                 </div>
             </div>
