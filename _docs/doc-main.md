@@ -23,7 +23,7 @@ relatedDocs: true
     <span class="doc-path__arrow"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
   </a>
 
-  <a class="doc-path" href="{{ '/docs/doc-pre-exercise-1/' | relative_url }}">
+  <a class="doc-path" href="{{ '/docs/doc-exercise-1/' | relative_url }}">
     <span class="doc-path__icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></span>
     <div class="doc-path__body">
       <h2 class="doc-path__title">I'm a mentee and I'm looking for the guidance docs</h2>
