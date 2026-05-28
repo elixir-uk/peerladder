@@ -1,6 +1,6 @@
 # PeerLadder
 
-Documentation site for the PeerLadder peer-mentoring programme — a collaboration between DisCouRSE and ELIXIR-UK, designed to support doctoral Researchers in Training Positions (dRTPs).
+Documentation site for the PeerLadder peer-mentoring programme – a collaboration between DisCouRSE and ELIXIR-UK, designed to support doctoral Researchers in Training Positions (dRTPs).
 
 Built with [Jekyll](https://jekyllrb.com/) using the Docy theme.
 
@@ -35,6 +35,6 @@ assets/         # Images, fonts, JS
 
 ## License
 
-The Jekyll theme used by this project (Docy) is licensed under the Envato Elements License — see [LICENSE](LICENSE) for details.
+The Jekyll theme used by this project (Docy) is licensed under the Envato Elements License – see [LICENSE](LICENSE) for details.
 
 Site content © PeerLadder / DisCouRSE / ELIXIR-UK contributors.

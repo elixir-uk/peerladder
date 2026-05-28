@@ -31,9 +31,9 @@ The format PeerLadder uses, drawing on Tietze's *Kollegiale Beratung*, is **stru
 
 Two literatures converge on the answer.
 
-**Mentoring functions.** Kram showed that traditional mentoring has both *career functions* (sponsorship, exposure, coaching) and *psychosocial functions* (acceptance, role-modelling, friendship).<sup class="doc-ref"><a href="#ref-2">2</a></sup> Peers are weaker on career sponsorship — they have less institutional power to deploy — but stronger on psychosocial functions, because shared experience makes reflection more authentic. For underrepresented dRTPs who often lack visible role models in senior positions, peer relationships offer the kind of psychosocial support that hierarchical mentoring frequently cannot.
+**Mentoring functions.** Kram showed that traditional mentoring has both *career functions* (sponsorship, exposure, coaching) and *psychosocial functions* (acceptance, role-modelling, friendship).<sup class="doc-ref"><a href="#ref-2">2</a></sup> Peers are weaker on career sponsorship – they have less institutional power to deploy – but stronger on psychosocial functions, because shared experience makes reflection more authentic. For underrepresented dRTPs who often lack visible role models in senior positions, peer relationships offer the kind of psychosocial support that hierarchical mentoring frequently cannot.
 
-**Social learning.** Bandura's social-cognitive theory shows that humans learn by observing and modelling each other.<sup class="doc-ref"><a href="#ref-3">3</a></sup> In peer consultation, every member learns even when it is not their case — by watching how the group works through a problem, by hearing how others reframe a challenge, by noticing what advice they themselves are tempted to give. This is why a session focused on one person's question still benefits everyone in the room.
+**Social learning.** Bandura's social-cognitive theory shows that humans learn by observing and modelling each other.<sup class="doc-ref"><a href="#ref-3">3</a></sup> In peer consultation, every member learns even when it is not their case – by watching how the group works through a problem, by hearing how others reframe a challenge, by noticing what advice they themselves are tempted to give. This is why a session focused on one person's question still benefits everyone in the room.
 
 ## Key concepts
 
@@ -65,9 +65,9 @@ Two literatures converge on the answer.
     </div>
     <div id="collapse-safety" class="collapse" data-parent="#theory-accordion">
       <div class="card-body">
-        <p>Hiring people from underrepresented groups does not, on its own, change outcomes. If they do not feel safe to speak, disagree, point out a problem, or admit uncertainty, you have a diverse room and a homogeneous conversation — and the research shows that produces homogeneous results.</p>
+        <p>Hiring people from underrepresented groups does not, on its own, change outcomes. If they do not feel safe to speak, disagree, point out a problem, or admit uncertainty, you have a diverse room and a homogeneous conversation – and the research shows that produces homogeneous results.</p>
         <p>This is what <strong>Amy Edmondson</strong> at Harvard Business School calls <strong>psychological safety</strong>: the shared belief that the team is safe for interpersonal risk-taking. It is the variable that makes diversity work.<sup class="doc-ref"><a href="#ref-4">4</a></sup></p>
-        <p>The CIPD's 2024 evidence review confirms that psychologically safe teams display more <em>learning behaviour</em>: they speak up about errors, ask for help, and admit uncertainty rather than hiding it. Counter-intuitively, less safe teams may look better on the surface but actually make more mistakes — mistakes that go unreported, and therefore unfixed.<sup class="doc-ref"><a href="#ref-5">5</a></sup></p>
+        <p>The CIPD's 2024 evidence review confirms that psychologically safe teams display more <em>learning behaviour</em>: they speak up about errors, ask for help, and admit uncertainty rather than hiding it. Counter-intuitively, less safe teams may look better on the surface but actually make more mistakes – mistakes that go unreported, and therefore unfixed.<sup class="doc-ref"><a href="#ref-5">5</a></sup></p>
 
         <figure class="psafety-fig">
           <svg class="psafety-svg" viewBox="-70 -80 700 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Scatter plot of team performance vs diversity, split by psychological safety. Teams with high psychological safety cluster at high performance across all diversity levels; teams without it sit lower regardless of how diverse they are.">
@@ -151,7 +151,7 @@ Two literatures converge on the answer.
             <i class="icon_check_alt2"></i>
             <div class="media-body">
                 <strong>Google's Project Aristotle</strong>
-                <p>A two-year study of 180 Google teams identified five dynamics that distinguished high-performing teams. <strong>Psychological safety emerged as the most important</strong> — the foundation that allows the other four (dependability, structure &amp; clarity, meaning, impact) to function.<sup class="doc-ref"><a href="#ref-6">6</a></sup></p>
+                <p>A two-year study of 180 Google teams identified five dynamics that distinguished high-performing teams. <strong>Psychological safety emerged as the most important</strong> – the foundation that allows the other four (dependability, structure &amp; clarity, meaning, impact) to function.<sup class="doc-ref"><a href="#ref-6">6</a></sup></p>
             </div>
         </blockquote>
       </div>
@@ -168,8 +168,8 @@ Two literatures converge on the answer.
     </div>
     <div id="collapse-cross-domain" class="collapse" data-parent="#theory-accordion">
       <div class="card-body">
-        <p>PeerLadder cohorts mix dRTPs from across the digital research stack — research software engineers, data stewards, bioinformaticians, HPC specialists, community managers — on purpose. The adaptation of <em>Kollegiale Beratung</em> for cross-faculty groups shows why this matters: in cross-disciplinary peer consultation, a problem that feels stuck inside one domain often has a ready answer in another, and participants gain new methods and reframes from contexts they would never normally encounter.<sup class="doc-ref"><a href="#ref-7">7</a></sup></p>
-        <p>For leadership specifically, the underlying challenges — managing without formal authority, building influence, navigating institutional structures — generalise across domains. What changes is the specific vocabulary and the working culture. A mixed cohort lets that vocabulary travel.</p>
+        <p>PeerLadder cohorts mix dRTPs from across the digital research stack – research software engineers, data stewards, bioinformaticians, HPC specialists, community managers – on purpose. The adaptation of <em>Kollegiale Beratung</em> for cross-faculty groups shows why this matters: in cross-disciplinary peer consultation, a problem that feels stuck inside one domain often has a ready answer in another, and participants gain new methods and reframes from contexts they would never normally encounter.<sup class="doc-ref"><a href="#ref-7">7</a></sup></p>
+        <p>For leadership specifically, the underlying challenges – managing without formal authority, building influence, navigating institutional structures – generalise across domains. What changes is the specific vocabulary and the working culture. A mixed cohort lets that vocabulary travel.</p>
       </div>
     </div>
   </div>
@@ -179,7 +179,7 @@ Two literatures converge on the answer.
 ## References
 
 <ol class="doc-references-list">
-  <li id="ref-1">Häuser-Huth, J. (n.d.). <em>Das Allgemeine Promotionskolleg: D1 Kollegiale Beratung für Promovierende — Kurzinformation</em>. Zentrum für Qualitätssicherung und -entwicklung (ZQ), Johannes Gutenberg-Universität Mainz. <a href="https://www.zq.uni-mainz.de/files/2018/05/F_D1_Kurzinformation_KollegialeBeratung.pdf" target="_blank" rel="noopener noreferrer">zq.uni-mainz.de (PDF, in German)</a>. Summarising Tietze, K.-O. (2013), <em>Kollegiale Beratung: Problemlösungen gemeinsam entwickeln</em> (6. Aufl.), Rowohlt.</li>
+  <li id="ref-1">Häuser-Huth, J. (n.d.). <em>Das Allgemeine Promotionskolleg: D1 Kollegiale Beratung für Promovierende – Kurzinformation</em>. Zentrum für Qualitätssicherung und -entwicklung (ZQ), Johannes Gutenberg-Universität Mainz. <a href="https://www.zq.uni-mainz.de/files/2018/05/F_D1_Kurzinformation_KollegialeBeratung.pdf" target="_blank" rel="noopener noreferrer">zq.uni-mainz.de (PDF, in German)</a>. Summarising Tietze, K.-O. (2013), <em>Kollegiale Beratung: Problemlösungen gemeinsam entwickeln</em> (6. Aufl.), Rowohlt.</li>
   <li id="ref-2">Kram, K. E. (1985). <em>Mentoring at work: Developmental relationships in organizational life</em>. Scott Foresman.</li>
   <li id="ref-3">Bandura, A. (1977). <em>Social Learning Theory</em>. Prentice-Hall.</li>
   <li id="ref-4">Edmondson, A. C. (1999). Psychological Safety and Learning Behavior in Work Teams. <em>Administrative Science Quarterly</em>, 44, 350–383. <a href="https://journals.sagepub.com/doi/10.2307/2666999" target="_blank" rel="noopener noreferrer">SAGE journals</a></li>

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PeerLadder 2026 — Applications closed
+title: PeerLadder 2026 – Applications closed
 description: Applications for the PeerLadder 2026 pilot cohort closed on 4 May 2026 and are now under review. Selection day is 13 May 2026; successful applicants will be contacted by email.
 permalink: /apply/
 navbar:
@@ -20,7 +20,7 @@ navbar:
                         <p class="apply_status_closed__title"><strong>Applications closed</strong></p>
                         <p class="apply_status_closed__body">Applications for the 2026 pilot cohort closed on <strong>Monday 4 May 2026 at 23:59 BST</strong>. We're now reviewing submissions ahead of the virtual selection day on <strong>13 May 2026</strong>. Successful applicants will be contacted by email.</p>
                     </div>
-                    <p class="apply_lead">PeerLadder is a funded peer-mentoring programme for dRTPs from underrepresented backgrounds who are ready to step into leadership. The page below is preserved as a record of the 2026 application — sign up to our updates if you'd like to hear about a future cohort.</p>
+                    <p class="apply_lead">PeerLadder is a funded peer-mentoring programme for dRTPs from underrepresented backgrounds who are ready to step into leadership. The page below is preserved as a record of the 2026 application – sign up to our updates if you'd like to hear about a future cohort.</p>
                     <ul class="apply_checklist">
                         <li><strong>Free</strong> – all costs covered, including travel and accommodation for the in-person workshop</li>
                         <li><strong>Four short questions</strong> – ~150 words each. No CV, no references</li>

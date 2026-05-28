@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Why It Matters
-description: The evidence behind PeerLadder — why diverse leadership in research tech matters and why psychological safety is the missing piece. Citations from McKinsey, Royal Academy of Engineering, House of Commons, CIPD and Edmondson.
+description: The evidence behind PeerLadder – why diverse leadership in research tech matters and why psychological safety is the missing piece. Citations from McKinsey, Royal Academy of Engineering, House of Commons, CIPD and Edmondson.
 permalink: /why/
 sitemap: false
 noindex: true
@@ -151,7 +151,7 @@ noindex: true
             <div class="col-lg-4 offset-lg-1 col-md-12">
                 <div class="pl_feature_box about_meta_card">
                     <p class="pl_feature_sub">Google's Project Aristotle</p>
-                    <p class="why_pullquote">A two-year study of 180 Google teams identified five key dynamics that distinguished high-performing teams. <strong>Psychological safety emerged as the most important</strong> – the foundation that allows the other four (dependability, structure &amp; clarity, meaning, impact) to function.<span class="why_pullquote_attr">— Project Aristotle, Google People Operations.<sup><a href="#ref-8">8</a></sup></span></p>
+                    <p class="why_pullquote">A two-year study of 180 Google teams identified five key dynamics that distinguished high-performing teams. <strong>Psychological safety emerged as the most important</strong> – the foundation that allows the other four (dependability, structure &amp; clarity, meaning, impact) to function.<span class="why_pullquote_attr">– Project Aristotle, Google People Operations.<sup><a href="#ref-8">8</a></sup></span></p>
                 </div>
             </div>
 

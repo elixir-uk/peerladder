@@ -51,7 +51,7 @@
 
 // ── Psychological-safety scatter plot (embedded SVG, from the ELEAD poster) ──
 // White figure card so the chart's inherent colours (orange / grey / navy)
-// read consistently in both light and dark theme — same pattern you'd use
+// read consistently in both light and dark theme – same pattern you'd use
 // for an embedded image.
 .psafety-fig {
   margin: 24px 0;
@@ -267,7 +267,7 @@
 // `overflow != visible` (browsers treat it as a scroll container).
 // The site's `.body_wrapper` sets `overflow-x: hidden` in _predefine.scss,
 // and the responsive `.doc_documentation_area` adds `overflow: hidden` at
-// some breakpoints — both kill sticky for everything inside the doc
+// some breakpoints – both kill sticky for everything inside the doc
 // layout. Scope the override to doc pages (body.doc, set by default.html)
 // so the rest of the site keeps its horizontal-overflow clipping.
 body.doc {
@@ -277,7 +277,7 @@ body.doc {
 
 // ── Three-panel layout (ETT-inspired) ────────────────────────────────────────
 // Centred max-width wrapper so the layout breathes on wide screens and the
-// right TOC sits at the right edge of the layout — not floating in the
+// right TOC sits at the right edge of the layout – not floating in the
 // middle of the viewport. The left sidebar uses an elevated surface so it
 // reads as a distinct panel in both themes; both sidebars are sticky on
 // desktop so they stay in view as you scroll the main content.
@@ -285,7 +285,7 @@ body.doc {
 // Below the `lg` breakpoint (<992px) the layout stacks vertically: the
 // docs sidebar becomes a full-width strip at the top of the page (with its
 // "Documentation menu" toggle from sidebar.html collapsing the nav), and
-// the right TOC is hidden — it adds little on a phone and would crowd the
+// the right TOC is hidden – it adds little on a phone and would crowd the
 // stacked layout.
 .doc-flex-layout {
   display: flex;
@@ -294,7 +294,7 @@ body.doc {
   max-width: 1600px;
   margin: 0 auto;
   // Bottom padding gives the sticky sidebars somewhere to "land" before
-  // the footer starts — without it the sticky panels settle flush against
+  // the footer starts – without it the sticky panels settle flush against
   // the footer because the flex container ends right at the main content's
   // bottom.
   padding: 0 24px 60px;
@@ -363,7 +363,7 @@ body.doc {
     display: none;
   }
 
-  // Inner wrapper no longer needs its own sticky/padding — the panel
+  // Inner wrapper no longer needs its own sticky/padding – the panel
   // handles it now.
   .doc_rightsidebar {
     position: static;

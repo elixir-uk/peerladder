@@ -20,7 +20,7 @@ custom_css:
 
 We select in three steps: an **eligibility check**, a **scored assessment** of the application, and a **virtual selection session**. We publish the criteria in full so applicants know exactly what we look for.
 
-## Step 1 — Eligibility
+## Step 1 – Eligibility
 
 ### Self-identification
 
@@ -28,7 +28,7 @@ PeerLadder is for digital Research Technical Professionals (dRTPs) who identify 
 
 ### Optional demographic monitoring
 
-Collected for monitoring and reporting only — handled confidentially and **not used to rank** applicants: woman; non-binary / gender diverse; minority ethnic background; disabled / neurodivergent (including chronic health conditions); LGBTQIA+; from a lower socioeconomic background. We know marginalisation is intersectional, so there is also an open field for anyone underrepresented in their context who isn't reflected above.
+Collected for monitoring and reporting only – handled confidentially and **not used to rank** applicants: woman; non-binary / gender diverse; minority ethnic background; disabled / neurodivergent (including chronic health conditions); LGBTQIA+; from a lower socioeconomic background. We know marginalisation is intersectional, so there is also an open field for anyone underrepresented in their context who isn't reflected above.
 
 ### Career stage
 
@@ -40,9 +40,9 @@ Applicants should have **at least 3 years** in a dRTP or equivalent technical re
 | Mid-career | 6–10 years |
 | Early senior leader | 11–15 years |
 
-## Step 2 — What we look for
+## Step 2 – What we look for
 
-Each written response is up to about 150 words. There's no checklist to game — we read for genuine reflection rather than polish, and the notes below describe what a strong response tends to show.
+Each written response is up to about 150 words. There's no checklist to game – we read for genuine reflection rather than polish, and the notes below describe what a strong response tends to show.
 
 <div id="criteria-accordion">
 
@@ -88,7 +88,7 @@ Each written response is up to about 150 words. There's no checklist to game —
     </div>
     <div id="collapse-crit-c" class="collapse" data-parent="#criteria-accordion">
       <div class="card-body">
-        <p><em>How do you understand underrepresented groups in the context of leadership? What systemic barriers can influential leaders positively affect?</em> This is not about "ranking oppression" — it's about reflection and programme fit.</p>
+        <p><em>How do you understand underrepresented groups in the context of leadership? What systemic barriers can influential leaders positively affect?</em> This is not about "ranking oppression" – it's about reflection and programme fit.</p>
         <p><strong>A strong response shows:</strong> awareness of systemic barriers, an ability to articulate institutional dynamics, and a genuine interest in inclusive change.</p>
       </div>
     </div>
@@ -114,7 +114,7 @@ Each written response is up to about 150 words. There's no checklist to game —
 
 Shortlisted applicants are invited to the virtual selection session.
 
-## Step 3 — Selection session
+## Step 3 – Selection session
 
 A session of about two hours for applicants (longer for reviewers):
 

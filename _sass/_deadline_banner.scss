@@ -8,7 +8,7 @@
    don't overlap. The include's inline script measures the banner and sets
    `--deadline-banner-height` on the document root; the rules below apply
    it to the navbar variants. On scroll, the navbar gets `.navbar_fixed`
-   (position: fixed, top: 0 via inline style) — by then the banner has
+   (position: fixed, top: 0 via inline style) – by then the banner has
    scrolled away, so collapsing to viewport-top is correct.
    ────────────────────────────────────────────────────────────────────────── */
 
@@ -127,7 +127,7 @@ body.has-deadline-banner {
     outline-offset: 2px;
 }
 
-/* Smaller screens — stack the message + CTA, keep close button pinned */
+/* Smaller screens – stack the message + CTA, keep close button pinned */
 @media (max-width: 575px) {
     .deadline_banner__inner {
         padding: 10px 48px 10px 16px;

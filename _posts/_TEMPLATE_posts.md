@@ -7,8 +7,8 @@ category:     articles   # articles | news | events
 author:       Full Name
 avatar:       img/avatars/firstname-lastname.webp   # shown on story card
 
-# ── Events only — remove these lines for articles/news ───────────────────────
-event_date:   2026-09-01        # YYYY-MM-DD — controls upcoming vs past sorting
+# ── Events only – remove these lines for articles/news ───────────────────────
+event_date:   2026-09-01        # YYYY-MM-DD – controls upcoming vs past sorting
 event_location: Manchester, UK  # optional
 
 # ── Card thumbnail ────────────────────────────────────────────────────────────
@@ -23,13 +23,13 @@ comments:     false
 [![Post image]({{ 'img/posts/your-image.jpg' | relative_url }})]({{ 'img/posts/your-image.jpg' | relative_url }})
 
 <!-- excerpt-start -->
-This is the excerpt that appears on the card. Keep it to 1–2 sentences — everything after this comment up to ~120 characters will be shown as the card preview.
+This is the excerpt that appears on the card. Keep it to 1–2 sentences – everything after this comment up to ~120 characters will be shown as the card preview.
 
-Full post content continues here in Markdown. The excerpt-start comment above marks where the card snippet begins — everything before it is ignored in the card view.
+Full post content continues here in Markdown. The excerpt-start comment above marks where the card snippet begins – everything before it is ignored in the card view.
 
 ## Section heading
 
-Regular paragraph text. You can use all standard Markdown here — headings, lists, blockquotes, links, bold, italic.
+Regular paragraph text. You can use all standard Markdown here – headings, lists, blockquotes, links, bold, italic.
 
 - List item one
 - List item two
@@ -37,6 +37,6 @@ Regular paragraph text. You can use all standard Markdown here — headings, lis
 
 > Blockquote text here.
 >
-> — Attribution
+> – Attribution
 
 More body content here.

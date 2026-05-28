@@ -1,5 +1,5 @@
 ---
-title: Pre-exercise 2 — Leadership goals
+title: Pre-exercise 2 – Leadership goals
 container: wide-container
 category: preparation
 right_sidebar: true
@@ -18,7 +18,7 @@ custom_css:
 
 ## About this exercise
 
-Building on [Pre-exercise 1]({{ "/docs/doc-pre-exercise-1/" | relative_url }}), set the **leadership development goals** you want to work on. You'll use the DIRECT competency framework to see where you are now, then turn that into a few concrete goals — which you'll bring to the first session and record in the [matching form]({{ "/docs/doc-matching-form/" | relative_url }}).
+Building on [Pre-exercise 1]({{ "/docs/doc-pre-exercise-1/" | relative_url }}), set the **leadership development goals** you want to work on. You'll use the DIRECT competency framework to see where you are now, then turn that into a few concrete goals – which you'll bring to the first session and record in the [matching form]({{ "/docs/doc-matching-form/" | relative_url }}).
 
 <blockquote class="media notice notice-success">
     <i class="icon_menu-square_alt2"></i>
@@ -52,7 +52,7 @@ Building on [Pre-exercise 1]({{ "/docs/doc-pre-exercise-1/" | relative_url }}), 
 
 | Field | Your plan |
 |-------|-----------|
-| Competency area | e.g. E2 — Leadership |
+| Competency area | e.g. E2 – Leadership |
 | Development goal | What you want to develop |
 | How it can be achieved | Concrete steps |
 | Support / resources (incl. people) | Who and what you need |

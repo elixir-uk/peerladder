@@ -70,14 +70,14 @@ table tr td p:last-child {
 // ── Code block overrides (Prism "coy" is a light theme; restyle for dark) ──
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #cdd6f4;          // soft blue-white — readable on dark
+  color: #cdd6f4;          // soft blue-white – readable on dark
   background: none;
 }
 
 pre[class*="language-"] > code,
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background-color: #0a1e1a;    // very dark teal — close to $bg but distinct
+  background-color: #0a1e1a;    // very dark teal – close to $bg but distinct
   background-image: none;
   box-shadow: none;
   border-left: 3px solid $violet;
@@ -131,7 +131,7 @@ pre[class*="language-"] {
 
   // Markdown tables render as plain `<table>` (no class), so they get no
   // styling from Bootstrap or any `.table_*` partial. Give them comfortable
-  // cell padding, subtle row dividers, and a strong header underline — all
+  // cell padding, subtle row dividers, and a strong header underline – all
   // theme-aware via `--color-text-rgb`.
   table {
     width: auto;

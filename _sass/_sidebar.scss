@@ -37,7 +37,7 @@
 #side-nav {
   font-size: 14px;
 
-  /* On large screens the sidebar is always visible — override BS .collapse. */
+  /* On large screens the sidebar is always visible – override BS .collapse. */
   @media (min-width: 992px) {
     display: block !important;
     height: auto !important;

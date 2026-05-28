@@ -847,7 +847,7 @@ blockquote {
   &.active {
     background: $brand_color;
     border-color: $brand_color;
-    // Don't flip with theme — brand bg stays dark-violet in both, so text
+    // Don't flip with theme – brand bg stays dark-violet in both, so text
     // must stay light. See --color-text-on-brand in _theme_vars.scss.
     color: var(--color-text-on-brand);
   }

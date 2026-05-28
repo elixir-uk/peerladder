@@ -614,7 +614,7 @@
     createCookie(name, "", -1);
   }
 
-  /* Docs sidebar — see _includes/sidebar.html. The collapse/expand is
+  /* Docs sidebar – see _includes/sidebar.html. The collapse/expand is
      driven by Bootstrap's data-toggle handlers, so no custom JS here. */
 
   /*--------------- Tab button js--------*/

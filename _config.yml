@@ -27,7 +27,7 @@ permalink: /:title/
 
 # Wordmark for the navbar. The lavender variant (violet on transparent)
 # reads on both light and dark backgrounds, so we use a single file in
-# both themes — no theme-based swap.
+# both themes – no theme-based swap.
 logo: /img/logos/logo-peer-ladder-lavender.svg
 logo2x:
 

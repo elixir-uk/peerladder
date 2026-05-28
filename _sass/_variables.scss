@@ -3,10 +3,10 @@
 ============================================================*/
 $syne:  'Syne', sans-serif;
 $inter: 'Inter', sans-serif;
-$rob:   $inter;   // alias — all existing $rob references now use Inter
+$rob:   $inter;   // alias – all existing $rob references now use Inter
 
 /*============================================================
-  Theme palette — pointers to CSS custom properties
+  Theme palette – pointers to CSS custom properties
   ────────────────────────────────────────────────────────────
   Real values live in `_theme_vars.scss` under :root and
   [data-theme="light"]. These SCSS aliases let the existing

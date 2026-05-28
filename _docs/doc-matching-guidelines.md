@@ -20,17 +20,17 @@ custom_css:
 
 After selection, participants are sorted into peer groups of **three to five**. We match deliberately, and we publish how, because good groups don't happen by chance. A few evidence-based criteria meaningfully improve trust, openness and the quality of conversations.
 
-The goal isn't a perfect match — it's a **well-balanced** one: enough common ground for psychological safety, enough difference for useful friction.<sup class="doc-ref"><a href="#ref-1">1</a></sup>
+The goal isn't a perfect match – it's a **well-balanced** one: enough common ground for psychological safety, enough difference for useful friction.<sup class="doc-ref"><a href="#ref-1">1</a></sup>
 
 ## What we match on
 
 Three things matter most, in this order:
 
-1. **Goals & learning orientation** *(most important)* — is someone genuinely here to grow, or to perform? Groups where everyone shares a real learning orientation work best.<sup class="doc-ref"><a href="#ref-2">2</a></sup>
-2. **Shared values & deeper alignment** — surface similarities (age, job title, background) create quick rapport but fade. Shared values are what sustain a group through the *adjustment phase* (roughly weeks 4–10), after the novelty wears off but before deeper trust forms.<sup class="doc-ref"><a href="#ref-3">3</a></sup>
-3. **Practical fit** — schedule overlap, time commitment, format. It can't make a match, but it can break one.
+1. **Goals & learning orientation** *(most important)* – is someone genuinely here to grow, or to perform? Groups where everyone shares a real learning orientation work best.<sup class="doc-ref"><a href="#ref-2">2</a></sup>
+2. **Shared values & deeper alignment** – surface similarities (age, job title, background) create quick rapport but fade. Shared values are what sustain a group through the *adjustment phase* (roughly weeks 4–10), after the novelty wears off but before deeper trust forms.<sup class="doc-ref"><a href="#ref-3">3</a></sup>
+3. **Practical fit** – schedule overlap, time commitment, format. It can't make a match, but it can break one.
 
-*On personality:* the evidence on personality matching is mixed,<sup class="doc-ref"><a href="#ref-4">4</a></sup> so we capture **communication style** instead — it's more actionable for peer mentoring.
+*On personality:* the evidence on personality matching is mixed,<sup class="doc-ref"><a href="#ref-4">4</a></sup> so we capture **communication style** instead – it's more actionable for peer mentoring.
 
 ## Similarity vs complementarity
 
@@ -40,21 +40,21 @@ Three things matter most, in this order:
 
 ## Building good groups
 
-- **Shared values, mixed experience** — the same things matter to them, but they're at different points in their journey. Everyone teaches, everyone learns.
-- **Don't isolate anyone** — if two members are highly extroverted and one isn't, the quiet one disappears (same goes for values or life stage). Pair the outlier with someone similar, or rebalance.
-- **Compatible, not identical goals** — if everyone chases the exact same outcome, the conversation narrows and the cross-pollination is lost.
-- **Schedule reality wins** — a good-enough group that can meet beats a perfect one that can't.
+- **Shared values, mixed experience** – the same things matter to them, but they're at different points in their journey. Everyone teaches, everyone learns.
+- **Don't isolate anyone** – if two members are highly extroverted and one isn't, the quiet one disappears (same goes for values or life stage). Pair the outlier with someone similar, or rebalance.
+- **Compatible, not identical goals** – if everyone chases the exact same outcome, the conversation narrows and the cross-pollination is lost.
+- **Schedule reality wins** – a good-enough group that can meet beats a perfect one that can't.
 
 ## The matching process
 
-1. **Intake** — everyone completes the [matching form]({{ "/docs/doc-matching-form/" | relative_url }}) before groups are confirmed.
-2. **Cluster by goal** — sort responses into goal groups (skill-building, accountability, confidence, exploration…).
-3. **Score values overlap** — aim for at least two values shared across members' top-3, and every member sharing at least one top-3 value with someone else.
-4. **Filter for logistics** — a group needs three or more overlapping weekly time slots.
-5. **Composition check** — no isolated outliers; mixed experience; at least one comfortable initiator; a mix of communication styles.
-6. **Sense-check** — separate known conflicts or relationships (same workplace, prior friction at selection).
-7. **Human review** — always.
-8. **Check in early, mid and later** (around weeks 2, 6 and 12) — week 2 catches structural issues, week 6 catches values friction, week 12 decides whether to continue or rotate. Adjust early, not after months of awkwardness.
+1. **Intake** – everyone completes the [matching form]({{ "/docs/doc-matching-form/" | relative_url }}) before groups are confirmed.
+2. **Cluster by goal** – sort responses into goal groups (skill-building, accountability, confidence, exploration…).
+3. **Score values overlap** – aim for at least two values shared across members' top-3, and every member sharing at least one top-3 value with someone else.
+4. **Filter for logistics** – a group needs three or more overlapping weekly time slots.
+5. **Composition check** – no isolated outliers; mixed experience; at least one comfortable initiator; a mix of communication styles.
+6. **Sense-check** – separate known conflicts or relationships (same workplace, prior friction at selection).
+7. **Human review** – always.
+8. **Check in early, mid and later** (around weeks 2, 6 and 12) – week 2 catches structural issues, week 6 catches values friction, week 12 decides whether to continue or rotate. Adjust early, not after months of awkwardness.
 
 *Adapted for groups from the University of Warwick's peer-learning pairing guide.*<sup class="doc-ref"><a href="#ref-5">5</a></sup>
 

@@ -22,7 +22,7 @@ At the *"choose today's format"* step of the
 [session frame]({{ "/docs/doc-peer-meetings-ground-rules/" | relative_url }}),
 the group picks one of the four formats below based on what people want to bring.
 The [ground rules]({{ "/docs/doc-peer-meetings-ground-rules/" | relative_url }})
-and the frame stay the same — only the middle changes.
+and the frame stay the same – only the middle changes.
 
 <blockquote class="media notice notice-success">
     <i class="icon_menu-square_alt2"></i>
@@ -45,7 +45,7 @@ fit one case comfortably, or two shorter ones if the group is experienced.<sup c
 | Phase | What happens | ~time |
 |-------|-------------|-------|
 | 1. Casting | If several want time, choose whose case is heard; assign moderator and (optionally) scribe and process observer | 5 min |
-| 2. The story | Case-giver explains the real situation; consultants ask *clarifying* questions only — no solutions yet | 10 min |
+| 2. The story | Case-giver explains the real situation; consultants ask *clarifying* questions only – no solutions yet | 10 min |
 | 3. Key question | Case-giver distils **one** precise question. Name what they want: to *solve* it, *see it from new angles*, get *ideas*, or just *encouragement* | 5 min |
 | 4. Choose a method | How consultants will respond: open brainstorm, an *"if it were me…"* round, a deliberate **perspective switch**, or a **cross-domain** round | 5 min |
 | 5. Consultation | Consultants offer ideas; the case-giver often just listens and takes notes (or the scribe does) rather than defending | 15–20 min |
@@ -54,7 +54,7 @@ fit one case comfortably, or two shorter ones if the group is experienced.<sup c
 ## 2. Cross-domain exchange
 
 **Use it when** the group wants to compare how a shared challenge is handled
-across domains. There is no single case-giver — the value is in the contrast
+across domains. There is no single case-giver – the value is in the contrast
 between research software, data stewardship, bioinformatics, HPC and the rest.<sup class="doc-ref"><a href="#ref-2">2</a></sup>
 
 | Step | What happens | ~time |
@@ -67,13 +67,13 @@ between research software, data stewardship, bioinformatics, HPC and the rest.<s
 ## 3. Peer support / resonance
 
 **Use it when** people mainly need to be heard and encouraged rather than solved
-— a valid need in its own right, and often where the sense of "I'm not alone in
+– a valid need in its own right, and often where the sense of "I'm not alone in
 this" comes from.
 
 | Step | What happens | ~time |
 |------|-------------|-------|
 | Open round | Each person shares what is on top for them, uninterrupted | 4–5 min each |
-| Resonance | Others reflect back what they heard and where they relate — no advice | 10–15 min |
+| Resonance | Others reflect back what they heard and where they relate – no advice | 10–15 min |
 | Close | Each person names what they are carrying away | 5 min |
 
 ## 4. Goal-setting & accountability
@@ -83,13 +83,13 @@ of sessions, returning to them each time the group meets.
 
 | Step | What happens | ~time |
 |------|-------------|-------|
-| Review | Revisit the goals from last time — what moved, what got stuck? | 10 min |
+| Review | Revisit the goals from last time – what moved, what got stuck? | 10 min |
 | Set / refine | Each person sets or sharpens one concrete leadership goal | 15 min |
 | Commit | Each names a next step and who will check in on it | 10 min |
 
 ## References
 
 <ol class="doc-references-list">
-  <li id="ref-1">Häuser-Huth, J. (n.d.). <em>Das Allgemeine Promotionskolleg: D1 Kollegiale Beratung für Promovierende — Kurzinformation</em>. Zentrum für Qualitätssicherung und -entwicklung (ZQ), Johannes Gutenberg-Universität Mainz. <a href="https://www.zq.uni-mainz.de/files/2018/05/F_D1_Kurzinformation_KollegialeBeratung.pdf" target="_blank" rel="noopener noreferrer">zq.uni-mainz.de (PDF, in German)</a>. Source of the six phases and the "what do you want" framing. Summarising Tietze, K.-O. (2013), <em>Kollegiale Beratung: Problemlösungen gemeinsam entwickeln</em> (6. Aufl.), Rowohlt.</li>
+  <li id="ref-1">Häuser-Huth, J. (n.d.). <em>Das Allgemeine Promotionskolleg: D1 Kollegiale Beratung für Promovierende – Kurzinformation</em>. Zentrum für Qualitätssicherung und -entwicklung (ZQ), Johannes Gutenberg-Universität Mainz. <a href="https://www.zq.uni-mainz.de/files/2018/05/F_D1_Kurzinformation_KollegialeBeratung.pdf" target="_blank" rel="noopener noreferrer">zq.uni-mainz.de (PDF, in German)</a>. Source of the six phases and the "what do you want" framing. Summarising Tietze, K.-O. (2013), <em>Kollegiale Beratung: Problemlösungen gemeinsam entwickeln</em> (6. Aufl.), Rowohlt.</li>
   <li id="ref-2">Heinsen, E. &amp; Putortì, G. (2016). Fachübergreifende Kollegiale Beratung für Tutorinnen und Tutoren. <em>Greifswalder Beiträge zur Hochschullehre</em>, 7, 66–75. <a href="https://www.uni-greifswald.de/storages/uni-greifswald/2_Studium/2.1_Studienangebot/2.1.4_Qualitaet_in_Studium_und_Lehre/Greifswalder_Beitraege_zur_Hochschullehre/GBzH_Ausgabe_7_Qualifizierung_2016.pdf" target="_blank" rel="noopener noreferrer">uni-greifswald.de (PDF, in German)</a>. Source of the cross-disciplinary mix and method modules.</li>
 </ol>

@@ -18,11 +18,11 @@ custom_css:
 
 ## Templates and downloads
 
-_Placeholder — list of downloadable templates: meeting agenda, reflection log, peer agreement, etc._
+_Placeholder – list of downloadable templates: meeting agenda, reflection log, peer agreement, etc._
 
 ## Reading list
 
-_Placeholder — key papers and books on peer mentoring, dRTP support, communities of practice, and psychological safety._
+_Placeholder – key papers and books on peer mentoring, dRTP support, communities of practice, and psychological safety._
 
 ## External links
 

@@ -18,7 +18,7 @@ custom_css:
 
 ## Why ground rules come first
 
-Your peer meetings change shape from one time to the next — the group picks a
+Your peer meetings change shape from one time to the next – the group picks a
 [format]({{ "/docs/doc-peer-meetings-formats/" | relative_url }}) depending on
 what people want to bring. What does **not** change is this set of rules. Agreed
 together during the opening workshops and named again at the start of every
@@ -34,12 +34,12 @@ different domains supporting each other into leadership.
 
 - **Confidential.** What is said in the group stays in the group.
 - **Equal footing.** No one speaks from rank or seniority. The least senior
-  voice may hold the insight that unlocks a problem — which only surfaces if the
+  voice may hold the insight that unlocks a problem – which only surfaces if the
   group is safe enough for them to say it.
 - **Everyone takes a turn.** Over the programme each person brings their own
   questions *and* helps with everyone else's. It is reciprocal by design.
 - **You learn when it is not your turn.** Helping with someone else's challenge
-  is not a favour — it is where you pick up methods, language and cross-domain
+  is not a favour – it is where you pick up methods, language and cross-domain
   moves you will reuse. No meeting is "about" only one person.
 - **It compounds.** This is the same group over months, not a one-off. Trust
   built early is what lets harder questions come up later.
@@ -48,7 +48,7 @@ different domains supporting each other into leadership.
     <i class="icon_menu-square_alt2"></i>
     <div class="media-body">
         <strong>Good things to bring</strong>
-        <p>Real, current, work-relevant leadership questions — leading a piece of
+        <p>Real, current, work-relevant leadership questions – leading a piece of
         work when you have no line-management authority; making your contribution
         visible; a difficult conversation with a manager or stakeholder; deciding
         whether to put yourself forward for a role; a structural barrier you keep
@@ -61,7 +61,7 @@ different domains supporting each other into leadership.
     <div class="media-body">
         <strong>Out of scope</strong>
         <p>Deep technical or domain-specific questions (the group can't guarantee
-        the expertise — take those to colleagues or domain experts), conflict
+        the expertise – take those to colleagues or domain experts), conflict
         between members of this group, and personal or wellbeing matters. For
         anything in confidence, contact the coordination team at any time.</p>
     </div>
@@ -83,18 +83,18 @@ bookends fixed is part of what makes the group feel predictable and safe.
 ## Roles (they rotate)
 
 Assign these fresh each meeting. Rotating them means everyone practises
-moderating — a leadership skill in itself.
+moderating – a leadership skill in itself.
 
-- **Moderator** — every session; keeps the group to the chosen format and the
+- **Moderator** – every session; keeps the group to the chosen format and the
   timing, and does not solve things themselves.
-- **Case-giver / consultants / scribe / process observer** — used by some
+- **Case-giver / consultants / scribe / process observer** – used by some
   formats; see [Session formats]({{ "/docs/doc-peer-meetings-formats/" | relative_url }}).
 
 <blockquote class="media notice notice-facilitator">
     <i class="icon_ribbon_alt"></i>
     <div class="media-body">
         <strong>Moderator tips</strong>
-        <p>Protect the quiet voices — invite them in by name if needed. Keep an
+        <p>Protect the quiet voices – invite them in by name if needed. Keep an
         eye on the clock so the closing round is never squeezed. And keep a light
         record of who has brought a case, so turns are shared fairly over the
         months.</p>
@@ -104,6 +104,6 @@ moderating — a leadership skill in itself.
 ## References
 
 <ol class="doc-references-list">
-  <li id="ref-1">Häuser-Huth, J. (n.d.). <em>Das Allgemeine Promotionskolleg: D1 Kollegiale Beratung für Promovierende — Kurzinformation</em>. Zentrum für Qualitätssicherung und -entwicklung (ZQ), Johannes Gutenberg-Universität Mainz. <a href="https://www.zq.uni-mainz.de/files/2018/05/F_D1_Kurzinformation_KollegialeBeratung.pdf" target="_blank" rel="noopener noreferrer">zq.uni-mainz.de (PDF, in German)</a>. Summarising Tietze, K.-O. (2013), <em>Kollegiale Beratung: Problemlösungen gemeinsam entwickeln</em> (6. Aufl.), Rowohlt.</li>
+  <li id="ref-1">Häuser-Huth, J. (n.d.). <em>Das Allgemeine Promotionskolleg: D1 Kollegiale Beratung für Promovierende – Kurzinformation</em>. Zentrum für Qualitätssicherung und -entwicklung (ZQ), Johannes Gutenberg-Universität Mainz. <a href="https://www.zq.uni-mainz.de/files/2018/05/F_D1_Kurzinformation_KollegialeBeratung.pdf" target="_blank" rel="noopener noreferrer">zq.uni-mainz.de (PDF, in German)</a>. Summarising Tietze, K.-O. (2013), <em>Kollegiale Beratung: Problemlösungen gemeinsam entwickeln</em> (6. Aufl.), Rowohlt.</li>
   <li id="ref-2">Heinsen, E. &amp; Putortì, G. (2016). Fachübergreifende Kollegiale Beratung für Tutorinnen und Tutoren. <em>Greifswalder Beiträge zur Hochschullehre</em>, 7, 66–75. <a href="https://www.uni-greifswald.de/storages/uni-greifswald/2_Studium/2.1_Studienangebot/2.1.4_Qualitaet_in_Studium_und_Lehre/Greifswalder_Beitraege_zur_Hochschullehre/GBzH_Ausgabe_7_Qualifizierung_2016.pdf" target="_blank" rel="noopener noreferrer">uni-greifswald.de (PDF, in German)</a></li>
 </ol>
