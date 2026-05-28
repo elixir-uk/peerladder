@@ -24,11 +24,11 @@ what people want to bring. What does **not** change is this set of rules. Agreed
 together during the opening workshops and named again at the start of every
 meeting, they are the constant that keeps the variety safe.
 
-The method is adapted from *Kollegiale Beratung* (Tietze, 2013), a peer
+The method is adapted from *Kollegiale Beratung*,<sup class="doc-ref"><a href="#ref-1">1</a></sup> a peer
 consultation format from German research and higher education, with the
-cross-disciplinary version developed for mixed-domain groups (Heinsen &
-Putortì, 2016). We have moved it from its original teaching setting to ours:
-dRTPs from different domains supporting each other into leadership.
+cross-disciplinary version developed for mixed-domain groups.<sup class="doc-ref"><a href="#ref-2">2</a></sup>
+We have moved it from its original teaching setting to ours: dRTPs from
+different domains supporting each other into leadership.
 
 ## The rules everyone abides by
 
@@ -101,9 +101,9 @@ moderating — a leadership skill in itself.
     </div>
 </blockquote>
 
-## Sources
+## References
 
-- Häuser-Huth, J. *Kollegiale Beratung für Promovierende* (APK, JGU Mainz),
-  drawing on Tietze, K.-O. (2013), *Kollegiale Beratung*.
-- Heinsen, E. & Putortì, G. (2016). Fachübergreifende Kollegiale Beratung für
-  Tutorinnen und Tutoren. *Greifswalder Beiträge zur Hochschullehre*, 7, 66–75.
+<ol class="doc-references-list">
+  <li id="ref-1">Häuser-Huth, J. (n.d.). <em>Das Allgemeine Promotionskolleg: D1 Kollegiale Beratung für Promovierende — Kurzinformation</em>. Zentrum für Qualitätssicherung und -entwicklung (ZQ), Johannes Gutenberg-Universität Mainz. <a href="https://www.zq.uni-mainz.de/files/2018/05/F_D1_Kurzinformation_KollegialeBeratung.pdf" target="_blank" rel="noopener noreferrer">zq.uni-mainz.de (PDF, in German)</a>. Summarising Tietze, K.-O. (2013), <em>Kollegiale Beratung: Problemlösungen gemeinsam entwickeln</em> (6. Aufl.), Rowohlt.</li>
+  <li id="ref-2">Heinsen, E. &amp; Putortì, G. (2016). Fachübergreifende Kollegiale Beratung für Tutorinnen und Tutoren. <em>Greifswalder Beiträge zur Hochschullehre</em>, 7, 66–75. <a href="https://www.uni-greifswald.de/storages/uni-greifswald/2_Studium/2.1_Studienangebot/2.1.4_Qualitaet_in_Studium_und_Lehre/Greifswalder_Beitraege_zur_Hochschullehre/GBzH_Ausgabe_7_Qualifizierung_2016.pdf" target="_blank" rel="noopener noreferrer">uni-greifswald.de (PDF, in German)</a></li>
+</ol>

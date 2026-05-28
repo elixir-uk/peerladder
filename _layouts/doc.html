@@ -10,6 +10,9 @@ layout: default
         </aside>
 
         <div class="doc-main-panel doc-middle-content rvfs-section">
+            {%- if page.title and page.noDocTitle != true %}
+            <h1 class="doc-page-title">{{ page.title }}</h1>
+            {%- endif %}
             {{ content }}
             {% unless page.noDocBottom %}
                 {% include doc_bottom.html %}

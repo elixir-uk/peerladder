@@ -128,32 +128,62 @@ pre[class*="language-"] {
   p, li { line-height: 1.75; }
   a { color: $brand_color; }
   a:hover { color: $lime; }
+
+  // Markdown tables render as plain `<table>` (no class), so they get no
+  // styling from Bootstrap or any `.table_*` partial. Give them comfortable
+  // cell padding, subtle row dividers, and a strong header underline — all
+  // theme-aware via `--color-text-rgb`.
+  table {
+    width: auto;
+    max-width: 100%;
+    margin: 22px 0;
+    border-collapse: collapse;
+    font-size: 15px;
+    th, td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(var(--color-text-rgb), 0.08);
+      text-align: left;
+      vertical-align: top;
+      line-height: 1.55;
+    }
+    th {
+      font-weight: 600;
+      border-bottom: 2px solid rgba(var(--color-text-rgb), 0.20);
+      color: $h_title;
+    }
+    tbody tr:last-child td { border-bottom: 0; }
+  }
 }
 
-// ── Notice blocks (dark theme overrides) ─────────────────────────────────────
+// ── Notice blocks ────────────────────────────────────────────────────────────
+// Theme-aware tinted backgrounds: low-alpha brand/semantic colours that work
+// over both the dark and light page backgrounds. Body text uses
+// `--color-text-rgb` so it flips automatically with the theme toggle; the
+// icon/heading colours are mid-saturated and chosen to pass AA contrast in
+// both directions.
 .notice-success {
-  background: rgba(#0a3025, 0.6);
-  border-color: rgba(#30845e, 0.45);
-  i, strong { color: #52c98c; }
-  p { color: rgba(#c8f0e0, 0.7); }
+  background: rgba(48, 132, 94, 0.08);
+  border-color: rgba(48, 132, 94, 0.45);
+  i, strong { color: #1e9968; }
+  p { color: rgba(var(--color-text-rgb), 0.80); }
 }
 .notice-warning {
-  background: rgba(#2a1e00, 0.6);
-  border-color: rgba(var(--color-accent-rgb), 0.3);
-  i, strong { color: $lime; }
-  p { color: rgba(var(--color-accent-rgb), 0.7); }
+  background: rgba(var(--color-accent-rgb), 0.10);
+  border-color: rgba(var(--color-accent-rgb), 0.35);
+  i, strong { color: var(--color-accent-strong); }
+  p { color: rgba(var(--color-text-rgb), 0.80); }
 }
 .notice-danger {
-  background: rgba(#2d0509, 0.6);
-  border-color: rgba(#fa303e, 0.35);
-  i, strong { color: #ff6b75; }
-  p { color: rgba(#ff6b75, 0.75); }
+  background: rgba(250, 48, 62, 0.08);
+  border-color: rgba(250, 48, 62, 0.35);
+  i, strong { color: #c92a35; }
+  p { color: rgba(var(--color-text-rgb), 0.80); }
 }
 .notice-facilitator {
-  background: rgba(#180e38, 0.6);
-  border-color: rgba(var(--color-brand-rgb), 0.4);
-  i, strong { color: $violet; }
-  p { color: rgba(#d4cff9, 0.75); }
+  background: rgba(var(--color-brand-rgb), 0.07);
+  border-color: rgba(var(--color-brand-rgb), 0.35);
+  i, strong { color: var(--color-brand-strong); }
+  p { color: rgba(var(--color-text-rgb), 0.80); }
 }
 
 // ── Bootstrap accordion / card (dark theme) ───────────────────────────────────
@@ -195,7 +225,11 @@ pre[class*="language-"] {
     }
   }
   .card-body {
-    background-color: $bg;
+    // Transparent so the whole accordion card stays one colour (the elevated
+    // surface) instead of inverting in light mode where `$bg` is greyer than
+    // the card itself. The header keeps its subtle `rgba(text, 0.04)` tint
+    // for visual separation; that's enough.
+    background-color: transparent;
     border-top: 1px solid rgba(var(--color-text-rgb), 0.08);
     color: rgba(var(--color-text-rgb), 0.75);
     font-size: 15px;

@@ -1,8 +1,87 @@
 // ── Doc home: category card grid ─────────────────────────────────────────────
 .doc-home-intro {
-  margin-bottom: 40px;
-  h1 { font-size: 32px; margin-bottom: 10px; }
-  p   { color: rgba(var(--color-text-rgb), 0.65); font-size: 16px; }
+  margin: 0 auto 48px;
+  max-width: 720px;
+  text-align: center;
+  h1 { font-size: 36px; margin-bottom: 12px; }
+  p   { color: rgba(var(--color-text-rgb), 0.65); font-size: 18px; line-height: 1.5; }
+}
+
+// Page title for regular doc pages (rendered by doc.html unless `noDocTitle: true`).
+.doc-page-title {
+  font-size: 32px;
+  margin: 0 0 28px;
+  line-height: 1.2;
+  color: $h_title;
+}
+
+// ── Numbered citations & references list ─────────────────────────────────────
+// Matches the styling used on the (hidden) /why/ page so research-heavy doc
+// pages can carry inline `<sup>` markers pointing to a numbered list at the
+// bottom. Apply `.doc-ref` to each inline citation and `.doc-references-list`
+// to the `<ol>` that holds the references.
+.doc-ref {
+  color: var(--color-accent-strong);
+  font-weight: 600;
+  margin-left: 2px;
+  a { color: inherit; }
+}
+
+.doc-references-list {
+  list-style: decimal;
+  padding-left: 28px;
+  margin-bottom: 0;
+  > li {
+    padding-left: 6px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 1.65;
+    color: rgba(var(--color-text-rgb), 0.7);
+    a {
+      color: $brand_color;
+      word-break: break-word;
+      &:hover { color: var(--color-accent-strong); }
+    }
+    &::marker {
+      color: var(--color-accent-strong);
+      font-weight: 700;
+    }
+  }
+}
+
+// ── Psychological-safety scatter plot (embedded SVG, from the ELEAD poster) ──
+// White figure card so the chart's inherent colours (orange / grey / navy)
+// read consistently in both light and dark theme — same pattern you'd use
+// for an embedded image.
+.psafety-fig {
+  margin: 24px 0;
+  padding: 18px 18px 14px;
+  background: #fff;
+  border: 1px solid rgba(2, 52, 82, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 720px;
+}
+
+.psafety-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.psafety-cap {
+  margin: 0;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(2, 52, 82, 0.18);
+  font-size: 13px;
+  line-height: 1.5;
+  color: #3a4654;
+
+  em { font-style: italic; }
+  strong { color: #023452; font-weight: 700; }
 }
 
 .doc-home-grid {
@@ -66,6 +145,104 @@
   }
 }
 
+// ── Doc home: audience-led paths (the docs landing page) ────────────────────
+// Each card is a single clickable region (the whole <a>), with an icon
+// chip on the left, headline + short description in the middle, and an
+// arrow on the right that nudges on hover.
+.doc-paths {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.doc-path {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 24px;
+  background: var(--color-bg-elevated);
+  // Brand-violet border to match the home page's `.pl_feature_box` cards.
+  border: 0.5px solid $lavender;
+  border-radius: 12px;
+  color: $p_color;
+  text-decoration: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+  @media (prefers-reduced-motion: reduce) { transition: none; }
+
+  &:hover,
+  &:focus {
+    border-color: rgba(var(--color-brand-rgb), 0.45);
+    background: rgba(var(--color-brand-rgb), 0.04);
+    text-decoration: none;
+    color: $p_color;
+    .doc-path__arrow { color: $brand_color; transform: translateX(4px); }
+    .doc-path__title { color: $brand_color; }
+  }
+  &:focus { outline: none; }
+  &:focus-visible {
+    outline: 2px solid $brand_color;
+    outline-offset: 2px;
+  }
+
+  &__icon {
+    flex: 0 0 auto;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: rgba(var(--color-brand-rgb), 0.10);
+    color: $brand_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  &__body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  &__title {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 4px;
+    color: $h_title;
+    transition: color 0.15s ease;
+    @media (prefers-reduced-motion: reduce) { transition: none; }
+  }
+
+  &__desc {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(var(--color-text-rgb), 0.7);
+    line-height: 1.5;
+  }
+
+  &__arrow {
+    flex: 0 0 auto;
+    color: rgba(var(--color-text-rgb), 0.45);
+    font-size: 18px;
+    transition: color 0.15s ease, transform 0.15s ease;
+    @media (prefers-reduced-motion: reduce) { transition: none; }
+  }
+
+  @media (max-width: 540px) {
+    flex-direction: column;
+    text-align: center;
+    .doc-path__arrow { display: none; }
+  }
+}
+
+.doc-home-footer-note {
+  text-align: center;
+  margin: 32px auto 0;
+  max-width: 720px;
+  color: rgba(var(--color-text-rgb), 0.55);
+  font-size: 13px;
+}
+
 // ── Doc page section ─────────────────────────────────────────────────────────
 .doc_documentation_area {
   z-index: 0;
@@ -85,47 +262,114 @@
   padding-top: 95px;
 }
 
-// ── Three-panel flex layout ───────────────────────────────────────────────────
-// The wrapper is full-viewport-width (no container), so the sidebar background
-// butts up against the page edge without any gutter hacks.
+// ── Sticky pre-requisite ─────────────────────────────────────────────────────
+// `position: sticky` is silently broken by any ancestor with
+// `overflow != visible` (browsers treat it as a scroll container).
+// The site's `.body_wrapper` sets `overflow-x: hidden` in _predefine.scss,
+// and the responsive `.doc_documentation_area` adds `overflow: hidden` at
+// some breakpoints — both kill sticky for everything inside the doc
+// layout. Scope the override to doc pages (body.doc, set by default.html)
+// so the rest of the site keeps its horizontal-overflow clipping.
+body.doc {
+  .body_wrapper { overflow: visible; }
+  .doc_documentation_area { overflow: visible; }
+}
+
+// ── Three-panel layout (ETT-inspired) ────────────────────────────────────────
+// Centred max-width wrapper so the layout breathes on wide screens and the
+// right TOC sits at the right edge of the layout — not floating in the
+// middle of the viewport. The left sidebar uses an elevated surface so it
+// reads as a distinct panel in both themes; both sidebars are sticky on
+// desktop so they stay in view as you scroll the main content.
+//
+// Below the `lg` breakpoint (<992px) the layout stacks vertically: the
+// docs sidebar becomes a full-width strip at the top of the page (with its
+// "Documentation menu" toggle from sidebar.html collapsing the nav), and
+// the right TOC is hidden — it adds little on a phone and would crowd the
+// stacked layout.
 .doc-flex-layout {
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
   min-height: calc(100vh - 95px);
+  max-width: 1600px;
+  margin: 0 auto;
+  // Bottom padding gives the sticky sidebars somewhere to "land" before
+  // the footer starts — without it the sticky panels settle flush against
+  // the footer because the flex container ends right at the main content's
+  // bottom.
+  padding: 0 24px 60px;
+
+  @media (max-width: 991.98px) {
+    flex-direction: column;
+    padding: 0 16px 40px;
+  }
 }
 
 .doc-sidebar-panel {
-  width: 280px;
+  width: 220px;
   flex-shrink: 0;
-  background: $bg;
-  border-right: 1px solid rgba(var(--color-text-rgb), 0.07);
+  background: var(--color-bg-elevated);
+  // Brand-violet border so the sidebar reads as part of the same visual
+  // system as the home page's `.pl_feature_box` cards.
+  border: 0.5px solid $lavender;
+  border-radius: 8px;
+  padding: 20px 14px;
+  margin-top: 32px;
+  // Sticky on the panel itself so the sidebar stays visible while the main
+  // content scrolls past. align-self overrides the parent's align-items so
+  // the panel keeps its intrinsic height.
+  position: sticky;
+  top: 95px;
+  align-self: flex-start;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
 
-  .doc_left_sidebarlist {
-    position: sticky;
-    top: 95px;
-    max-height: calc(100vh - 95px);
-    overflow-y: auto;
+  @media (max-width: 991.98px) {
+    position: static;
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin-top: 16px;
   }
 }
 
 .doc-main-panel {
-  flex: 1;
+  flex: 1 1 0;
   min-width: 0;
-  padding: 50px 60px 80px;
-  max-width: 900px;
+  padding: 40px 56px 80px;
+
+  @media (max-width: 991.98px) {
+    padding: 24px 4px 60px;
+  }
 }
 
 .doc-right-panel {
   width: 220px;
   flex-shrink: 0;
-  border-left: 1px solid rgba(var(--color-text-rgb), 0.1);
+  padding: 32px 16px 30px;
+  // Sticky on the panel itself; no left border (it read as an unwanted
+  // vertical divider when the layout is centred and the middle column is
+  // already visually distinct).
+  position: sticky;
+  top: 95px;
+  align-self: flex-start;
+  max-height: calc(100vh - 95px);
+  overflow-y: auto;
 
+  @media (max-width: 991.98px) {
+    display: none;
+  }
+
+  // Inner wrapper no longer needs its own sticky/padding — the panel
+  // handles it now.
   .doc_rightsidebar {
-    position: sticky;
-    top: 95px;
-    max-height: calc(100vh - 95px);
-    overflow-y: auto;
-    padding: 50px 20px 30px;
+    position: static;
+    max-height: none;
+    overflow: visible;
+    padding: 0;
   }
 }
 

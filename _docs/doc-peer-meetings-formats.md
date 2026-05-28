@@ -40,7 +40,7 @@ and the frame stay the same — only the middle changes.
 
 **Use it when** one person has a specific, current leadership challenge they want
 the group to help them think through. One case runs in six short phases; you can
-fit one case comfortably, or two shorter ones if the group is experienced.
+fit one case comfortably, or two shorter ones if the group is experienced.<sup class="doc-ref"><a href="#ref-1">1</a></sup>
 
 | Phase | What happens | ~time |
 |-------|-------------|-------|
@@ -55,7 +55,7 @@ fit one case comfortably, or two shorter ones if the group is experienced.
 
 **Use it when** the group wants to compare how a shared challenge is handled
 across domains. There is no single case-giver — the value is in the contrast
-between research software, data stewardship, bioinformatics, HPC and the rest.
+between research software, data stewardship, bioinformatics, HPC and the rest.<sup class="doc-ref"><a href="#ref-2">2</a></sup>
 
 | Step | What happens | ~time |
 |------|-------------|-------|
@@ -87,11 +87,9 @@ of sessions, returning to them each time the group meets.
 | Set / refine | Each person sets or sharpens one concrete leadership goal | 15 min |
 | Commit | Each names a next step and who will check in on it | 10 min |
 
-## Sources
+## References
 
-- Häuser-Huth, J. *Kollegiale Beratung für Promovierende* (APK, JGU Mainz),
-  drawing on Tietze, K.-O. (2013), *Kollegiale Beratung* — the six phases and the
-  "what do you want" framing.
-- Heinsen, E. & Putortì, G. (2016). Fachübergreifende Kollegiale Beratung für
-  Tutorinnen und Tutoren. *Greifswalder Beiträge zur Hochschullehre*, 7, 66–75 —
-  the cross-disciplinary mix and method modules.
+<ol class="doc-references-list">
+  <li id="ref-1">Häuser-Huth, J. (n.d.). <em>Das Allgemeine Promotionskolleg: D1 Kollegiale Beratung für Promovierende — Kurzinformation</em>. Zentrum für Qualitätssicherung und -entwicklung (ZQ), Johannes Gutenberg-Universität Mainz. <a href="https://www.zq.uni-mainz.de/files/2018/05/F_D1_Kurzinformation_KollegialeBeratung.pdf" target="_blank" rel="noopener noreferrer">zq.uni-mainz.de (PDF, in German)</a>. Source of the six phases and the "what do you want" framing. Summarising Tietze, K.-O. (2013), <em>Kollegiale Beratung: Problemlösungen gemeinsam entwickeln</em> (6. Aufl.), Rowohlt.</li>
+  <li id="ref-2">Heinsen, E. &amp; Putortì, G. (2016). Fachübergreifende Kollegiale Beratung für Tutorinnen und Tutoren. <em>Greifswalder Beiträge zur Hochschullehre</em>, 7, 66–75. <a href="https://www.uni-greifswald.de/storages/uni-greifswald/2_Studium/2.1_Studienangebot/2.1.4_Qualitaet_in_Studium_und_Lehre/Greifswalder_Beitraege_zur_Hochschullehre/GBzH_Ausgabe_7_Qualifizierung_2016.pdf" target="_blank" rel="noopener noreferrer">uni-greifswald.de (PDF, in German)</a>. Source of the cross-disciplinary mix and method modules.</li>
+</ol>

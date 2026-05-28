@@ -5,18 +5,14 @@ subitems:
   - title: Home
     url: /docs/doc-main/
 
-  - title: Start here
+  - title: Background
     subitems:
-      - title: About the programme
-        url: /docs/doc-about-programme/
       - title: Foundations of peer mentoring
         url: /docs/doc-theory-foundations/
       - title: dRTPs in context
         url: /docs/doc-theory-drtp-context/
-      - title: What to expect
-        url: /docs/doc-pre-what-to-expect/
 
-  - title: Selection & matching
+  - title: Programme playbook
     subitems:
       - title: How we select
         url: /docs/doc-selection-criteria/
@@ -25,21 +21,13 @@ subitems:
       - title: The matching form
         url: /docs/doc-matching-form/
 
-  - title: Mentee guide
+  - title: Mentee toolkit
     subitems:
-      - title: Pre-exercise 1 — Communication styles
-        url: /docs/doc-pre-exercise-1/
-      - title: Pre-exercise 2 — Leadership goals
-        url: /docs/doc-pre-exercise-2/
-      - title: Workshop 1 — Overview
-        url: /docs/doc-workshop-1-overview/
-      - title: Workshop 1 — Guide
-        url: /docs/doc-workshop-1-guide/
-      - title: Workshop 2 — Overview
-        url: /docs/doc-workshop-2-overview/
-      - title: Workshop 2 — Guide
-        url: /docs/doc-workshop-2-guide/
-      - title: 'Peer meetings: Ground rules'
+      - title: 'Exercise: Communication styles'
+        url: /docs/doc-exercise-1/
+      - title: 'Exercise:Leadership goals'
+        url: /docs/doc-exercise-2/
+      - title: 'Ground rules'
         url: /docs/doc-peer-meetings-ground-rules/
-      - title: 'Peer meetings: Session formats'
+      - title: 'Session formats'
         url: /docs/doc-peer-meetings-formats/

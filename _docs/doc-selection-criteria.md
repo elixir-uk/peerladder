@@ -20,14 +20,6 @@ custom_css:
 
 We select in three steps: an **eligibility check**, a **scored assessment** of the application, and a **virtual selection session**. We publish the criteria in full so applicants know exactly what we look for.
 
-<blockquote class="media notice notice-success">
-    <i class="icon_menu-square_alt2"></i>
-    <div class="media-body">
-        <strong>Not sure if you're eligible?</strong>
-        <p>If you would like to discuss your eligibility or the accessibility of the programme, contact us at <strong>peerladder@elixiruknode.org</strong>.</p>
-    </div>
-</blockquote>
-
 ## Step 1 — Eligibility
 
 ### Self-identification

@@ -20,17 +20,17 @@ custom_css:
 
 After selection, participants are sorted into peer groups of **three to five**. We match deliberately, and we publish how, because good groups don't happen by chance. A few evidence-based criteria meaningfully improve trust, openness and the quality of conversations.
 
-The goal isn't a perfect match — it's a **well-balanced** one: enough common ground for psychological safety, enough difference for useful friction (Mannix & Neale, 2005).
+The goal isn't a perfect match — it's a **well-balanced** one: enough common ground for psychological safety, enough difference for useful friction.<sup class="doc-ref"><a href="#ref-1">1</a></sup>
 
 ## What we match on
 
 Three things matter most, in this order:
 
-1. **Goals & learning orientation** *(most important)* — is someone genuinely here to grow, or to perform? Groups where everyone shares a real learning orientation work best (Payne & Huffman, 2005).
-2. **Shared values & deeper alignment** — surface similarities (age, job title, background) create quick rapport but fade. Shared values are what sustain a group through the *adjustment phase* (roughly weeks 4–10), after the novelty wears off but before deeper trust forms (Harrison, Price & Bell, 1998).
+1. **Goals & learning orientation** *(most important)* — is someone genuinely here to grow, or to perform? Groups where everyone shares a real learning orientation work best.<sup class="doc-ref"><a href="#ref-2">2</a></sup>
+2. **Shared values & deeper alignment** — surface similarities (age, job title, background) create quick rapport but fade. Shared values are what sustain a group through the *adjustment phase* (roughly weeks 4–10), after the novelty wears off but before deeper trust forms.<sup class="doc-ref"><a href="#ref-3">3</a></sup>
 3. **Practical fit** — schedule overlap, time commitment, format. It can't make a match, but it can break one.
 
-*On personality:* the evidence on personality matching is mixed (Menges, 2016), so we capture **communication style** instead — it's more actionable for peer mentoring.
+*On personality:* the evidence on personality matching is mixed,<sup class="doc-ref"><a href="#ref-4">4</a></sup> so we capture **communication style** instead — it's more actionable for peer mentoring.
 
 ## Similarity vs complementarity
 
@@ -56,18 +56,16 @@ Three things matter most, in this order:
 7. **Human review** — always.
 8. **Check in early, mid and later** (around weeks 2, 6 and 12) — week 2 catches structural issues, week 6 catches values friction, week 12 decides whether to continue or rotate. Adjust early, not after months of awkwardness.
 
-*Adapted for groups from the University of Warwick's peer-learning pairing guide (2024).*
+*Adapted for groups from the University of Warwick's peer-learning pairing guide.*<sup class="doc-ref"><a href="#ref-5">5</a></sup>
 
 ## References
 
-- Cain, S. (2012). *Quiet: The power of introverts in a world that can't stop talking.*
-- Harrison, D. A., Price, K. H., & Bell, M. P. (1998). Beyond relational demography. *Academy of Management Journal, 41*(1), 96–107.
-- Kram, K. E. (1985). *Mentoring at work.*
-- London, M., & Smither, J. W. (2002). Feedback orientation, feedback culture, and the longitudinal performance management process. *Human Resource Management Review, 12*(1), 81–100.
-- Mannix, E., & Neale, M. A. (2005). What differences make a difference? *Psychological Science in the Public Interest, 6*(2), 31–55.
-- Menges, C. (2016). Matching by personality matters. *Group & Organization Management, 41*(1), 98–129.
-- Payne, S. C., & Huffman, A. H. (2005). The impact of learning goal orientation similarity on formal mentoring relationship outcomes. *Advances in Developing Human Resources, 7*(4), 471–487.
-- Schwartz, S. H. (2012). An overview of the Schwartz theory of basic values. *Online Readings in Psychology and Culture, 2*(1).
-- University of Warwick (2024). *Pairing-Up Guide.*
+<ol class="doc-references-list">
+  <li id="ref-1">Mannix, E., &amp; Neale, M. A. (2005). What differences make a difference? The promise and reality of diverse teams in organizations. <em>Psychological Science in the Public Interest</em>, 6(2), 31–55. <a href="https://doi.org/10.1111/j.1529-1006.2005.00022.x" target="_blank" rel="noopener noreferrer">doi.org/10.1111/j.1529-1006.2005.00022.x</a></li>
+  <li id="ref-2">Payne, S. C., &amp; Huffman, A. H. (2005). The impact of learning goal orientation similarity on formal mentoring relationship outcomes. <em>Advances in Developing Human Resources</em>, 7(4), 471–487. <a href="https://doi.org/10.1177/1523422305279679" target="_blank" rel="noopener noreferrer">doi.org/10.1177/1523422305279679</a></li>
+  <li id="ref-3">Harrison, D. A., Price, K. H., &amp; Bell, M. P. (1998). Beyond relational demography: Time and the effects of surface- and deep-level diversity on work group cohesion. <em>Academy of Management Journal</em>, 41(1), 96–107. <a href="https://doi.org/10.2307/256901" target="_blank" rel="noopener noreferrer">doi.org/10.2307/256901</a></li>
+  <li id="ref-4">Menges, C. (2016). Toward improving the effectiveness of formal mentoring programs: Matching by personality matters. <em>Group &amp; Organization Management</em>, 41(1), 98–129. <a href="https://doi.org/10.1177/1059601115579567" target="_blank" rel="noopener noreferrer">doi.org/10.1177/1059601115579567</a></li>
+  <li id="ref-5">University of Warwick (2024). <em>Pairing-Up Guide</em>. <a href="https://warwick.ac.uk/fac/cross_fac/academy/funding/current-projects-2021-2022/peer-learning/pairing/" target="_blank" rel="noopener noreferrer">warwick.ac.uk</a></li>
+</ol>
 
-*Practitioner frameworks (widely used, not peer-reviewed): Social Styles (TRACOM Group); DiSC.*
+*Practitioner frameworks referenced elsewhere on this site (widely used in workplace settings; not peer-reviewed): Social Styles (TRACOM Group); DiSC.*
