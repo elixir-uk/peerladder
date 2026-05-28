@@ -1,36 +1,72 @@
-{% assign docs = site.data.navigation_docs | map: 'docs' | join: ',' | split: ',' %}
+{%- comment -%}
+  Previous / next links for docs.
 
-{% for document in docs %}
-    {% assign document_url = document | prepend:"/docs/" | append:"/" %}
-    {% if document_url == page.url %}
-        <div class="paginate-post pt-5">
-            <div class="d-flex justify-content-between">
-                {% if forloop.index == 2 %}
-                    {% else %}
-                        {% assign previous = forloop.index0 | minus: 1 %}
-                        {% assign previous_page = docs[previous] | prepend:"/docs/" | append:"/" %}
-                        {% assign previous_doc = site.docs | where:"url", previous_page | first %}
+  Reads the same sidebar data the left nav uses
+  (`site.data.sidebars[page.sidebar]`), flattens the nested
+  subitems into one ordered list of URLs, finds the current page,
+  and only renders a side (previous or next) if that neighbour
+  actually exists. If neither exists the whole block is omitted.
+{%- endcomment -%}
+{%- assign sidebar = site.data.sidebars[page.sidebar] -%}
+{%- if sidebar -%}
+  {%- assign flat_urls = "" | split: "" -%}
+  {%- for item in sidebar.subitems -%}
+    {%- if item.url -%}
+      {%- assign flat_urls = flat_urls | push: item.url -%}
+    {%- endif -%}
+    {%- if item.subitems -%}
+      {%- for sub in item.subitems -%}
+        {%- if sub.url -%}
+          {%- assign flat_urls = flat_urls | push: sub.url -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endfor -%}
 
-                        <div class="heading_content mr-auto">
-                            <h6 class="medium  mb-1">{{previous_doc.title}}</h6>
-                            <a href="{{previous_page}}">&larr;
-                                {{ site.data.translation[site.lang].previous | default: "Previous" }}</a>
-                        </div>
-                {% endif %}
-                {% if forloop.last %}
-                    {% else %}
-                        {% assign next = forloop.index0 | plus: 1 %}
-                        {% assign next_page = docs[next] | prepend:"/docs/" | append:"/" %}
-                        {% assign next_doc = site.docs | where:"url", next_page | first %}
+  {%- assign current_index = -1 -%}
+  {%- for u in flat_urls -%}
+    {%- if u == page.url -%}
+      {%- assign current_index = forloop.index0 -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
 
-                        <div class="heading_content ml-auto">
-                            <h6 class="medium mb-1">{{next_doc.title}}</h6>
-                            <a href="{{next_page}}">{{ site.data.translation[site.lang].next | default: "Next" }}
-                                &rarr;</a>
-                        </div>
-                {% endif %}
-            </div>
+  {%- if current_index >= 0 -%}
+    {%- assign prev_index = current_index | minus: 1 -%}
+    {%- assign next_index = current_index | plus: 1 -%}
+    {%- assign total = flat_urls | size -%}
+
+    {%- assign has_prev = false -%}
+    {%- if current_index > 0 -%}
+      {%- assign prev_url = flat_urls[prev_index] -%}
+      {%- assign prev_doc = site.docs | where: "url", prev_url | first -%}
+      {%- if prev_doc -%}{%- assign has_prev = true -%}{%- endif -%}
+    {%- endif -%}
+
+    {%- assign has_next = false -%}
+    {%- if next_index < total -%}
+      {%- assign next_url = flat_urls[next_index] -%}
+      {%- assign next_doc = site.docs | where: "url", next_url | first -%}
+      {%- if next_doc -%}{%- assign has_next = true -%}{%- endif -%}
+    {%- endif -%}
+
+    {%- if has_prev or has_next -%}
+    <div class="paginate-post pt-5">
+      <div class="d-flex justify-content-between">
+        {%- if has_prev -%}
+        <div class="heading_content mr-auto">
+          <h6 class="medium mb-1">{{ prev_doc.title }}</h6>
+          <a href="{{ prev_url | relative_url }}">&larr; {{ site.data.translation[site.lang].previous | default: "Previous" }}</a>
         </div>
-        {% break %}
-    {% endif %}
-{% endfor %}
+        {%- endif -%}
+        {%- if has_next -%}
+        <div class="heading_content ml-auto text-right">
+          <h6 class="medium mb-1">{{ next_doc.title }}</h6>
+          <a href="{{ next_url | relative_url }}">{{ site.data.translation[site.lang].next | default: "Next" }} &rarr;</a>
+        </div>
+        {%- endif -%}
+      </div>
+    </div>
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
