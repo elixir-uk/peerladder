@@ -25,7 +25,7 @@ Peer mentoring is a structured form of mutual support between people at a simila
 - **Coaching** uses a trained coach to help an individual through goal-oriented sessions. The coach's training is the design feature: they bring method, not domain expertise.
 - **Peer mentoring** removes both asymmetries. Every participant is both an advisor and someone being advised, over time, and the group's value comes from shared professional context rather than from one person's seniority or training.
 
-The format PeerLadder uses, drawing on Tietze's *Kollegiale Beratung*, is **structured peer consultation**: small fixed groups meeting regularly, with rotating roles, a defined process for raising and working through real cases, and a strict expectation of confidentiality.<sup class="doc-ref"><a href="#ref-1">1</a></sup> It is a learning method, not therapy and not a status game.
+The format PeerLadder uses, is **structured peer consultation**: small fixed groups meeting regularly, with rotating roles, a defined process for raising and working through real cases, and a strict expectation of confidentiality.<sup class="doc-ref"><a href="#ref-1">1</a></sup> It is a learning method, not therapy and not a status game.
 
 ## Why does it work?
 
@@ -168,7 +168,7 @@ Two literatures converge on the answer.
     </div>
     <div id="collapse-cross-domain" class="collapse" data-parent="#theory-accordion">
       <div class="card-body">
-        <p>PeerLadder cohorts mix dRTPs from across the digital research stack – research software engineers, data stewards, bioinformaticians, HPC specialists, community managers – on purpose. The adaptation of <em>Kollegiale Beratung</em> for cross-faculty groups shows why this matters: in cross-disciplinary peer consultation, a problem that feels stuck inside one domain often has a ready answer in another, and participants gain new methods and reframes from contexts they would never normally encounter.<sup class="doc-ref"><a href="#ref-7">7</a></sup></p>
+        <p>PeerLadder cohorts mix dRTPs from across the digital research stack – research software engineers, data stewards, bioinformaticians, HPC specialists, community managers – on purpose. We have adapted proven methods for cross-faculty groups, which shows why this matters: in cross-disciplinary peer consultation, a problem that feels stuck inside one domain often has a ready answer in another, and participants gain new methods and reframes from contexts they would never normally encounter.<sup class="doc-ref"><a href="#ref-7">7</a></sup></p>
         <p>For leadership specifically, the underlying challenges – managing without formal authority, building influence, navigating institutional structures – generalise across domains. What changes is the specific vocabulary and the working culture. A mixed cohort lets that vocabulary travel.</p>
       </div>
     </div>
