@@ -47,7 +47,8 @@ social:
 
 collections:
   docs:
-    output: false
+    output: true
+    permalink: /docs/:path/
   people:
     output: true
     permalink: /people/:name/
@@ -97,6 +98,7 @@ defaults:
       type: docs
     values:
       layout: doc
+      sidebar: peerladder
   # _posts
   - scope:
       path:         ""

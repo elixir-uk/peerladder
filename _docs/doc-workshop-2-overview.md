@@ -24,15 +24,9 @@ _Placeholder — what this session builds on from Workshop 1 and what it aims to
 
 _Placeholder — materials, any prep, room or platform setup._
 
-## Session plan
+## What this session covers
 
-| Time | Activity | Who |
-|------|----------|-----|
-| 0–10 min | Welcome back and check-in | Facilitator |
-| 10–30 min | _Placeholder activity_ | All |
-| 30–50 min | _Placeholder activity_ | All |
-| 50–55 min | Reflection | All |
-| 55–60 min | Close and next steps | Facilitator |
+_Placeholder — the materials, concepts and exercises this session works through. Keep this evergreen: the timed agenda and any private details live in the team's working docs, not here._
 
 <blockquote class="media notice notice-facilitator">
     <i class="icon_ribbon_alt"></i>

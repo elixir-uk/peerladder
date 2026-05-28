@@ -30,10 +30,4 @@ relatedDocs: true
   {% endunless %}
 {% endfor %}
 
-  <div class="doc-home-card doc-home-card--changelog">
-    <h3 class="doc-home-card__title">Change log</h3>
-    <p class="doc-home-card__desc">Release notes and version history.</p>
-    <a href="{{ '/docs/doc-changelog/' | relative_url }}" class="learn_btn">View changelog <i class="arrow_right"></i></a>
-  </div>
-
 </div>

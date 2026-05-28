@@ -1,0 +1,133 @@
+/* ============================================================
+   Documentation sidebar.
+
+   Adapted from the ELIXIR Toolkit Theme
+   (https://github.com/elixir-belgium/elixir-toolkit-theme) for this site:
+     - All colours flow through the theme variables (no hardcoded colour),
+       so the sidebar flips correctly with the light/dark toggle.
+     - Bootstrap 4 collapse attributes (the site still loads BS4).
+     - `prefers-reduced-motion` respected for the chevron rotation.
+     - Focus-visible outlines for keyboard navigation.
+
+   Markup conventions used here are produced by `_includes/sidebar.html`.
+   ============================================================ */
+
+/* Mobile toggle ("Documentation menu") shown only below the lg breakpoint. */
+.sidebar-collapse {
+  background: rgba(var(--color-brand-rgb), 0.08);
+  color: $p_color;
+  border: 1px solid rgba(var(--color-brand-rgb), 0.20);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-weight: 500;
+  text-align: left;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    background: rgba(var(--color-brand-rgb), 0.16);
+    color: $p_color;
+    outline: none;
+  }
+  &:focus-visible {
+    outline: 2px solid $brand_color;
+    outline-offset: 2px;
+  }
+}
+
+#side-nav {
+  font-size: 14px;
+
+  /* On large screens the sidebar is always visible — override BS .collapse. */
+  @media (min-width: 992px) {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Sidebar title block at the top of the nav */
+  .sidebar-title-wrapper {
+    border-bottom: 1px solid rgba(var(--color-text-rgb), 0.08);
+    margin-bottom: 8px;
+  }
+  .sidebar-title {
+    color: $h_title;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    &:hover { color: $brand_color; }
+    &.active { color: $brand_color; }
+  }
+
+  /* Lists */
+  ul { list-style: none; padding: 0; margin: 0; }
+  > ul > li { margin-bottom: 2px; }
+  ul ul { margin: 2px 0 8px 0; }
+  ul ul li { margin: 0; }
+
+  /* Top-level row: either a link or a collapse-toggle anchor */
+  > ul > li > a {
+    flex: 1 1 auto;
+    color: $p_color;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    line-height: 1.3;
+    &:hover { color: $brand_color; }
+    &.active { color: $brand_color; }
+    &:focus-visible {
+      outline: 2px solid $brand_color;
+      outline-offset: 2px;
+    }
+  }
+
+  /* Sub-level rows */
+  ul ul li > a {
+    display: block;
+    width: 100%;
+    color: rgba(var(--color-text-rgb), 0.72);
+    padding: 5px 10px 5px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    line-height: 1.4;
+    &:hover { color: $brand_color; }
+    &.active {
+      color: $brand_color;
+      font-weight: 600;
+    }
+    &:focus-visible {
+      outline: 2px solid $brand_color;
+      outline-offset: 2px;
+    }
+  }
+
+  /* Chevron toggle next to a section */
+  .sidebar-chevron {
+    flex: 0 0 auto;
+    margin-left: 4px;
+    padding: 4px 8px;
+    line-height: 1;
+    color: rgba(var(--color-text-rgb), 0.55);
+    &:hover,
+    &:focus {
+      color: $brand_color;
+      text-decoration: none;
+      outline: none;
+    }
+    &:focus-visible {
+      outline: 2px solid $brand_color;
+      outline-offset: 2px;
+    }
+    .fa-chevron-right {
+      font-size: 11px;
+      @media (prefers-reduced-motion: no-preference) {
+        transition: transform 0.2s ease;
+      }
+    }
+    &:not(.collapsed) .fa-chevron-right {
+      transform: rotate(90deg);
+    }
+  }
+}

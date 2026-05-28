@@ -1,5 +1,5 @@
 ---
-title: Pre-exercise 1
+title: Pre-exercise 1 — Communication styles
 container: wide-container
 category: preparation
 right_sidebar: true
@@ -18,23 +18,31 @@ custom_css:
 
 ## About this exercise
 
-_Placeholder — what this exercise is for and why you're doing it before Workshop 1._
+Before your first session, get to know your own **communication style**. Understanding how you communicate — and how that differs from the people you'll work with — is the foundation for everything that follows. Your result also feeds into the [matching form]({{ "/docs/doc-matching-form/" | relative_url }}) we use to build your peer group.
 
 <blockquote class="media notice notice-success">
     <i class="icon_menu-square_alt2"></i>
     <div class="media-body">
         <strong>Before you begin</strong>
-        <p>_Placeholder — what you will need, and roughly how long this takes._</p>
+        <p>About 15 minutes, a way to take notes, and a few minutes for a short online quiz.</p>
     </div>
 </blockquote>
 
 ## Steps
 
-1. **Step one** — _Placeholder_
-2. **Step two** — _Placeholder_
-3. **Step three** — _Placeholder_
-4. **Step four** — _Placeholder_
+1. **Take the quiz** — [Which bird communicator are you?](https://www.charitycomms.org.uk/which-bird-communicator-are-you)
+2. **Reflect on your result** and note where you land on each of these:
+   - **Passive or active?** Passive communicators are quieter and talk around a subject; active communicators are more assertive and state their meaning clearly.
+   - **Verbal or written?**
+   - **Internal or external processor?** Do you think things over quietly, or talk the options out loud?
+   - **Verbose or to the point?**
+3. **Think about working across styles:** How would you describe your style to someone else? How would you find out theirs — and what if they don't know it themselves? How might you need to adapt?
+4. **Record your communication style** in the [matching form]({{ "/docs/doc-matching-form/" | relative_url }}) (question D2), and keep your notes to bring to the first session.
 
 ## Reflection
 
-_Placeholder — questions to sit with or notes to bring to Workshop 1._
+What is one thing you will do differently when working with someone whose communication style is different from yours?
+
+---
+
+*References: CharityComms, "Which bird communicator are you?"; Youth Employment UK, "How to find your communication style and use it at work."*

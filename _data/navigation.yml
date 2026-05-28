@@ -25,6 +25,9 @@ left:
   #     - title: Past Events
   #       url: /past-events/
 
+  - title: Documentation
+    url: /docs/doc-main/
+
   - title: People
     url: /people/
 

@@ -1,42 +1,30 @@
 - title: Home
-  img: img/side-nav/home.png
+  icon: fa-solid fa-house
   url: docs/doc-main/
 
-- title: About
-  img: img/side-nav/document.png
+- title: Start here
+  icon: fa-solid fa-compass
   docs:
     - doc-about-programme
-
-- title: Theory
-  img: img/side-nav/chat1.png
-  docs:
     - doc-theory-foundations
     - doc-theory-drtp-context
-
-- title: Before you start
-  img: img/side-nav/briefcase.png
-  docs:
     - doc-pre-what-to-expect
+
+- title: Selection & matching
+  icon: fa-solid fa-clipboard-check
+  docs:
+    - doc-selection-criteria
+    - doc-matching-guidelines
+    - doc-matching-form
+
+- title: Mentee guide
+  icon: fa-solid fa-people-group
+  docs:
     - doc-pre-exercise-1
     - doc-pre-exercise-2
-
-- title: Workshop 1
-  img: img/side-nav/layout.png
-  docs:
     - doc-workshop-1-overview
     - doc-workshop-1-guide
-
-- title: Workshop 2
-  img: img/side-nav/layout.png
-  docs:
     - doc-workshop-2-overview
     - doc-workshop-2-guide
-
-- title: Resources
-  img: img/side-nav/issuin.png
-  docs:
-    - doc-resources
-
-- title: Change log
-  img: img/side-nav/clock.png
-  url: docs/doc-changelog/
+    - doc-peer-meetings-ground-rules
+    - doc-peer-meetings-formats

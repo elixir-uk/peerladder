@@ -1,0 +1,97 @@
+---
+title: Session formats
+container: wide-container
+category: peer-meetings
+right_sidebar: true
+search: true
+banner: true
+navbar:
+    right_nav_tool: true
+tags: [peer meetings, formats, facilitator]
+custom_js:
+- assets/font-size/js/rv-jquery-fontsize-2.0.3.min.js
+- assets/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js
+custom_css:
+- assets/font-size/css/rvfs.css
+- assets/mcustomscrollbar/jquery.mCustomScrollbar.min.css
+---
+
+## Choosing a format
+
+At the *"choose today's format"* step of the
+[session frame]({{ "/docs/doc-peer-meetings-ground-rules/" | relative_url }}),
+the group picks one of the four formats below based on what people want to bring.
+The [ground rules]({{ "/docs/doc-peer-meetings-ground-rules/" | relative_url }})
+and the frame stay the same — only the middle changes.
+
+<blockquote class="media notice notice-success">
+    <i class="icon_menu-square_alt2"></i>
+    <div class="media-body">
+        <strong>Keep it balanced</strong>
+        <p>Three of the four formats are whole-group; only <em>case
+        consultation</em> centres one person's question, and even then roles
+        rotate and everyone learns from working someone else's challenge. The
+        moderator keeps a light tally of who has had time, so attention is shared
+        fairly across the programme and no one is overlooked.</p>
+    </div>
+</blockquote>
+
+## 1. Case consultation
+
+**Use it when** one person has a specific, current leadership challenge they want
+the group to help them think through. One case runs in six short phases; you can
+fit one case comfortably, or two shorter ones if the group is experienced.
+
+| Phase | What happens | ~time |
+|-------|-------------|-------|
+| 1. Casting | If several want time, choose whose case is heard; assign moderator and (optionally) scribe and process observer | 5 min |
+| 2. The story | Case-giver explains the real situation; consultants ask *clarifying* questions only — no solutions yet | 10 min |
+| 3. Key question | Case-giver distils **one** precise question. Name what they want: to *solve* it, *see it from new angles*, get *ideas*, or just *encouragement* | 5 min |
+| 4. Choose a method | How consultants will respond: open brainstorm, an *"if it were me…"* round, a deliberate **perspective switch**, or a **cross-domain** round | 5 min |
+| 5. Consultation | Consultants offer ideas; the case-giver often just listens and takes notes (or the scribe does) rather than defending | 15–20 min |
+| 6. Close | Case-giver picks one or two things to actually try and names a concrete next step | 5 min |
+
+## 2. Cross-domain exchange
+
+**Use it when** the group wants to compare how a shared challenge is handled
+across domains. There is no single case-giver — the value is in the contrast
+between research software, data stewardship, bioinformatics, HPC and the rest.
+
+| Step | What happens | ~time |
+|------|-------------|-------|
+| Name the topic | The group picks one shared theme (e.g. influence without authority, getting credit, leading change) | 5 min |
+| Round-robin | Each person: *"how is this handled in my domain or team?"* | 3–4 min each |
+| Synthesis | Moderator gathers the patterns and the surprises | 10 min |
+| Close | Each person names one idea worth borrowing | 5 min |
+
+## 3. Peer support / resonance
+
+**Use it when** people mainly need to be heard and encouraged rather than solved
+— a valid need in its own right, and often where the sense of "I'm not alone in
+this" comes from.
+
+| Step | What happens | ~time |
+|------|-------------|-------|
+| Open round | Each person shares what is on top for them, uninterrupted | 4–5 min each |
+| Resonance | Others reflect back what they heard and where they relate — no advice | 10–15 min |
+| Close | Each person names what they are carrying away | 5 min |
+
+## 4. Goal-setting & accountability
+
+**Use it when** the group wants to set and track leadership goals over a series
+of sessions, returning to them each time the group meets.
+
+| Step | What happens | ~time |
+|------|-------------|-------|
+| Review | Revisit the goals from last time — what moved, what got stuck? | 10 min |
+| Set / refine | Each person sets or sharpens one concrete leadership goal | 15 min |
+| Commit | Each names a next step and who will check in on it | 10 min |
+
+## Sources
+
+- Häuser-Huth, J. *Kollegiale Beratung für Promovierende* (APK, JGU Mainz),
+  drawing on Tietze, K.-O. (2013), *Kollegiale Beratung* — the six phases and the
+  "what do you want" framing.
+- Heinsen, E. & Putortì, G. (2016). Fachübergreifende Kollegiale Beratung für
+  Tutorinnen und Tutoren. *Greifswalder Beiträge zur Hochschullehre*, 7, 66–75 —
+  the cross-disciplinary mix and method modules.

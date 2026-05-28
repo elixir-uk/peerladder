@@ -614,22 +614,8 @@
     createCookie(name, "", -1);
   }
 
-  $(".mobile_menu_btn").on("click", function () {
-    $("body").removeClass("menu-is-closed").addClass("menu-is-opened");
-  });
-  $(".close_nav").on("click", function (e) {
-    if ($(".side_menu").hasClass("menu-opened")) {
-      $(".side_menu").removeClass("menu-opened");
-      $("body").removeClass("menu-is-opened");
-    } else {
-      $(".side_menu").addClass("menu-opened");
-    }
-  });
-
-  $(".click_capture").on("click", function () {
-    $("body").removeClass("menu-is-opened").addClass("menu-is-closed");
-    $(".side_menu").removeClass("menu-opened");
-  });
+  /* Docs sidebar — see _includes/sidebar.html. The collapse/expand is
+     driven by Bootstrap's data-toggle handlers, so no custom JS here. */
 
   /*--------------- Tab button js--------*/
   $(".next").on("click", function () {
