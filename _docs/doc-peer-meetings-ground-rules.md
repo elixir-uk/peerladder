@@ -62,8 +62,9 @@ different domains supporting each other into leadership.
         <strong>Out of scope</strong>
         <p>Deep technical or domain-specific questions (the group can't guarantee
         the expertise – take those to colleagues or domain experts), conflict
-        between members of this group, and personal or wellbeing matters. For
-        anything in confidence, contact the coordination team at any time.</p>
+        between members of this group, and personal and wellbeing matters
+        unrelated to work. For anything in confidence, contact the coordination
+        team at any time.</p>
     </div>
 </blockquote>
 
@@ -74,7 +75,7 @@ bookends fixed is part of what makes the group feel predictable and safe.
 
 | Stage | What happens | ~time |
 |-------|-------------|-------|
-| Check in | A quick round so everyone arrives and is heard | 5 min |
+| Check in | A quick round so everyone arrives and is heard, and a space to share how people have acted on the group's advice on things they brought previously | 5 min |
 | Reaffirm the rules | Name confidentiality and equal footing out loud | 2 min |
 | Choose today's format | Decide what the group wants to bring (see [Session formats]({{ "/docs/doc-peer-meetings-formats/" | relative_url }})) | 3 min |
 | Run the format | The variable core | 60–75 min |
@@ -83,10 +84,15 @@ bookends fixed is part of what makes the group feel predictable and safe.
 ## Roles (they rotate)
 
 Assign these fresh each meeting. Rotating them means everyone practises
-moderating – a leadership skill in itself.
+moderating – a leadership skill in itself. Roles can also rotate *during* a
+session: when the group brings several cases, switch the moderator and
+timekeeper for each one, so everyone gets a chance to bring a case, listen, and
+hold a role.
 
-- **Moderator** – every session; keeps the group to the chosen format and the
-  timing, and does not solve things themselves.
+- **Moderator** – every session; keeps the group to the chosen format, and does
+  not solve things themselves.
+- **Timekeeper** – every session; keeps each stage to time and protects the
+  closing round from being squeezed.
 - **Case-giver / consultants / scribe / process observer** – used by some
   formats; see [Session formats]({{ "/docs/doc-peer-meetings-formats/" | relative_url }}).
 
@@ -94,8 +100,8 @@ moderating – a leadership skill in itself.
     <i class="icon_ribbon_alt"></i>
     <div class="media-body">
         <strong>Moderator tips</strong>
-        <p>Protect the quiet voices – invite them in by name if needed. Keep an
-        eye on the clock so the closing round is never squeezed. And keep a light
+        <p>Protect the quiet voices – invite them in by name if needed. Lean on
+        the timekeeper so the closing round is never squeezed. And keep a light
         record of who has brought a case, so turns are shared fairly over the
         months.</p>
     </div>

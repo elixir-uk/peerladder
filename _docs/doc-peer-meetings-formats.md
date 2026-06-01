@@ -44,12 +44,12 @@ fit one case comfortably, or two shorter ones if the group is experienced.<sup c
 
 | Phase | What happens | ~time |
 |-------|-------------|-------|
-| 1. Casting | If several want time, choose whose case is heard; assign moderator and (optionally) scribe and process observer | 5 min |
-| 2. The story | Case-giver explains the real situation; consultants ask *clarifying* questions only – no solutions yet | 10 min |
-| 3. Key question | Case-giver distils **one** precise question. Name what they want: to *solve* it, *see it from new angles*, get *ideas*, or just *encouragement* | 5 min |
+| 1. Casting | If several want time, choose whose case is heard; assign moderator, timekeeper and (optionally) scribe and process observer | 5 min |
+| 2. The story | Case-giver presents the real situation and distils **one** precise question for the group – no solutions yet. Name what they want: to *solve* it, *see it from new angles*, get *ideas*, or just *encouragement* | 10 min |
+| 3. Clarifying questions | Consultants ask *clarifying* or yes/no questions only – to understand the case, not to suggest solutions | 5 min |
 | 4. Choose a method | How consultants will respond: open brainstorm, an *"if it were me…"* round, a deliberate **perspective switch**, or a **cross-domain** round | 5 min |
-| 5. Consultation | Consultants offer ideas; the case-giver often just listens and takes notes (or the scribe does) rather than defending | 15–20 min |
-| 6. Close | Case-giver picks one or two things to actually try and names a concrete next step | 5 min |
+| 5. Consultation | Consultants offer ideas; the case-giver listens and takes notes (or the scribe does) only – no response to the advice until the close | 15–20 min |
+| 6. Close | Case-giver responds, picks one or two things to actually try, and names a concrete next step | 5 min |
 
 ## 2. Cross-domain exchange
 
@@ -72,7 +72,7 @@ this" comes from.
 
 | Step | What happens | ~time |
 |------|-------------|-------|
-| Open round | Each person shares what is on top for them, uninterrupted | 4–5 min each |
+| Open round | Each person shares what is currently at the top of their mind, uninterrupted | 4–5 min each |
 | Resonance | Others reflect back what they heard and where they relate – no advice | 10–15 min |
 | Close | Each person names what they are carrying away | 5 min |
 
@@ -84,7 +84,7 @@ of sessions, returning to them each time the group meets.
 | Step | What happens | ~time |
 |------|-------------|-------|
 | Review | Revisit the goals from last time – what moved, what got stuck? | 10 min |
-| Set / refine | Each person sets or sharpens one concrete leadership goal | 15 min |
+| Set / refine | Each person sets or sharpens one concrete leadership goal, with feedback and review from peers | 15 min |
 | Commit | Each names a next step and who will check in on it | 10 min |
 
 ## References

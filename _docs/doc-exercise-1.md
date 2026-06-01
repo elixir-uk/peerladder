@@ -24,18 +24,18 @@ Before your first session, get to know your own **communication style**. Underst
     <i class="icon_menu-square_alt2"></i>
     <div class="media-body">
         <strong>Before you begin</strong>
-        <p>About 15 minutes, a way to take notes, and a few minutes for a short online quiz.</p>
+        <p>You will need: 15 minutes of time, a way to take notes, and a few minutes for a short online quiz.</p>
     </div>
 </blockquote>
 
 ## Steps
 
 1. **Take the quiz** – [Which bird communicator are you?](https://www.charitycomms.org.uk/which-bird-communicator-are-you)
-2. **Reflect on your result** and note where you land on each of these:
-   - **Passive or active?** Passive communicators are quieter and talk around a subject; active communicators are more assertive and state their meaning clearly.
-   - **Verbal or written?**
-   - **Internal or external processor?** Do you think things over quietly, or talk the options out loud?
-   - **Verbose or to the point?**
+2. **Reflect on your results** and make notes on the following questions:
+   - **Are you a passive or active communicator?** Passive communicators are quieter, avoid attention, and talk around subjects instead of directly saying their thoughts. Active communicators are more assertive and state their meaning clearly.
+   - **Do you prefer verbal or written communication?**
+   - **Are you an internal or external processor?** When you need to think through an issue, do you prefer talking the options out loud with another person, or thinking things over quietly in your head?
+   - **Are you verbose or to the point?** Do you like to give lots of detail and context when sharing your thoughts, or do you prefer to get to the point and share only the most relevant information?
 3. **Think about working across styles:** How would you describe your style to someone else? How would you find out theirs – and what if they don't know it themselves? How might you need to adapt?
 4. **Record your communication style** in the [matching form]({{ "/docs/doc-matching-form/" | relative_url }}) (question D2), and keep your notes to bring to the first session.
 

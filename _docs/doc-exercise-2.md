@@ -37,15 +37,17 @@ Building on [Pre-exercise 1]({{ "/docs/doc-pre-exercise-1/" | relative_url }}), 
 
 ### DIRECT competencies
 
+Definitions of each competency are [on the DIRECT framework site](https://directframework.com/framework/skills_and_competencies/).
+
 | Category | Competencies |
 |----------|--------------|
-| A. Software engineering & development | Web & mobile development · software engineering methodologies & tools · software/CS concepts & theory · software design & architecture · UI/UX design |
-| B. ICT infrastructures | HPC · web · cloud · general systems infrastructure |
-| C. Information & data technologies | Data engineering & management · data science |
-| D. Professional skills | Personal skills · interpersonal skills · teamwork & collaboration |
-| E. Leadership & management | People & team · leadership · project management |
-| F. Domain expertise & research | Domain knowledge · research skills |
-| G. Communication | Verbal & written communication · community & outreach · training |
+| A. Software engineering & development | **A1** Web & mobile development · **A2** software engineering methodologies & tools · **A3** software/CS concepts & theory · **A4** software design & architecture · **A5** UI/UX design |
+| B. ICT infrastructures | **B1** HPC · **B2** web · **B3** cloud · **B4** general systems infrastructure |
+| C. Information & data technologies | **C1** Data engineering & management · **C2** data science |
+| D. Professional skills | **D1** Personal skills · **D2** interpersonal skills · **D3** teamwork & collaboration |
+| E. Leadership & management | **E1** People & team · **E2** leadership · **E3** project management |
+| F. Domain expertise & research | **F1** Domain knowledge · **F2** research skills |
+| G. Communication | **G1** Verbal & written communication · **G2** community & outreach · **G3** training |
 | H. Other | Add competencies specific to your role |
 
 ### Action plan template
