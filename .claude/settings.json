@@ -34,7 +34,12 @@
       "Bash(sed -n '40,60p' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/_blog.scss)",
       "Bash(sed -n '710,730p' /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/_blog.scss)",
       "Bash(grep -nA2 \"\\\\.tl-tag\\\\b\\\\|\\\\.tag-workshop\\\\b\\\\|\\\\.tag-applications\\\\b\" /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/_shortcode.scss /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/_blog.scss /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass/_tag.scss)",
-      "Bash(grep -rnA5 \"filter-pill\\\\|\\\\.filter_pill\\\\|filter_pills\" /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_includes)"
+      "Bash(grep -rnA5 \"filter-pill\\\\|\\\\.filter_pill\\\\|filter_pills\" /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_sass /Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_includes)",
+      "Bash(curl -s http://127.0.0.1:4001/people/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:4001/people/mary-kathleen-hannah/)",
+      "Bash(curl -s http://127.0.0.1:4001/people/patricia-herterich/)",
+      "Bash(perl -0pi -e 's{^\\(avatar: /img/avatars/sara-villa\\)\\\\.jpg$}{$1.webp}m' _people/sara-villa.md)",
+      "Bash(perl -0pi -e 's{^\\(avatar: /img/avatars/xenia-perez-sitja\\)\\\\.jpeg$}{$1.webp}m' _people/xenia-perez-sitja.md)"
     ],
     "additionalDirectories": [
       "/Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_posts"
