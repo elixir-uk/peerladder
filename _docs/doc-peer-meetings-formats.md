@@ -45,10 +45,9 @@ fit one case comfortably, or two shorter ones if the group is experienced.<sup c
 | Phase | What happens | ~time |
 |-------|-------------|-------|
 | 1. Casting | If several want time, choose whose case is heard; assign moderator, timekeeper and (optionally) scribe and process observer | 5 min |
-| 2. The story | Case-giver presents the real situation and distils **one** precise question for the group – no solutions yet. Name what they want: to *solve* it, *see it from new angles*, get *ideas*, or just *encouragement* | 10 min |
-| 3. Clarifying questions | Consultants ask *clarifying* or yes/no questions only – to understand the case, not to suggest solutions | 5 min |
-| 4. Choose a method | How consultants will respond: open brainstorm, an *"if it were me…"* round, a deliberate **perspective switch**, or a **cross-domain** round | 5 min |
-| 5. Consultation | Consultants offer ideas; the case-giver listens and takes notes (or the scribe does) only – no response to the advice until the close | 15–20 min |
+| 2. The story | Case-giver presents the real situation and distils **one** precise question for the group – no solutions yet. Name what they want: to *solve* it, *see it from new angles*, get *ideas*, or just *encouragement* | 8 min |
+| 3. Clarifying questions | Consultants ask *clarifying* or yes/no questions only – to understand the case, not to suggest solutions | 10 min |
+| 4. Consultation | Consultants offer ideas; the case-giver listens and takes notes (or the scribe does) only – no response to the advice until the close | 15–20 min |
 | 6. Close | Case-giver responds, picks one or two things to actually try, and names a concrete next step | 5 min |
 
 ## 2. Cross-domain exchange
