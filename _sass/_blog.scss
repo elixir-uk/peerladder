@@ -82,6 +82,32 @@
     }
   }
 }
+// Stories card meta row (date · category). These were <a> elements (so they
+// inherited .post_tag a styling); now the whole card is the link, so the date
+// is a <time> and the category a <span> — restore their look here. Scoped to
+// .story-item so the event card's own .post_tag spans are unaffected.
+.story-item .post_tag {
+  time,
+  [class^="cat-"] {
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  time {
+    color: var(--color-text-muted);
+  }
+  [class^="cat-"] {
+    padding-left: 10px;
+    &:before {
+      content: "";
+      width: 1px;
+      height: 13px;
+      background: #c9c9e2;
+      display: inline-block;
+      margin-right: 13px;
+    }
+  }
+}
 .post_author {
   .round_img {
     border-radius: 50%;
@@ -270,6 +296,13 @@
   padding: 100px 0 120px;
 }
 .blog_single_item {
+  // Constrain inline content images (e.g. the Markdown lead image, which
+  // renders as a bare <img> outside .blog_single_img) so they never overflow
+  // the column and overlap the sidebar.
+  img {
+    max-width: 100%;
+    height: auto;
+  }
   ul {
     list-style: none;
     box-shadow: 0 3px 6px 0 rgba(4, 73, 89, 0.02);

@@ -28,7 +28,7 @@
                     <div class="row mt-40">
                         {% for post in upcoming_events %}
                             <div class="col-md-6 col-lg-4 mb-40">
-                                <div class="blog_grid_post event_card">
+                                <a href="{{ post.url | relative_url }}" class="blog_grid_post event_card">
                                     <img src="{{ post.post_img | relative_url }}" alt="">
                                     <div class="grid_post_content">
                                         <div class="post_tag">
@@ -40,14 +40,12 @@
                                                 <span class="event_location">{{ post.event_location }}</span>
                                             {% endif %}
                                         </div>
-                                        <a href="{{ post.url | relative_url }}">
-                                            <h4 class="b_title">{{ post.title }}</h4>
-                                        </a>
+                                        <h4 class="b_title">{{ post.title }}</h4>
                                         {% assign excerptParts = post.excerpt | split: "<!-- excerpt-start -->" %}
                                         <p>{{ excerptParts[1] | strip_html | strip | truncate: 120 }}</p>
-                                        <a href="{{ post.url | relative_url }}" class="learn_btn">View Event <i class="arrow_right"></i></a>
+                                        <span class="learn_btn">View Event <i class="arrow_right"></i></span>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         {% endfor %}
                     </div>
@@ -75,25 +73,21 @@
                 <div class="row" id="storiesGrid">
                     {% for post in stories %}
                         <div class="col-md-6 col-lg-4 mb-40 story-item" data-category="{{ post.category }}">
-                            <div class="blog_grid_post">
+                            <a href="{{ post.url | relative_url }}" class="blog_grid_post">
                                 <img src="{{ post.post_img | relative_url }}" alt="">
                                 <div class="grid_post_content">
                                     <div class="post_tag">
-                                        <a href="#">
-                                            <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-                                                {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-                                                {{ post.date | date: date_format }}
-                                            </time>
-                                        </a>
-                                        <a class="cat-{{ post.category }}" href="#">{{ post.category | capitalize }}</a>
+                                        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+                                            {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+                                            {{ post.date | date: date_format }}
+                                        </time>
+                                        <span class="cat-{{ post.category }}">{{ post.category | capitalize }}</span>
                                     </div>
-                                    <a href="{{ post.url | relative_url }}">
-                                        <h4 class="b_title">{{ post.title }}</h4>
-                                    </a>
+                                    <h4 class="b_title">{{ post.title }}</h4>
                                     {% assign excerptParts = post.excerpt | split: "<!-- excerpt-start -->" %}
                                     <p>{{ excerptParts[1] | strip_html | strip | truncate: 120 }}</p>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <a href="{{ post.url | relative_url }}" class="learn_btn">Read More <i class="arrow_right"></i></a>
+                                        <span class="learn_btn">Read More <i class="arrow_right"></i></span>
                                         <div class="media post_author">
                                             <div class="round_img">
                                                 <img src="{{ post.avatar | relative_url }}" alt="">
@@ -104,7 +98,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     {% endfor %}
                 </div>
