@@ -1,5 +1,5 @@
 ---
-name: Mara Encarnacin Mic Amigo
+name: Encarna Micó Amigo
 layout: person
 role: mentee
 affiliation: Heriot-Watt University
