@@ -1,5 +1,5 @@
 ---
-title:          Systemic Leadership — Virtual Workshop with OLS
+title:          Systemic Leadership – Virtual Workshop with OLS
 category:       events
 
 author:         

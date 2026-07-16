@@ -19,12 +19,12 @@ Held on 2 June 2026 at the Samuel Alexander Building, University of Manchester (
 
 ## Agenda
 
-- **09:30 — Welcome & coffee.**
-- **09:40 — Introduction to the day.**
-- **09:45 — OLS Ally Skills workshop** (with a break in the middle). A practical session on recognising oppression and responding as an ally — learning and rehearsing real-world scenarios, from creating a friendly environment to confronting overt harassment, and how to make long-term systemic change.
-- **12:15 — Lunch.**
-- **13:00 — DisCouRSE presentation + Q&A.** Gillian Sinclair introduced the DisCouRSE project, how it supports underrepresented dRTPs, and opportunities to get involved and apply for funding.
-- **13:15 — Peer-Mentoring Session** (with a break in the middle). Fellows met their peer-mentoring groups and were introduced to the structured peer-mentoring format, practising through role-play and their own work cases, and taking home resources to self-organise for the rest of the programme.
-- **15:40 — Close.** Summary of the day and next steps.
+- **09:30 – Welcome & coffee.**
+- **09:40 – Introduction to the day.**
+- **09:45 – OLS Ally Skills workshop** (with a break in the middle). A practical session on recognising oppression and responding as an ally – learning and rehearsing real-world scenarios, from creating a friendly environment to confronting overt harassment, and how to make long-term systemic change.
+- **12:15 – Lunch.**
+- **13:00 – DisCouRSE presentation + Q&A.** Gillian Sinclair introduced the DisCouRSE project, how it supports underrepresented dRTPs, and opportunities to get involved and apply for funding.
+- **13:15 – Peer-Mentoring Session** (with a break in the middle). Fellows met their peer-mentoring groups and were introduced to the structured peer-mentoring format, practising through role-play and their own work cases, and taking home resources to self-organise for the rest of the programme.
+- **15:40 – Close.** Summary of the day and next steps.
 
 Next up: the virtual workshop on systemic leadership with OLS on 7 July 2026.

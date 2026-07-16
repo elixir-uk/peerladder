@@ -12,7 +12,7 @@ comments:       false
 [![Our first cohort]({{ 'img/posts/cohort-recruited.webp' | relative_url }})]({{ 'img/posts/cohort-recruited.webp' | relative_url }})
 
 <!-- excerpt-start -->
-PeerLadder has officially begun — we've recruited our full cohort of fellows and the programme is now under way.
+PeerLadder has officially begun – we've recruited our full cohort of fellows and the programme is now under way.
 
 We're delighted to announce that recruitment is complete and all of our fellows have joined the programme. Our first cohort of digital Research Technical Professionals (dRTPs) from across the UK are now stepping into the PeerLadder journey together.
 

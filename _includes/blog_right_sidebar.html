@@ -1,9 +1,10 @@
 <div class="blog_sidebar pl-40">
     <div class="widget recent_news_widget">
-        <h4 class="c_head">Reacent News</h4>
+        <h4 class="c_head">Recent News</h4>
         {% assign maxRelated = 4 %}
         {% assign maxRelatedCounter = 0 %}
-        {% for post in site.posts %}
+        {% assign recent_posts = site.posts | where_exp: "p", "p.category != 'events'" %}
+        {% for post in recent_posts %}
             {% unless post.url == page.url %}
                 <div class="media recent_post_item">
                     <img alt="" src="{{post.post_img | relative_url}}">

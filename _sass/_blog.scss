@@ -84,7 +84,7 @@
 }
 // Stories card meta row (date · category). These were <a> elements (so they
 // inherited .post_tag a styling); now the whole card is the link, so the date
-// is a <time> and the category a <span> — restore their look here. Scoped to
+// is a <time> and the category a <span> – restore their look here. Scoped to
 // .story-item so the event card's own .post_tag spans are unaffected.
 .story-item .post_tag {
   time,
