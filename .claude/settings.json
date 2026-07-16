@@ -70,7 +70,10 @@
       "Bash(curl -s http://127.0.0.1:4001/people/xenia-perez-sitja/)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" --max-time 5 http://127.0.0.1:4001/)",
       "Bash(curl -sS -L --max-time 40 -o /tmp/_mu.jpeg \"https://t20526645.p.clickup-attachments.com/t20526645/8a2f8e51-899d-42dd-8028-e5aae07c75ac/IMG_6788.jpeg\")",
-      "Bash(magick /tmp/_mu.jpeg -resize 400x400^ -gravity center -extent 400x400 -quality 82 michael-umeokoli.webp)"
+      "Bash(magick /tmp/_mu.jpeg -resize 400x400^ -gravity center -extent 400x400 -quality 82 michael-umeokoli.webp)",
+      "Bash(grep -vE '^fa-\\(solid|brands|regular\\)$')",
+      "Bash(curl -s http://127.0.0.1:4001/peerladder-at-elixir-all-hands-europe/)",
+      "Bash(curl -s -o /dev/null -w \"webp serves: %{http_code} %{content_type}\\\\n\" http://127.0.0.1:4001/img/posts/all-hands-xenia-presenting.webp)"
     ],
     "additionalDirectories": [
       "/Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_posts"
