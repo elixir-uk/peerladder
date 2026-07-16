@@ -19,7 +19,7 @@ We were proud to showcase PeerLadder at [**ELIXIR All Hands Europe 2026**](https
 
 ## Building People, Strengthening ELIXIR
 
-As part of the *Building People, Strengthening ELIXIR: Training, Leadership and Lasting Impact* session, Xènia Pérez Sitjà presented PeerLadder's perspective on career progression programmes for digital Research Technical Professionals.
+As part of the *Building People, Strengthening ELIXIR: Training, Leadership and Lasting Impact* session, Xènia Pérez Sitjà contributed to the conversation on PeerLadder's perspective on career progression programmes for digital Research Technical Professionals, while Saskia Lawson-Tovey presented a lightning talk on what the programme does and brings to UK dRTPs. 
 
 [![Xènia Pérez Sitjà presenting PeerLadder at ELIXIR All Hands Europe 2026]({{ 'img/posts/all-hands-xenia-presenting.webp' | relative_url }})]({{ 'img/posts/all-hands-xenia-presenting.webp' | relative_url }})
 
