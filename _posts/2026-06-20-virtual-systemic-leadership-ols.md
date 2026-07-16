@@ -2,8 +2,8 @@
 title:          Systemic Leadership — Virtual Workshop with OLS
 category:       events
 
-author:         PeerLadder Team
-avatar:         img/avatars/peerladder-team.webp
+author:         
+avatar:         
 
 event_date:     2026-07-07
 event_location: Online

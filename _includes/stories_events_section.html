@@ -2,16 +2,16 @@
     <div class="container">
         <ul class="nav nav-tabs stories_events_tabs" id="storiesEventsTabs" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="events-tab" data-toggle="tab" href="#events" role="tab">Events</a>
+                <a class="nav-link active" id="stories-tab" data-toggle="tab" href="#stories" role="tab">Stories</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="stories-tab" data-toggle="tab" href="#stories" role="tab">Stories</a>
+                <a class="nav-link" id="events-tab" data-toggle="tab" href="#events" role="tab">Events</a>
             </li>
         </ul>
 
         <div class="tab-content stories_events_content" id="storiesEventsContent">
             <!-- STORIES TAB -->
-            <div class="tab-pane fade" id="stories" role="tabpanel">
+            <div class="tab-pane fade show active" id="stories" role="tabpanel">
                 <div class="stories_filter">
                     <button class="filter-pill active" data-filter="all">All</button>
                     <button class="filter-pill" data-filter="articles">Articles</button>
@@ -40,14 +40,20 @@
                                     <p>{{ excerptParts[1] | strip_html | strip | truncate: 120 }}</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <span class="learn_btn">Read More <i class="arrow_right"></i></span>
+                                        {% if post.author or post.avatar %}
                                         <div class="media post_author">
+                                            {% if post.avatar %}
                                             <div class="round_img">
                                                 <img src="{{ post.avatar | relative_url }}" alt="">
                                             </div>
+                                            {% endif %}
+                                            {% if post.author %}
                                             <div class="media-body author_text">
                                                 <h4>{{ post.author }}</h4>
                                             </div>
+                                            {% endif %}
                                         </div>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </a>
@@ -56,7 +62,7 @@
                 </div>
             </div>
             <!-- EVENTS TAB -->
-            <div class="tab-pane fade show active" id="events" role="tabpanel">
+            <div class="tab-pane fade" id="events" role="tabpanel">
                 {% assign today = site.time | date: "%Y-%m-%d" %}
                 {% assign upcoming_events = "" | split: "" %}
                 {% for post in site.posts %}

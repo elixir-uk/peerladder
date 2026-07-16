@@ -1,9 +1,7 @@
 ---
-title:          We've Recruited Our First Cohort
+title:          We've recruited our first cohort
 category:       news
 
-author:         PeerLadder Team
-avatar:         img/avatars/peerladder-team.webp
 
 post_img:       img/posts/cohort-recruited.webp
 

@@ -1,5 +1,5 @@
 ---
-title:          PeerLadder in the Spotlight at ELIXIR All Hands Europe
+title:          PeerLadder in the spotlight at ELIXIR All Hands Europe
 category:       news
 
 post_img:       img/posts/elixir-all-hands-2026.webp

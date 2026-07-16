@@ -48,7 +48,10 @@
       "Bash(magick montage *)",
       "Bash(magick /tmp/opt_staircase.jpg -resize 1200x675^ -gravity center -extent 1200x675 -quality 82 img/posts/ols-systemic-leadership.webp)",
       "Bash(magick img/blog-classic/about_img.jpg -resize 300x /tmp/_about_preview.png)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:4001/img/blog-classic/about_img.jpg)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:4001/img/blog-classic/about_img.jpg)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:4001/discourse-flexible-funding-awarded/)",
+      "Bash(curl -s http://127.0.0.1:4001/discourse-flexible-funding-awarded/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:4001/img/posts/ols-systemic-leadership.webp)"
     ],
     "additionalDirectories": [
       "/Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_posts"

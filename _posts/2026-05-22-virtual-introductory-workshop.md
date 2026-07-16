@@ -1,5 +1,5 @@
 ---
-title:          Virtual Introductory Workshop
+title:          Virtual introductory workshop
 category:       events
 
 event_date:     2026-05-22
