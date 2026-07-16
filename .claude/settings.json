@@ -64,7 +64,10 @@
       "Bash(mv _posts/2026-06-20-virtual-systemic-leadership-ols.md  _events/virtual-systemic-leadership-ols.md)",
       "Bash(mv _events/virtual-introductory-workshop.md   _events/2026-05-22-virtual-introductory-workshop.md)",
       "Bash(mv _events/in-person-first-workshop.md         _events/2026-06-02-in-person-first-workshop.md)",
-      "Bash(mv _events/virtual-systemic-leadership-ols.md  _events/2026-07-07-virtual-systemic-leadership-ols.md)"
+      "Bash(mv _events/virtual-systemic-leadership-ols.md  _events/2026-07-07-virtual-systemic-leadership-ols.md)",
+      "Bash(awk '/home_stories_events/,/<\\\\/section>/')",
+      "Bash(:)",
+      "Bash(curl -s http://127.0.0.1:4001/people/xenia-perez-sitja/)"
     ],
     "additionalDirectories": [
       "/Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_posts"

@@ -86,7 +86,8 @@
 // inherited .post_tag a styling); now the whole card is the link, so the date
 // is a <time> and the category a <span> – restore their look here. Scoped to
 // .story-item so the event card's own .post_tag spans are unaffected.
-.story-item .post_tag {
+.story-item .post_tag,
+.home_stories_events .post_tag {
   time,
   [class^="cat-"] {
     font-size: 14px;
@@ -915,6 +916,66 @@ blockquote {
   margin-top: 30px;
   padding-top: 20px;
   border-top: 1px solid #e7edf0;
+}
+
+// Inline "Show past events" toggle on the Stories & Events page
+.past_events_toggle_wrap {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(var(--color-text-rgb), 0.12);
+  text-align: center;
+}
+.past_events_toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid rgba(var(--color-brand-rgb), 0.4);
+  color: $brand_color;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+
+  .toggle_hide { display: none; }
+  i { transition: transform 0.2s ease; }
+
+  &:hover,
+  &:focus-visible {
+    background: rgba(var(--color-brand-rgb), 0.08);
+    border-color: $brand_color;
+  }
+  &[aria-expanded="true"] {
+    .toggle_show { display: none; }
+    .toggle_hide { display: inline; }
+    i { transform: rotate(90deg); }
+  }
+}
+.past_events_panel[hidden] { display: none; }
+
+// Homepage "News & events" teaser section
+.home_stories_events {
+  padding: 90px 0;
+
+  .home_se_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 10px;
+
+    .c_head { margin-bottom: 0; }
+  }
+  .home_se_subhead {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: $brand_color;
+  }
 }
 
 .past_events_header {

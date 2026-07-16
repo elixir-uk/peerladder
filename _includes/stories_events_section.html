@@ -63,15 +63,20 @@
             </div>
             <!-- EVENTS TAB -->
             <div class="tab-pane fade" id="events" role="tabpanel">
+                {% assign ef = site.date_format | default: "%b %-d, %Y" %}
                 {% assign today = site.time | date: "%Y-%m-%d" %}
                 {% assign upcoming_events = "" | split: "" %}
-                {% assign all_events = site.events | sort: "event_date" %}
-                {% for post in all_events %}
+                {% assign past_events = "" | split: "" %}
+                {% assign events_asc = site.events | sort: "event_date" %}
+                {% for post in events_asc %}
                     {% assign event_d = post.event_date | date: "%Y-%m-%d" %}
                     {% if event_d >= today %}
                         {% assign upcoming_events = upcoming_events | push: post %}
+                    {% else %}
+                        {% assign past_events = past_events | push: post %}
                     {% endif %}
                 {% endfor %}
+                {% assign past_events = past_events | reverse %}
 
                 {% if upcoming_events.size > 0 %}
                     <div class="row mt-40">
@@ -81,10 +86,7 @@
                                     <img src="{{ post.post_img | relative_url }}" alt="">
                                     <div class="grid_post_content">
                                         <div class="post_tag">
-                                            <span class="event_date_badge">
-                                                {% assign ef = site.date_format | default: "%b %-d, %Y" %}
-                                                {{ post.event_date | date: ef }}
-                                            </span>
+                                            <span class="event_date_badge">{{ post.event_date | date: ef }}</span>
                                             {% if post.event_location %}
                                                 <span class="event_location">{{ post.event_location }}</span>
                                             {% endif %}
@@ -99,14 +101,56 @@
                         {% endfor %}
                     </div>
                 {% else %}
-                    <p class="no-events-msg">No events scheduled at the moment – check back soon.</p>
+                    <p class="no-events-msg">No upcoming events right now – check back soon, or browse past events below.</p>
                 {% endif %}
 
-                <div class="past_events_link">
-                    <a href="{{ '/past-events/' | relative_url }}" class="learn_btn">View Past Events <i class="arrow_right"></i></a>
-                </div>
+                {% if past_events.size > 0 %}
+                    <div class="past_events_toggle_wrap">
+                        <button type="button" class="past_events_toggle" id="pastEventsToggle" aria-expanded="false" aria-controls="pastEventsPanel">
+                            <span class="toggle_show">Show past events ({{ past_events.size }})</span>
+                            <span class="toggle_hide">Hide past events</span>
+                            <i class="arrow_right"></i>
+                        </button>
+                    </div>
+                    <div class="past_events_panel" id="pastEventsPanel" hidden>
+                        <div class="row mt-40">
+                            {% for post in past_events %}
+                                <div class="col-md-6 col-lg-4 mb-40">
+                                    <a href="{{ post.url | relative_url }}" class="blog_grid_post event_card past_event">
+                                        <img src="{{ post.post_img | relative_url }}" alt="">
+                                        <div class="grid_post_content">
+                                            <div class="post_tag">
+                                                <span class="event_date_badge past">{{ post.event_date | date: ef }}</span>
+                                                {% if post.event_location %}
+                                                    <span class="event_location">{{ post.event_location }}</span>
+                                                {% endif %}
+                                            </div>
+                                            <h4 class="b_title">{{ post.title }}</h4>
+                                            {% assign excerptParts = post.excerpt | split: "<!-- excerpt-start -->" %}
+                                            <p>{{ excerptParts[1] | strip_html | strip | truncate: 120 }}</p>
+                                            <span class="learn_btn">View Event <i class="arrow_right"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endif %}
             </div>
 
         </div>
     </div>
 </section>
+
+<script>
+(function () {
+  var btn = document.getElementById('pastEventsToggle');
+  var panel = document.getElementById('pastEventsPanel');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function () {
+    var expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    panel.hidden = expanded;
+  });
+}());
+</script>

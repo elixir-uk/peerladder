@@ -25,5 +25,7 @@ custom_css:
 
 {% include features_section.html %}
 
+{% include home_stories_events.html %}
+
 {% include doc_testimonial.html %}
 

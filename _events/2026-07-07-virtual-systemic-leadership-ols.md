@@ -1,6 +1,7 @@
 ---
 title:          Systemic Leadership – Virtual Workshop with OLS
 category:       events
+permalink:      /events/virtual-systemic-leadership-ols/
 
 author:         
 avatar:         
