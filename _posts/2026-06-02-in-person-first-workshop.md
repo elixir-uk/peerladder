@@ -2,8 +2,6 @@
 title:          In-person First Workshop
 category:       events
 
-author:         PeerLadder Team
-avatar:         img/avatars/peerladder-team.webp
 
 event_date:     2026-06-02
 event_location: Manchester, UK
@@ -11,7 +9,8 @@ event_location: Manchester, UK
 post_img:       img/posts/in-person-first-workshop.webp
 ---
 
-[![In-person First Workshop]({{ 'img/posts/in-person-first-workshop.webp' | relative_url }})]({{ 'img/posts/in-person-first-workshop.webp' | relative_url }})
+<!-- Card/lead image: Whitworth Hall, University of Manchester. Source: Wikimedia Commons (Mdbeckwith), licence CC0 / public domain. https://commons.wikimedia.org/wiki/File:The_University_Of_Manchester_Whitworth_Hall.jpg -->
+[![The historic Whitworth Hall at the University of Manchester]({{ 'img/posts/in-person-first-workshop.webp' | relative_url }})]({{ 'img/posts/in-person-first-workshop.webp' | relative_url }})
 
 <!-- excerpt-start -->
 Our first in-person workshop brought the cohort together in Manchester for an OLS Ally Skills workshop, a DisCouRSE update, and their first structured peer-mentoring session.

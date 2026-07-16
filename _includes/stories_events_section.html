@@ -10,7 +10,51 @@
         </ul>
 
         <div class="tab-content stories_events_content" id="storiesEventsContent">
+            <!-- STORIES TAB -->
+            <div class="tab-pane fade" id="stories" role="tabpanel">
+                <div class="stories_filter">
+                    <button class="filter-pill active" data-filter="all">All</button>
+                    <button class="filter-pill" data-filter="articles">Articles</button>
+                    <button class="filter-pill" data-filter="news">News</button>
+                </div>
 
+                {% assign stories = site.posts | where_exp: "p", "p.category == 'articles' or p.category == 'news'" %}
+                {% if stories.size == 0 %}
+                    <p class="no-events-msg">No articles yet – come back soon.</p>
+                {% endif %}
+                <div class="row" id="storiesGrid">
+                    {% for post in stories %}
+                        <div class="col-md-6 col-lg-4 mb-40 story-item" data-category="{{ post.category }}">
+                            <a href="{{ post.url | relative_url }}" class="blog_grid_post">
+                                <img src="{{ post.post_img | relative_url }}" alt="">
+                                <div class="grid_post_content">
+                                    <div class="post_tag">
+                                        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+                                            {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+                                            {{ post.date | date: date_format }}
+                                        </time>
+                                        <span class="cat-{{ post.category }}">{{ post.category | capitalize }}</span>
+                                    </div>
+                                    <h4 class="b_title">{{ post.title }}</h4>
+                                    {% assign excerptParts = post.excerpt | split: "<!-- excerpt-start -->" %}
+                                    <p>{{ excerptParts[1] | strip_html | strip | truncate: 120 }}</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="learn_btn">Read More <i class="arrow_right"></i></span>
+                                        <div class="media post_author">
+                                            <div class="round_img">
+                                                <img src="{{ post.avatar | relative_url }}" alt="">
+                                            </div>
+                                            <div class="media-body author_text">
+                                                <h4>{{ post.author }}</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
             <!-- EVENTS TAB -->
             <div class="tab-pane fade show active" id="events" role="tabpanel">
                 {% assign today = site.time | date: "%Y-%m-%d" %}
@@ -55,52 +99,6 @@
 
                 <div class="past_events_link">
                     <a href="{{ '/past-events/' | relative_url }}" class="learn_btn">View Past Events <i class="arrow_right"></i></a>
-                </div>
-            </div>
-
-            <!-- STORIES TAB -->
-            <div class="tab-pane fade" id="stories" role="tabpanel">
-                <div class="stories_filter">
-                    <button class="filter-pill active" data-filter="all">All</button>
-                    <button class="filter-pill" data-filter="articles">Articles</button>
-                    <button class="filter-pill" data-filter="news">News</button>
-                </div>
-
-                {% assign stories = site.posts | where_exp: "p", "p.category == 'articles' or p.category == 'news'" %}
-                {% if stories.size == 0 %}
-                    <p class="no-events-msg">No articles yet – come back soon.</p>
-                {% endif %}
-                <div class="row" id="storiesGrid">
-                    {% for post in stories %}
-                        <div class="col-md-6 col-lg-4 mb-40 story-item" data-category="{{ post.category }}">
-                            <a href="{{ post.url | relative_url }}" class="blog_grid_post">
-                                <img src="{{ post.post_img | relative_url }}" alt="">
-                                <div class="grid_post_content">
-                                    <div class="post_tag">
-                                        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-                                            {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-                                            {{ post.date | date: date_format }}
-                                        </time>
-                                        <span class="cat-{{ post.category }}">{{ post.category | capitalize }}</span>
-                                    </div>
-                                    <h4 class="b_title">{{ post.title }}</h4>
-                                    {% assign excerptParts = post.excerpt | split: "<!-- excerpt-start -->" %}
-                                    <p>{{ excerptParts[1] | strip_html | strip | truncate: 120 }}</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="learn_btn">Read More <i class="arrow_right"></i></span>
-                                        <div class="media post_author">
-                                            <div class="round_img">
-                                                <img src="{{ post.avatar | relative_url }}" alt="">
-                                            </div>
-                                            <div class="media-body author_text">
-                                                <h4>{{ post.author }}</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    {% endfor %}
                 </div>
             </div>
 

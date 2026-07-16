@@ -39,7 +39,16 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:4001/people/mary-kathleen-hannah/)",
       "Bash(curl -s http://127.0.0.1:4001/people/patricia-herterich/)",
       "Bash(perl -0pi -e 's{^\\(avatar: /img/avatars/sara-villa\\)\\\\.jpg$}{$1.webp}m' _people/sara-villa.md)",
-      "Bash(perl -0pi -e 's{^\\(avatar: /img/avatars/xenia-perez-sitja\\)\\\\.jpeg$}{$1.webp}m' _people/xenia-perez-sitja.md)"
+      "Bash(perl -0pi -e 's{^\\(avatar: /img/avatars/xenia-perez-sitja\\)\\\\.jpeg$}{$1.webp}m' _people/xenia-perez-sitja.md)",
+      "Bash(python3 -c \"import sys,json;d=json.load\\(sys.stdin\\);[print\\(p['title'],'|',p['imageinfo'][0].get\\('thumburl',''\\)[:90]\\) for p in d.get\\('query',{}\\).get\\('pages',{}\\).values\\(\\)]\")",
+      "Bash(curl -s --max-time 40 -o mcr_whitworth.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/The_University_Of_Manchester_Whitworth_Hall.jpg/1600px-The_University_Of_Manchester_Whitworth_Hall.jpg\")",
+      "Bash(sips -g pixelWidth -g pixelHeight mcr_whitworth.jpg)",
+      "Bash(magick mcr_whitworth.jpg -resize 900x /tmp/_mcr_preview.png)",
+      "Bash(curl -sL --max-time 40 -o mcr_whitworth.jpg \"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/The_University_Of_Manchester_Whitworth_Hall.jpg/1280px-The_University_Of_Manchester_Whitworth_Hall.jpg\")",
+      "Bash(magick montage *)",
+      "Bash(magick /tmp/opt_staircase.jpg -resize 1200x675^ -gravity center -extent 1200x675 -quality 82 img/posts/ols-systemic-leadership.webp)",
+      "Bash(magick img/blog-classic/about_img.jpg -resize 300x /tmp/_about_preview.png)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:4001/img/blog-classic/about_img.jpg)"
     ],
     "additionalDirectories": [
       "/Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_posts"

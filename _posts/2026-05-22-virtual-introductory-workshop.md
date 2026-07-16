@@ -2,16 +2,14 @@
 title:          Virtual Introductory Workshop
 category:       events
 
-author:         PeerLadder Team
-avatar:         img/avatars/peerladder-team.webp
-
 event_date:     2026-05-22
 event_location: Online
 
 post_img:       img/posts/virtual-intro-workshop.webp
 ---
 
-[![Introductory Workshop]({{ 'img/posts/virtual-intro-workshop.webp' | relative_url }})]({{ 'img/posts/virtual-intro-workshop.webp' | relative_url }})
+<!-- Card/lead image: generic workspace. Source: StockSnap/Openverse, licence CC0 / public domain (no attribution required). -->
+[![A tidy desk workspace representing the online workshop]({{ 'img/posts/virtual-intro-workshop.webp' | relative_url }})]({{ 'img/posts/virtual-intro-workshop.webp' | relative_url }})
 
 <!-- excerpt-start -->
 The cohort's first meeting: a virtual introductory workshop where fellows get to know one another and reflect on their communication styles and leadership goals.
