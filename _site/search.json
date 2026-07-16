@@ -5,7 +5,7 @@
       "category" : "preparation",
       "tags"     : "preparation, exercise",
       "url"      : "/docs/doc-exercise-1/",
-      "date"     : "2026-07-16 08:57:03 +0100",
+      "date"     : "2026-07-16 10:03:15 +0100",
       "type"     : "Doc"
     },
   
@@ -14,7 +14,7 @@
       "category" : "preparation",
       "tags"     : "preparation, exercise",
       "url"      : "/docs/doc-exercise-2/",
-      "date"     : "2026-07-16 08:57:03 +0100",
+      "date"     : "2026-07-16 10:03:15 +0100",
       "type"     : "Doc"
     },
   
@@ -23,7 +23,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/docs/doc-main/",
-      "date"     : "2026-07-16 08:57:03 +0100",
+      "date"     : "2026-07-16 10:03:15 +0100",
       "type"     : "Doc"
     },
   
@@ -32,7 +32,7 @@
       "category" : "matching",
       "tags"     : "matching, form",
       "url"      : "/docs/doc-matching-form/",
-      "date"     : "2026-07-16 08:57:03 +0100",
+      "date"     : "2026-07-16 10:03:15 +0100",
       "type"     : "Doc"
     },
   
@@ -41,7 +41,7 @@
       "category" : "matching",
       "tags"     : "matching, groups",
       "url"      : "/docs/doc-matching-guidelines/",
-      "date"     : "2026-07-16 08:57:03 +0100",
+      "date"     : "2026-07-16 10:03:15 +0100",
       "type"     : "Doc"
     },
   
@@ -50,7 +50,7 @@
       "category" : "peer-meetings",
       "tags"     : "peer meetings, formats, facilitator",
       "url"      : "/docs/doc-peer-meetings-formats/",
-      "date"     : "2026-07-16 08:57:03 +0100",
+      "date"     : "2026-07-16 10:03:15 +0100",
       "type"     : "Doc"
     },
   
@@ -59,7 +59,7 @@
       "category" : "peer-meetings",
       "tags"     : "peer meetings, ground rules",
       "url"      : "/docs/doc-peer-meetings-ground-rules/",
-      "date"     : "2026-07-16 08:57:03 +0100",
+      "date"     : "2026-07-16 10:03:15 +0100",
       "type"     : "Doc"
     },
   
@@ -68,7 +68,7 @@
       "category" : "resources",
       "tags"     : "resources, materials",
       "url"      : "/docs/doc-resources/",
-      "date"     : "2026-07-16 08:57:03 +0100",
+      "date"     : "2026-07-16 10:03:15 +0100",
       "type"     : "Doc"
     },
   
@@ -77,7 +77,7 @@
       "category" : "selection",
       "tags"     : "selection, eligibility, criteria",
       "url"      : "/docs/doc-selection-criteria/",
-      "date"     : "2026-07-16 08:57:03 +0100",
+      "date"     : "2026-07-16 10:03:15 +0100",
       "type"     : "Doc"
     },
   
@@ -86,7 +86,7 @@
       "category" : "theory",
       "tags"     : "theory, dRTP",
       "url"      : "/docs/doc-theory-drtp-context/",
-      "date"     : "2026-07-16 08:57:03 +0100",
+      "date"     : "2026-07-16 10:03:15 +0100",
       "type"     : "Doc"
     },
   
@@ -95,7 +95,7 @@
       "category" : "theory",
       "tags"     : "theory, peer mentoring",
       "url"      : "/docs/doc-theory-foundations/",
-      "date"     : "2026-07-16 08:57:03 +0100",
+      "date"     : "2026-07-16 10:03:15 +0100",
       "type"     : "Doc"
     }
   
@@ -106,30 +106,6 @@
       "category" : "news",
       "url"      : "/peerladder-at-elixir-all-hands-europe/",
       "date"     : "2026-06-25 00:00:00 +0100",
-      "type"     : "Blog"
-    } ,
-  
-    {
-      "title"    : "Systemic Leadership – Virtual Workshop with OLS",
-      "category" : "events",
-      "url"      : "/virtual-systemic-leadership-ols/",
-      "date"     : "2026-06-20 00:00:00 +0100",
-      "type"     : "Blog"
-    } ,
-  
-    {
-      "title"    : "In-person First Workshop",
-      "category" : "events",
-      "url"      : "/in-person-first-workshop/",
-      "date"     : "2026-06-02 00:00:00 +0100",
-      "type"     : "Blog"
-    } ,
-  
-    {
-      "title"    : "Virtual introductory workshop",
-      "category" : "events",
-      "url"      : "/virtual-introductory-workshop/",
-      "date"     : "2026-05-22 00:00:00 +0100",
       "type"     : "Blog"
     } ,
   

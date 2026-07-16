@@ -1,6 +1,7 @@
 ---
 title:          In-person First Workshop
 category:       events
+permalink:      /events/in-person-first-workshop/
 
 
 event_date:     2026-06-02

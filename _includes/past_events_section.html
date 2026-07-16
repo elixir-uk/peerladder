@@ -7,12 +7,11 @@
 
         {% assign today = site.time | date: "%Y-%m-%d" %}
         {% assign past_events = "" | split: "" %}
-        {% for post in site.posts %}
-            {% if post.category == "events" %}
-                {% assign event_d = post.event_date | date: "%Y-%m-%d" %}
-                {% if event_d < today %}
-                    {% assign past_events = past_events | push: post %}
-                {% endif %}
+        {% assign all_events = site.events | sort: "event_date" | reverse %}
+        {% for post in all_events %}
+            {% assign event_d = post.event_date | date: "%Y-%m-%d" %}
+            {% if event_d < today %}
+                {% assign past_events = past_events | push: post %}
             {% endif %}
         {% endfor %}
 

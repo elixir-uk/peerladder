@@ -1,6 +1,7 @@
 ---
 title:          Virtual introductory workshop
 category:       events
+permalink:      /events/virtual-introductory-workshop/
 
 event_date:     2026-05-22
 event_location: Online

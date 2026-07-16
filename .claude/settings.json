@@ -51,7 +51,20 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:4001/img/blog-classic/about_img.jpg)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:4001/discourse-flexible-funding-awarded/)",
       "Bash(curl -s http://127.0.0.1:4001/discourse-flexible-funding-awarded/)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:4001/img/posts/ols-systemic-leadership.webp)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:4001/img/posts/ols-systemic-leadership.webp)",
+      "Bash(curl -s http://127.0.0.1:4001/)",
+      "Bash(xargs ls -la)",
+      "Bash(awk '{printf \"%8d  %s\\\\n\",$5,$9}')",
+      "Bash(grep -rnE 'virtual-introductory-workshop|in-person-first-workshop|virtual-systemic-leadership-ols' _posts _pages _includes _layouts index.md)",
+      "Bash(grep -rnE 'site\\\\.posts|category == .events.|category != .events.' _includes _layouts _pages index.md)",
+      "Bash(mkdir -p _events)",
+      "Bash(git mv *)",
+      "Bash(mv _posts/2026-05-22-virtual-introductory-workshop.md   _events/virtual-introductory-workshop.md)",
+      "Bash(mv _posts/2026-06-02-in-person-first-workshop.md         _events/in-person-first-workshop.md)",
+      "Bash(mv _posts/2026-06-20-virtual-systemic-leadership-ols.md  _events/virtual-systemic-leadership-ols.md)",
+      "Bash(mv _events/virtual-introductory-workshop.md   _events/2026-05-22-virtual-introductory-workshop.md)",
+      "Bash(mv _events/in-person-first-workshop.md         _events/2026-06-02-in-person-first-workshop.md)",
+      "Bash(mv _events/virtual-systemic-leadership-ols.md  _events/2026-07-07-virtual-systemic-leadership-ols.md)"
     ],
     "additionalDirectories": [
       "/Users/xeniaperezsitja/Downloads/docy-knowledgebase-doc-jekyll-template-2023-11-27-05-19-50-utc/Docy-jekyll/_posts"

@@ -65,12 +65,11 @@
             <div class="tab-pane fade" id="events" role="tabpanel">
                 {% assign today = site.time | date: "%Y-%m-%d" %}
                 {% assign upcoming_events = "" | split: "" %}
-                {% for post in site.posts %}
-                    {% if post.category == "events" %}
-                        {% assign event_d = post.event_date | date: "%Y-%m-%d" %}
-                        {% if event_d >= today %}
-                            {% assign upcoming_events = upcoming_events | push: post %}
-                        {% endif %}
+                {% assign all_events = site.events | sort: "event_date" %}
+                {% for post in all_events %}
+                    {% assign event_d = post.event_date | date: "%Y-%m-%d" %}
+                    {% if event_d >= today %}
+                        {% assign upcoming_events = upcoming_events | push: post %}
                     {% endif %}
                 {% endfor %}
 
