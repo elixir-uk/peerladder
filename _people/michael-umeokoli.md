@@ -2,7 +2,7 @@
 name: Michael Umeokoli
 layout: person
 role: reviewer
-affiliation: Bubex Labs
+affiliation: Driscop
 country: UK
 avatar: /img/avatars/michael-umeokoli.webp
 orcid: 
